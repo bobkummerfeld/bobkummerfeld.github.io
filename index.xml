@@ -6,9 +6,188 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Your Name</copyright>
+    <copyright>&amp;copy; 2018 Bob Kummerfeld</copyright>
     <lastBuildDate>Sat, 09 Dec 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Second</title>
+      <link>/post/second/</link>
+      <pubDate>Mon, 02 Jul 2018 09:54:49 +0100</pubDate>
+      
+      <guid>/post/second/</guid>
+      <description>
+
+&lt;p&gt;This is my second blog entry, still recounting my history.&lt;/p&gt;
+
+&lt;h2 id=&#34;history-part-2&#34;&gt;History - part 2&lt;/h2&gt;
+
+&lt;p&gt;My story continues in 1980 when I was a tenured lecturer in Computer Science. At that time I had become interested in
+networks and the emerging internet in particular.  Australia had a fragmented academic network at the time with the public X25 network
+and CSIROnet the only long haul options, with some use of dialup modems. It was also the time when Unix was starting to
+takeoff in Universities - having arrived in 1975 but now becoming suitable for large scale teaching.&lt;/p&gt;
+
+&lt;p&gt;At the end of 1979 the Basser Dept of Computer Science at Sydney
+installed a DEC VAX780. Through our close relationship with the
+Bell Labs Unix group we were abble to use the latest Version 8 Unix
+and our programming staff (led by Piers Lauder) did extensive work
+to make it handle large numbers of dumb terminals in a student
+teaching environment.  Looking back on it this was amazing work.
+The machine was powerful for its day but less powerful than the
+Apple watch of today!  It had 4Mbytes main memory (no typo - that
+was MEGA bytes) and a 1MIP processor. Yet it handled up to 100
+student terminals running a text editor, compiler and utilities.
+At 100 it was only just usable but at 60 terminals it was fine.
+Part of the secret was the development of an inovative scheduler
+(the &amp;ldquo;fair-share&amp;rdquo; scheduler) that scheduled processes on the basis
+of resource usage (cpu/mem/IO etc) rather than just CPU, and had
+an approach that shared the resources equitably over of long period
+(eg days). This was work (mostly by Piers Lauder and Judy Kay) is
+the foundation for fair-share scheduling right up to the present
+day.&lt;/p&gt;
+
+&lt;p&gt;The early 1980&amp;rsquo;s was also the beginning of cheap academic networking
+in Australia.  Fixed line modems were cheap and accessible allowing
+a simple async character connection between two machines. Our first
+such connection was a 2400 bps line to UNSW where a lot of Unix
+development was going on.  This allowed remote interactive sessions
+and our programming staff could work with UNSW programmers on Unix
+development.  The missing service was the ability to send email and
+files. Unix had a primitive system called UUCP (Unix to Unix copy)
+but it was direct from one machine to another without any routing
+capability. Routing of messages was performed manually by embedding
+the route in the address. This was primitive and inconvenient and
+inspired me to propose a system that exchanged routing tables and
+did the routing automatically.   With Piers Lauder the first version
+was developed (called the Sydney Unix Network or SUN) and deployed
+around Australia to create the Australian Computer Science Network
+or ACSnet.&lt;/p&gt;
+
+&lt;p&gt;Things really took off at that point with all University CS departments joining the network
+and new versions of the system produced with more facilities. Eventually we commercialised the system (renamed
+as MHSnet - more on that later) and continued to develop it for many years after.&lt;/p&gt;
+
+&lt;p&gt;The key architecture of  MHSnet is that it was a store-and-forward message system with a very flexible transport layer that
+could run over and sort of underlying communication link, and a flexible application layer that could provide message services
+for things such as email and file transfer among many.  The transport layer could run over dialup, fixed lines or services such X25 and the emerging TCP/IP networks. The core of MHSnet was a heirarchical message routing service that exchanged routing
+tables between neighbouring nodes but automatically pruned the table where possible.&lt;/p&gt;
+
+&lt;p&gt;On a personal note, the 1980s were when my incredible children were born - Sarah in 1980, Rebecca in 1985 and Jonathan in 1988.
+All now in senior positions in research and academia.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Firstpost</title>
+      <link>/post/firstpost/</link>
+      <pubDate>Thu, 22 Feb 2018 14:57:11 +1100</pubDate>
+      
+      <guid>/post/firstpost/</guid>
+      <description>
+
+&lt;p&gt;First post on a new blog is the place to introduce myself. As the
+home page says I am currently (October 2017) an Honorary Associate
+Professor of Computer Science at the University of Sydney.  I
+officially “retired” in 2013 and was immediately re-appointed on
+an honorary basis, doing most of what I did before: teaching and
+research. I have since reduced my teaching to one course per year
+plus helping out with small sequences of lectures in other courses
+(eg introducing Python to a first class etc) and the odd lecture
+in other courses. I continue to do research at the same level as
+before retirement.&lt;/p&gt;
+
+&lt;h2 id=&#34;history-part-1&#34;&gt;History – part 1&lt;/h2&gt;
+
+&lt;p&gt;My history at the University of Sydney goes back a long long way.
+I started as an undergraduate student in 1968 (so that means 2017
+was my 50th year at USyd!) enrolled in a Science degree.  I had
+always been interested in computers from about age 8 when I was
+given a book on Science that had a couple of pages on computers. I
+“learned” Fortran from a book in late high school but had no way
+to run programs until I convince a physics tutor to let me use his
+account on the IBM 7040 housed in the School of Physics. Running
+the program involved typing punch cards and submitting the deck
+over the counter to an operator, then waiting a day until the cards
+and printout came back in a pigeonhole for the account. In 1969 I
+enrolled in Psychology and all students in the course had to be a
+subject for an experiment. I found that one of the experiments
+involved a PDP8 computer (also in Physics) that was used to measure
+reaction times, so I signed up. The researcher (Bill King) was very
+kind and lent me a book on programming in machine code for the PDP8.
+This involved writing instructions in assembler on paper and hand
+translating into binary machine instructions – this was fairly easy
+since the machine had an almost trivial instruction set and 12 bit
+words. My first program was a simple loop to count and display the
+result and Bill let me hand enter the program via switches on the
+front panel and run it. At this point I was completely hooked on
+computers.&lt;/p&gt;
+
+&lt;p&gt;I rapidly progressed to other computers and languages and enrolled
+in a newly established 2nd year computer course, mainly because it
+gave me my own account to run Fortran programs. After another year
+I had learned machine code for the IBM 7040, the KDF9 (interesting
+stack architecture) and a CDC 1700 (along with the PDP8 one of the
+first “minicomputers”). I also learned Algol, and assembler for
+each machine. By 1971 I had an operator “licence” for all the
+machines in the Computer Centre and was doing odd programming jobs
+for people.&lt;/p&gt;
+
+&lt;p&gt;I did Computer Science Honours in 1972 and received first class
+honours. This was a breakthrough because first class honours had
+not been given out for several years before then. The academic staff
+were a bit mean with marks in those days! The year 1972 is also
+very special because that was when I met my life partner (Prof.)
+Judy Kay (we have now been married for 42 years, 3 children, 2
+grandchildren).&lt;/p&gt;
+
+&lt;p&gt;Here are a few highlights/milestones of my journey through the world
+of computers and computer science:&lt;/p&gt;
+
+&lt;p&gt;I started a PhD in computer Science in 1973 supervised by J Ross
+Quinlan, inventor of machine learning (ID3 etc). My topic was
+“parallel parsing algorithms”.&lt;/p&gt;
+
+&lt;p&gt;In 1974 the first widely available microprocessor appeared, the
+Intel 8080 (preceded by the 8008 and 4004). In 1975 Mos Technology
+released the 6502 that was eventually to be used in the Apple 1 and
+Apple II. In 1975 I got my hands on one of the first single board
+microcomputers, the “JOLT” (I still have one and the Computer History
+Museum has one). It had an 8 bit MOS6502 CPU, 4K of static RAM, a
+dual UART and a PIA (parallel I/O). The UART was used to drive an
+ASR33 Teletype for character I/O. This was less powerful than a
+microcontroller found on an Arduino board today, but was amazing
+at the time.&lt;/p&gt;
+
+&lt;p&gt;In 1977 I got my first job at the University of Sydney (I had a 77
+staff number) as a research assistant writing code for the JOLT to
+send/receive packets from a satellite transceiver connected to a
+large antenna on the roof. We had a partner in Tohoku University
+in Japan that had gained access to an out of service geo-stationary
+satellite parked over the Pacific. The on-board transceiver was
+still usable and we started exchanging messages with Tohoku.&lt;/p&gt;
+
+&lt;p&gt;I was offered a 3 year lectureship and the beginning of 1978 which
+was converted to tenure track in 1979 and tenured in 1980.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MOOCs: so many learners, so much potential ...</title>
+      <link>/publication/kay2013moocs76/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/kay2013moocs76/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modelling long term goals</title>
+      <link>/publication/barua2014p1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/barua2014p1/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

@@ -6,11 +6,30 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Your Name</copyright>
+    <copyright>&amp;copy; 2018 Bob Kummerfeld</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Second</title>
+      <link>/post/second/</link>
+      <pubDate>Mon, 02 Jul 2018 09:54:49 +0100</pubDate>
+      
+      <guid>/post/second/</guid>
+      <description>This is my second blog entry, still recounting my history.
+History - part 2 My story continues in 1980 when I was a tenured lecturer in Computer Science. At that time I had become interested in networks and the emerging internet in particular. Australia had a fragmented academic network at the time with the public X25 network and CSIROnet the only long haul options, with some use of dialup modems.</description>
+    </item>
+    
+    <item>
+      <title>Firstpost</title>
+      <link>/post/firstpost/</link>
+      <pubDate>Thu, 22 Feb 2018 14:57:11 +1100</pubDate>
+      
+      <guid>/post/firstpost/</guid>
+      <description>First post on a new blog is the place to introduce myself. As the home page says I am currently (October 2017) an Honorary Associate Professor of Computer Science at the University of Sydney. I officially “retired” in 2013 and was immediately re-appointed on an honorary basis, doing most of what I did before: teaching and research. I have since reduced my teaching to one course per year plus helping out with small sequences of lectures in other courses (eg introducing Python to a first class etc) and the odd lecture in other courses.</description>
+    </item>
     
   </channel>
 </rss>
