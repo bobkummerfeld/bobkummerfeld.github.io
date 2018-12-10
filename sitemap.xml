@@ -5,8 +5,26 @@
     
     <url>
     
+      <loc>/post/second/</loc>
+      <lastmod>2018-07-02T09:54:49+01:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/firstpost/</loc>
       <lastmod>2018-02-22T14:57:11+11:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -25,15 +43,6 @@
     
       <loc>/talk/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/post/</loc>
-      <lastmod>2017-01-01T00:00:00+11:00</lastmod>
     </url>
     
   

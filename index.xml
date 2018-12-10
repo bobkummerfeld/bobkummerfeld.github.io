@@ -6,9 +6,76 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Your Name</copyright>
+    <copyright>&amp;copy; 2018 Bob Kummerfeld</copyright>
     <lastBuildDate>Sat, 09 Dec 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Second</title>
+      <link>/post/second/</link>
+      <pubDate>Mon, 02 Jul 2018 09:54:49 +0100</pubDate>
+      
+      <guid>/post/second/</guid>
+      <description>
+
+&lt;p&gt;This is my second blog entry, still recounting my history.&lt;/p&gt;
+
+&lt;h2 id=&#34;history-part-2&#34;&gt;History - part 2&lt;/h2&gt;
+
+&lt;p&gt;My story continues in 1980 when I was a tenured lecturer in Computer Science. At that time I had become interested in
+networks and the emerging internet in particular.  Australia had a fragmented academic network at the time with the public X25 network
+and CSIROnet the only long haul options, with some use of dialup modems. It was also the time when Unix was starting to
+takeoff in Universities - having arrived in 1975 but now becoming suitable for large scale teaching.&lt;/p&gt;
+
+&lt;p&gt;At the end of 1979 the Basser Dept of Computer Science at Sydney
+installed a DEC VAX780. Through our close relationship with the
+Bell Labs Unix group we were abble to use the latest Version 8 Unix
+and our programming staff (led by Piers Lauder) did extensive work
+to make it handle large numbers of dumb terminals in a student
+teaching environment.  Looking back on it this was amazing work.
+The machine was powerful for its day but less powerful than the
+Apple watch of today!  It had 4Mbytes main memory (no typo - that
+was MEGA bytes) and a 1MIP processor. Yet it handled up to 100
+student terminals running a text editor, compiler and utilities.
+At 100 it was only just usable but at 60 terminals it was fine.
+Part of the secret was the development of an inovative scheduler
+(the &amp;ldquo;fair-share&amp;rdquo; scheduler) that scheduled processes on the basis
+of resource usage (cpu/mem/IO etc) rather than just CPU, and had
+an approach that shared the resources equitably over of long period
+(eg days). This was work (mostly by Piers Lauder and Judy Kay) is
+the foundation for fair-share scheduling right up to the present
+day.&lt;/p&gt;
+
+&lt;p&gt;The early 1980&amp;rsquo;s was also the beginning of cheap academic networking
+in Australia.  Fixed line modems were cheap and accessible allowing
+a simple async character connection between two machines. Our first
+such connection was a 2400 bps line to UNSW where a lot of Unix
+development was going on.  This allowed remote interactive sessions
+and our programming staff could work with UNSW programmers on Unix
+development.  The missing service was the ability to send email and
+files. Unix had a primitive system called UUCP (Unix to Unix copy)
+but it was direct from one machine to another without any routing
+capability. Routing of messages was performed manually by embedding
+the route in the address. This was primitive and inconvenient and
+inspired me to propose a system that exchanged routing tables and
+did the routing automatically.   With Piers Lauder the first version
+was developed (called the Sydney Unix Network or SUN) and deployed
+around Australia to create the Australian Computer Science Network
+or ACSnet.&lt;/p&gt;
+
+&lt;p&gt;Things really took off at that point with all University CS departments joining the network
+and new versions of the system produced with more facilities. Eventually we commercialised the system (renamed
+as MHSnet - more on that later) and continued to develop it for many years after.&lt;/p&gt;
+
+&lt;p&gt;The key architecture of  MHSnet is that it was a store-and-forward message system with a very flexible transport layer that
+could run over and sort of underlying communication link, and a flexible application layer that could provide message services
+for things such as email and file transfer among many.  The transport layer could run over dialup, fixed lines or services such X25 and the emerging TCP/IP networks. The core of MHSnet was a heirarchical message routing service that exchanged routing
+tables between neighbouring nodes but automatically pruned the table where possible.&lt;/p&gt;
+
+&lt;p&gt;On a personal note, the 1980s were when my incredible children were born - Sarah in 1980, Rebecca in 1985 and Jonathan in 1988.
+All now in senior positions in research and academia.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Firstpost</title>
