@@ -50,6 +50,15 @@
     
     <url>
     
+      <loc>/publication/barua2014p1/</loc>
+      <lastmod>2014-07-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/kay2013moocs76/</loc>
       <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     </url>
@@ -70,6 +79,7 @@
     <url>
     
       <loc>/publication_types/1/</loc>
+      <lastmod>2014-07-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -97,16 +107,8 @@
     
     <url>
     
-      <loc>/publication/barua2014p1/</loc>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/publication_types/</loc>
-      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+      <lastmod>2014-07-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
