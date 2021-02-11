@@ -59,6 +59,15 @@
     
     <url>
     
+      <loc>/courses/</loc>
+      <lastmod>2017-01-01T00:00:00+11:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/</loc>
       <lastmod>2017-01-01T00:00:00+11:00</lastmod>
     </url>
@@ -109,6 +118,24 @@
     
       <loc>/publication/kay2013moocs76/</loc>
       <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/courses/info1112-2020/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/courses/trythis/</loc>
+      <priority>0</priority>
     </url>
     
   
