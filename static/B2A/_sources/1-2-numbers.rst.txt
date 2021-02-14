@@ -1,0 +1,111 @@
+
+1.2 Integers and Real Numbers
+:::::::::::::::::::::::::::::
+
+We can represent *everything* in the computer using patterns of binary digits.
+
+Integers, fractions, characters, images, sound, video….
+
+It all depends on how we interpret the sequence of bits. A sequence might be interpreted as
+an integer, or we might interpret it to mean a certain character (eg a capital A), or it might
+represent a pixel in an image.
+
+Before we get to an explanation of techniques for representing numbers in a binary sequence, I'd
+like to discuss the way we organise the bits in the memory of a computer.
+
+
+------
+Memory
+------
+
+Computer memory is made up of switches (actually transistors - an electronic switch) that represent the ones and zeros of binary numbers.
+
+Instead of being a very long sequence of these switches, the memory is divided into equal size chunks.
+Modern computers use chunks of eight of these switches and each chunk is called a **BYTE**.
+
+
+.. note:: The Burroughs B1000 series computers from the 1970's did not have a fixed chunk size.
+   Instead of 8 bit bytes, the programmers could choose any size they wanted.
+
+You can think of computer memory as a sequence of these 8-bit bytes. The position of each byte in the sequence is
+the **address** of the byte.   The computer can easily retrieve an individual byte using the address of the byte.
+
+
+.. image:: Images/number-1.png
+   :width: 8cm
+   :align: center
+
+.. note:: In the case of the Burroughs B1000 series, the individual bits were numbered, so the machine
+   was described as *bit addressable*
+
+
+-----------------
+Numbers: integers
+-----------------
+
+If we use a single 8-bit byte for integers we impose a limit on the range of values that can be represented.
+
+.. raw:: html
+
+
+          <div class="fitb">
+                <p>The number of different values we can represent in 8-bits is <input type="text" id="Q1" data-component="binary">.</p>
+                <button type="button" onclick="sendfitb('Q1')">Check</button>
+		<script id="Q1-answers" type="application/json">
+		[
+
+        { "regex": "256", "feedback": " Correct!", "result": ""  }  ,
+        { "regex": "255", "feedback": " Wrong. Did you forget to include 0?", "result": ""  }  ,
+        { "regex": "x", "feedback": " Oops... wrong.  The range goes from 00000000 to 11111111.  00000000 is 0 and 11111111 is 255. Try again.", "result": ""  }          ]
+	</script>
+	<p id="Q1-feedback"> <p>
+	</script>
+
+	</div>
+
+To represent a large range of values we could add more bits. For example, 2 bytes or 16 bits would let us represent many more integers.
+
+Do you think it is possible to represent ALL integers in a computer?
+
+The answer is **NO**! The reason is that computers have a finite amount of memory, and in mathematics there are an infinite number of integers
+and they can be infitely large.   We have to impose a limit somewhere.
+
+As well as integers we also want to represent negative numbers and fractions. How do we do that in the computer where we only have bits
+and no minus sign or point?
+
+In the case of negative integers, we have to choose a way of interpreting the existing bits as either a positive or negative number.
+One way to do this is to reserve one of the bits to mean a sign, eg 0 means positive, 1 means negative.
+In the past, some computers did this and typically assigned the left most bit (most significant) to be the sign bit.
+This representation is called "sign and magnitude".
+
+Modern computers use another method called "two's complement" representation, and that's the method we will describe in more detail.
+
+To make it a bit easier, we will assume we have only a 4-bit chunk to represent our integers.  If we only represent positive
+integers we can have 0000 to 1111  or 0-15, 16 different patterns and so 16 different values.
+
+.. csv-table::
+   :header: "Binary", "Unsigned", "sign and magnitude", "2s complement"
+   :widths: 20, 20, 20, 20
+
+   "0000", 0, 0, 0
+   "0001", 1, 1, 1
+   "0010", 2, 2, 2
+   "0011", 3, 3, 3
+   "0100", 4, 4, 4
+   "0101", 5, 5, 5
+   "0110", 6, 6, 6
+   "0111", 7, 7, 7
+   "1000", 8, -0, -8
+   "1001", 9, -1, -7
+   "1010", 10, -2, -6
+   "1011", 11, -3, -5
+   "1100", 12, -4, -4
+   "1101", 13, -5, -3
+   "1110", 14, -6, -2
+   "1111", 15, -7, -1
+
+
+
+Another way to think about this is in the form of a number circle:
+
+.. image:: Images/number-2.png

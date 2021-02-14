@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From the Bits to Applications &#8212; B2A 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/paho-mqtt-min.js"></script>
+    <script src="_static/eBook.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction to the book" href="0-introduction.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="from-the-bits-to-applications">
+<h1>From the Bits to Applications<a class="headerlink" href="#from-the-bits-to-applications" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="0-introduction.html">Introduction to the book</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-1-binary.html">1.1 Starting at the Bits</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1-1-binary.html#why-do-computers-use-binary">Why do computers use binary?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1-1-binary.html#binary-video">Binary: Video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1-2-numbers.html">1.2 Integers and Real Numbers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1-2-numbers.html#memory">Memory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1-2-numbers.html#numbers-integers">Numbers: integers</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>From here on there are examples of use of reStructuredText.</p>
+<p>How to do a table of contents with links.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
+   <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
+
+   <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">file</span>
+</pre></div>
+</div>
+<p>Runestone uses the <code class="docutils literal notranslate"><span class="pre">restructuredText</span></code> (rst) markup language.  We chose this over markdown largely because rst is extensible.  Nearly all of the basic markup tasks are already handled by restructuredText.  You should check out the docs for the basics of restructuredText (link below). Our extensions are all for the interactive elements.  One key hint about restructuredText:  Its like <strong>Python</strong> – <em>indentation matters!</em></p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://docutils.sourceforge.net/rst.html">restructuredText Docs</a></p></li>
+<li><p><a class="reference external" href="https://runestone.academy/runestone/static/authorguide/index.html">Runestone Docs</a></p></li>
+<li><p>Join the discussion on our <a class="reference external" href="https://groups.google.com/forum/#!forum/runestone_instructors">Google Group</a></p></li>
+<li><p>Tell us about problems on <a class="reference external" href="https://github.com/RunestoneInteractive/RunestoneComponents">Github</a></p></li>
+</ul>
+<div class="section" id="section-3-sample-directives">
+<h2>SECTION 3: Sample Directives<a class="headerlink" href="#section-3-sample-directives" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="activecode">
+<h3>ActiveCode<a class="headerlink" href="#activecode" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="multiple-choice">
+<h3>Multiple Choice<a class="headerlink" href="#multiple-choice" title="Permalink to this headline">¶</a></h3>
+<p>These are just two of the many interactive components for writing online course materials.  You can see examples of all of them <a class="reference external" href="http://interactivepython.org/runestone/static/overview/overview.html">On our Example Page</a></p>
+<p>Now feel free to modify this file to start creating your own interactive page.</p>
+</div>
+</div>
+<div class="section" id="section-4-theme">
+<h2>Section 4: Theme<a class="headerlink" href="#section-4-theme" title="Permalink to this headline">¶</a></h2>
+<p>You can override the style rules in the default theme by adding css rules to a file named <strong>theme-overrides.css</strong> (the filename is important - this will replace an existing file). Make sure the file’s directory is part of the <code class="docutils literal notranslate"><span class="pre">html_static_path</span></code>. You can do so by placing it in a folder <strong>_static</strong>, then modifying <code class="docutils literal notranslate"><span class="pre">html_static_path</span></code> in conf.py to include that folder:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html_static_path</span> <span class="o">=</span>  <span class="n">runestone_static_dirs</span><span class="p">()</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;_static&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>If you want to do more significant changes to the theme, you should copy the files in the runestone/common/project/template/sphinx_bootstrap to a directory like <code class="docutils literal notranslate"><span class="pre">_templates/my_theme</span></code>. Then make sure these values are set in conf.py:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_templates&quot;</span><span class="p">]</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;my_theme&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">B2A</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="0-introduction.html">Introduction to the book</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-1-binary.html">1.1 Starting at the Bits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-2-numbers.html">1.2 Integers and Real Numbers</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="0-introduction.html" title="next chapter">Introduction to the book</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Bob K.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
