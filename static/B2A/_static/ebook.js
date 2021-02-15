@@ -81,6 +81,5 @@ function sendfitb(ansid)
   var msgJSON = JSON.stringify(msg);
   message = new Paho.MQTT.Message(msgJSON);
   message.destinationName = eBookdata.EBtopic;
-  alert(eBookdata.EBtopic);
   client.send(message);
 }
