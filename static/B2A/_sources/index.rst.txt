@@ -20,7 +20,7 @@ From the Bits to Applications
    1-1-binary.rst
    1-2-numbers.rst
 
-1.0 Introduction to the book
+1.0 Introduction
 ::::::::::::::::::::::::::::
 
 This book is based on material that was developed by me, Bob Kummerfeld, for the University of Sydney
