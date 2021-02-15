@@ -20,4 +20,21 @@ From the Bits to Applications
    1-1-binary.rst
    1-2-numbers.rst
 
+1.0 Introduction to the book
+::::::::::::::::::::::::::::
+
+This book is based on material that was developed by me, Bob Kummerfeld, for the University of Sydney
+School of Computer Science INFO1112 course in 2020. That was the year the pandemic started and
+we had to rapidly pivot from conventional face-to-face lectures and labs to fully online delivery.
+
+I spent several months creating videos for each segment of material, each with self test quiz questions.
+I've taken this material and converted it into book format using the Sphinx document processor and a
+small preprocessor program that I wrote to add a few extra features.
+
+Eventually I plan to enable a user login system with a backend personal user model for each registered
+user. Then I can add a simple dashboard display that allows users to see where they are up to in the material,
+what should be done next, what the main concepts are etc.
+
+The material is arranged in a series of web pages, each with text, graphics, embedded self test exercises and short video.
+
 
