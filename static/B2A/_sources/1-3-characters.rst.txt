@@ -48,8 +48,20 @@ used as signals to an external device to do something.  This is now largely hist
 of the "tab", "backspace", "line feed" and "carriage return"
 characters that indicate where on the screen the next character should appear.
 
+Here is a nice table of ASCII codes produced at UCLA:
+
 .. image:: Images/ascii-table-ack.png
 
+For a more complete history of the development of ASCII see the Wikipedia article <https://en.wikipedia.org/wiki/ASCII>
+
+Let's look at some ASCII codes
+
+.. csv-table::
+   :header: "Character", "Code in binary", "Code in hexadecimal", "Code in decimal"
+   :widths: 20,20,20,20
+
+   "A", "01000001", "41", "65"
+   "B", "01000010", "42", "66"
 
 
 
