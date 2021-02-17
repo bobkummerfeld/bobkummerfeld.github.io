@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.3 Characters &#8212; B2A 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/paho-mqtt-min.js"></script>
+    <script src="_static/eBook.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1.4 Instructions" href="1-4-instructions.html" />
+    <link rel="prev" title="1.2 Integers and Real Numbers" href="1-2-numbers.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="characters">
+<h1>1.3 Characters<a class="headerlink" href="#characters" title="Permalink to this headline">¶</a></h1>
+<p>As I said before, we can represent <em>everything</em> in the computer using patterns of binary digits.</p>
+<p>This includes characters - codes that indicate a shape that we print on a page or display on a screen.
+Characters are probably the most common entities that are stored and manipulated in computers. We use them in documents,
+web pages, notifications, presentations, books and so on. They are the mechanism we use to communicate between
+humans and computers and so are incredibly important.</p>
+<p>In the early days of computers we mainly used print.  Messages from the computer were printed on paper. But today most interaction
+is via graphics on screens. This gives great flexibility but also makes the discussion of character representation in binary a lot more complicated.</p>
+<p>The graphical representation of a character is sometimes called a “grapheme” and I’ll use that term
+to describe what the character looks like when displayed.   This can get very confusing because there are usually many representations
+of a character that can be displayed - multiple fonts, multiple font sizes etc. These different graphical representations are usually called
+“allographs” of the grapheme.</p>
+<p>To avoid some of the confusion I will just refer to the graphemes as <strong>characters</strong>. Characters can have multiple graphical representations (fonts, size etc)
+on the screen, but I will cover that aspect of the representation separately. But, there is still some confusion because many languages draw a distinction
+between upper and lower case versions and use separate representations (codes) for each version.
+And, of course there are the annotations on characters such as <em>diacritical marks</em>.  Then there are languages like Chinese that has thousands of characters
+in common use. I will start by describing how represent characters used in English.</p>
+<div class="section" id="binary-patterns-to-represent-characters">
+<h2>Binary patterns to represent characters<a class="headerlink" href="#binary-patterns-to-represent-characters" title="Permalink to this headline">¶</a></h2>
+<p>Since the memory of most computers is divided into 8-bit bytes that are individually addressable, it makes sense that we use a byte to
+represent a single character.   With 8 bits we can represent 256 characters and in normal English this is certainly enough to represent
+the alphabetic, numeric and special characters. The most commonly used encoding for English characters was developed by the American Standards Association
+and released in 1963. It is called the American Standard Code for Information Interchange or ASCII. It uses 7 bits and so can represent 128 individual
+characters.  Each group of 7 bits is stored in a single byte, with the 8th bit often used as a method of error detection called a “parity bit”.
+If the last bit is not used as a parity bit it is set to zero.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The value of a parity bit is calculated by counting the number of 1 bits in the field.
+If the system uses <strong>even</strong> parity then the parity bit is set to zero if there are an even number of  1 bits in the field.
+If the system uses <strong>odd</strong> parity then the parity bit is set to zero if there are an odd number of  1 bits in the field.
+This bit can be checked to see if something has changed in the field.</p>
+</div>
+<p>ASCII has codes for upper and lower case alphabetical characters, numbers, space and a selection of “special” characters.
+These codes use only 95 of the available 128 code values. The rest of the code values are called “control characters” and were originally
+used as signals to an external device to do something.  This is now largely historical, with the exception
+of the “tab”, “backspace”, “line feed” and “carriage return”
+characters that indicate where on the screen the next character should appear.</p>
+<img alt="_images/ascii-table-ack.png" src="_images/ascii-table-ack.png" />
+</div>
+<div class="section" id="characters-video">
+<h2>Characters: Video<a class="headerlink" href="#characters-video" title="Permalink to this headline">¶</a></h2>
+<iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/dummy" frameborder="0"  allowfullscreen></iframe></div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">B2A</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1-1-binary.html">1.1 Starting at the Bits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-2-numbers.html">1.2 Integers and Real Numbers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1.3 Characters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#binary-patterns-to-represent-characters">Binary patterns to represent characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#characters-video">Characters: Video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1-4-instructions.html">1.4 Instructions</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Bob Kummerfeld.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/1-3-characters.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

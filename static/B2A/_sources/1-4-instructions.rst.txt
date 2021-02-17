@@ -1,0 +1,21 @@
+
+1.4 Instructions
+::::::::::::::::
+
+The last simple type I want to describe are computer **instructions**
+
+
+-------------------
+Instructions: Video
+-------------------
+
+.. raw:: html
+
+          <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/dummy" frameborder="0"  allowfullscreen></iframe>
+
+
+
+
+
+
+

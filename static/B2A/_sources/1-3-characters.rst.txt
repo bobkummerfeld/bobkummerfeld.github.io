@@ -1,0 +1,69 @@
+
+1.3 Characters
+::::::::::::::
+
+As I said before, we can represent *everything* in the computer using patterns of binary digits.
+
+This includes characters - codes that indicate a shape that we print on a page or display on a screen.
+Characters are probably the most common entities that are stored and manipulated in computers. We use them in documents,
+web pages, notifications, presentations, books and so on. They are the mechanism we use to communicate between
+humans and computers and so are incredibly important.
+
+In the early days of computers we mainly used print.  Messages from the computer were printed on paper. But today most interaction
+is via graphics on screens. This gives great flexibility but also makes the discussion of character representation in binary a lot more complicated.
+
+The graphical representation of a character is sometimes called a "grapheme" and I'll use that term
+to describe what the character looks like when displayed.   This can get very confusing because there are usually many representations
+of a character that can be displayed - multiple fonts, multiple font sizes etc. These different graphical representations are usually called
+"allographs" of the grapheme.
+
+To avoid some of the confusion I will just refer to the graphemes as **characters**. Characters can have multiple graphical representations (fonts, size etc)
+on the screen, but I will cover that aspect of the representation separately. But, there is still some confusion because many languages draw a distinction
+between upper and lower case versions and use separate representations (codes) for each version.
+And, of course there are the annotations on characters such as *diacritical marks*.  Then there are languages like Chinese that has thousands of characters
+in common use. I will start by describing how represent characters used in English.
+
+---------------------------------------
+Binary patterns to represent characters
+---------------------------------------
+
+Since the memory of most computers is divided into 8-bit bytes that are individually addressable, it makes sense that we use a byte to
+represent a single character.   With 8 bits we can represent 256 characters and in normal English this is certainly enough to represent
+the alphabetic, numeric and special characters. The most commonly used encoding for English characters was developed by the American Standards Association
+and released in 1963. It is called the American Standard Code for Information Interchange or ASCII. It uses 7 bits and so can represent 128 individual
+characters.  Each group of 7 bits is stored in a single byte, with the 8th bit often used as a method of error detection called a "parity bit".
+If the last bit is not used as a parity bit it is set to zero.
+
+.. note::
+
+   The value of a parity bit is calculated by counting the number of 1 bits in the field.
+   If the system uses **even** parity then the parity bit is set to zero if there are an even number of  1 bits in the field.
+   If the system uses **odd** parity then the parity bit is set to zero if there are an odd number of  1 bits in the field.
+   This bit can be checked to see if something has changed in the field.
+
+
+ASCII has codes for upper and lower case alphabetical characters, numbers, space and a selection of "special" characters.
+These codes use only 95 of the available 128 code values. The rest of the code values are called "control characters" and were originally
+used as signals to an external device to do something.  This is now largely historical, with the exception
+of the "tab", "backspace", "line feed" and "carriage return"
+characters that indicate where on the screen the next character should appear.
+
+.. image:: Images/ascii-table-ack.png
+
+
+
+
+-----------------
+Characters: Video
+-----------------
+
+.. raw:: html
+
+          <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/dummy" frameborder="0"  allowfullscreen></iframe>
+
+
+
+
+
+
+

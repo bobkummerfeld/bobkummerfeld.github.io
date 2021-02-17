@@ -16,9 +16,10 @@ From the Bits to Applications
 .. toctree::
    :maxdepth: 2
 
-   0-introduction.rst
    1-1-binary.rst
    1-2-numbers.rst
+   1-3-characters.rst
+   1-4-instructions.rst
 
 1.0 Introduction
 ::::::::::::::::::::::::::::

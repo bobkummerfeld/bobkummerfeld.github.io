@@ -17,6 +17,7 @@
     <script src="_static/eBook.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1.3 Characters" href="1-3-characters.html" />
     <link rel="prev" title="1.1 Starting at the Bits" href="1-1-binary.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -198,7 +199,119 @@ we do arithmetic and don’t think about what happens when you exceed the 4 bits
 <p>For example, what happens if you add 5 and 6?   Using the 2s complement number circle we start at 5 then go around the circle 6 steps
 and end up at -5!  That’s because 5+6 is 11 which exceeds the capacity of a 4 bit 2s complement representation which can only represent integers
 from -8 to +7.</p>
+  <div class="fitb">
+        <p>Using 4 bit 2s complement representation, what is the value of -4-7? <input type="text" id="Q2" data-component="numbers"></p>
+        <button type="button" onclick="sendfitb('Q2')">Check</button>
+        <script id="Q2-answers" type="application/json">
+        [
+
+{ "regex": "5", "feedback": " Correct!", "result": ""  }  ,
+{ "regex": "+5", "feedback": " Correct!", "result": ""  }  ,
+{ "regex": "-11", "feedback": " Wrong. Don't forget we only have 4 bits and we are using 2s complement. Try the number wheel.", "result": ""  }  ,
+{ "regex": "x", "feedback": " Oops... wrong.  ", "result": ""  }          ]
+</script>
+<p id="Q2-feedback"> <p>
+</script>
+
+</div><p>These examples are trivial because we are using only 4 bits for our numbers. However, the same issues can arise with larger fields.
+For example, a common method of representing intergers in a computer is to use 4 bytes, or 4 x 8 = 32 bits.</p>
+  <div class="fitb">
+        <p>How many positive integers can you represent in 32 bits? <input type="text" id="Q3" data-component="numbers"></p>
+        <button type="button" onclick="sendfitb('Q3')">Check</button>
+        <script id="Q3-answers" type="application/json">
+        [
+
+{ "regex": "4294967296", "feedback": "Correct.", "result": ""  }  ,
+{ "regex": "x", "feedback": " Wrong. We can represent 2 raised to the power 32 different values, or 4294967296", "result": ""  }          ]
+</script>
+<p id="Q3-feedback"> <p>
+</script>
+
+</div><p>So if we can only represent about 4000 million or 4G positive integers then if we use 2s complement representation
+we can only represent numbers in the approximate range of minus 2G to plus 2G.
+We can still overflow 32 bits if we add two large integers!</p>
+<p>Representing integers in 4 bytes is called <strong>single precision</strong>.  Some computers allow the use of 8 bytes, or <strong>double precisions</strong>.
+What is the range of positive and negative integers that can be represented in 2s complement double precision?</p>
 </div>
+<div class="section" id="representing-real-numbers">
+<h2>Representing Real Numbers<a class="headerlink" href="#representing-real-numbers" title="Permalink to this headline">¶</a></h2>
+<p>There are many situations where you need to represent fractions, not just whole numbers.  For this, the computer needs a way of representing <strong>real numbers</strong>.
+We know that our computers are finite and we have a limited number of bits to represent data, so any representation of real numbers will also have to be limited.</p>
+<p>With real numbers we have to represent the fractional part as well as the whole number. This means we’ll have a limited <em>precision</em> as well as <em>range</em>.</p>
+<p>Just as there are many ways to represent integers, there are also many ways to represent the parts of a real number.   A common way is “fixed point” representation
+where we take our field of bits and divide it into fixed sized parts to represent the whole number and the fraction.</p>
+<p>For example, we might have one byte for the whole number and one byte for the fraction and so get a number like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">00101010.10000100</span>
+</pre></div>
+</div>
+<p>The part to the left of the <em>binary</em> point is interpreted as a normal positive number. To the right of the point we
+using <em>negative</em> powers of two for each position, so in the case the value is</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">^-</span><span class="mi">1</span> <span class="n">x</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="o">^-</span><span class="mi">6</span> <span class="n">x</span> <span class="mi">1</span> <span class="ow">or</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">64</span>  <span class="ow">or</span> <span class="mi">33</span><span class="o">/</span><span class="mi">64</span> <span class="ow">or</span> <span class="mf">0.51562</span>
+</pre></div>
+</div>
+<p>The total value is 42.51562.</p>
+<p>Fixed point representation suffers from the finite-ness problem already mentioned, but also has another problem.
+It’s not very <em>efficient</em> at representing real numbers.  For example a number like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">00101010.10000000</span>
+</pre></div>
+</div>
+<p>This number is “wasting” a lot of zeros on the end. If we needed more digits in the whole number part to represent a big number
+we have a problem.  We can’t re-use the unneccesary zeros on the end.</p>
+<p>The solution was another, ingenious, method to represent real numbers. We allow the binary point to “float” to a position that makes
+optimal use of the available bits.  It does this by storing the number in these two parts:  exponent and magnitude.   When we write large real numbers
+in decimal we often use a method called “scientific notation”. This is exactly the same idea.</p>
+<p>For example, the decimal number 315.82 could be expressed as:</p>
+<img alt="_images/number-4.png" src="_images/number-4.png" />
+<p>In binary we call this representation “floating point” and the magnitude is called the “mantissa”. We also arrange the bit pattern a little
+differently and include an explicit sign bit:</p>
+<img alt="_images/number-5.png" src="_images/number-5.png" />
+<p>To make the representation even more efficient, we have to allow for very small numbers, less than one.  In order to avoid wasting bits in the mantissa
+we need to represent a <em>negative</em> exponent.  We could do this using 2s complement representation that we have already covered, but in the most popular standard
+for floating point numbers (IEEE-754) they use yet another method - “biased” representation where a fixed value is added to the number and the result
+stored as an unsigned 8 bit number.</p>
+<p>The last feature of floating point number representation I want to mention is that the numbers are “normalised”. The mantissa is shifted left or right until
+there is a single 1 to the left of the binary point, and the exponent is adjusted accordingly.</p>
+<p>The widely used IEEE-754 floating number representation standard has three sizes:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>Size</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>single precision</p></td>
+<td><p>32 bits</p></td>
+</tr>
+<tr class="row-odd"><td><p>double precision</p></td>
+<td><p>64 bits</p></td>
+</tr>
+<tr class="row-even"><td><p>extended precision</p></td>
+<td><p>80 bits</p></td>
+</tr>
+</tbody>
+</table>
+<p>The reasons behind the floating representation are related to efficient use of the computer hardware, the logic. For example, if all floating point numbers are
+normalised, then all numbers have a 1 to the left of the binary point, and so we don’t need to store it, so we save a bit.   Similarly, the exponent is stored in
+biased representation because it makes it easier to do arithmetic.</p>
+<p>On the subject of computer arithmetic:  there are a lot of traps that programmers can fall in to when using real numbers as represented in floating point.
+Many numbers can not be represented exactly, for example take the decimal number 0.1 and try and represent it in binary fixed point with 16 bits for the fractional
+part.  You can see that you can’t represent it accurately. This compounded if you now do arithmetic on the (innacurate) representation. So you might multiply your
+number by 10 and then test the result to see if it equals 1 (0.1 x 10).  You might be surprised by the result.</p>
+<p>The subject of floating point number representation and floating point arithmetic could occupy several University level courses!
+So that’s all I’ll say about them here.</p>
+<p>There are many other ways to represent numbers as binary patterns.   The Python language represents integers in a form that allows arbitrary length numbers
+and arithmetic on them. Try a simple loop to calculate factorial 100. The result is a very long integer.</p>
+<p>Real numbers can also be represented by “rational” numbers - pairs of integers. There are software libraries that implement rational number
+representation but I don’t know of any current computer hardware that does this.</p>
+<p>That completes our introduction to representing numbers as binary values in a computer.</p>
+</div>
+<div class="section" id="numbers-video">
+<h2>Numbers: Video<a class="headerlink" href="#numbers-video" title="Permalink to this headline">¶</a></h2>
+<iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/KTyO8oplip4" frameborder="0"  allowfullscreen></iframe></div>
 </div>
 
 
@@ -223,8 +336,12 @@ from -8 to +7.</p>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">1.2 Integers and Real Numbers</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#memory">Memory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#numbers-integers">Numbers: integers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#representing-real-numbers">Representing Real Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#numbers-video">Numbers: Video</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="1-3-characters.html">1.3 Characters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-4-instructions.html">1.4 Instructions</a></li>
 </ul>
 
 

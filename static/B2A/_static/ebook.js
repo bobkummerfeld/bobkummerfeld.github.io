@@ -57,8 +57,7 @@ function checkans(qid)
                         return ansobj[ans].result;
                 }
 
-                patt = new RegExp(rx);
-                if (patt.exec(ansval) != null)
+                if (ansval.indexOf(rx) == 0)
                 {
                         document.getElementById(fbackid).innerHTML = ansobj[ans].feedback;
                         return ansobj[ans].result;
