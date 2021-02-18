@@ -21,7 +21,7 @@ To avoid some of the confusion I will just refer to the graphemes as **character
 on the screen, but I will cover that aspect of the representation separately. But, there is still some confusion because many languages draw a distinction
 between upper and lower case versions and use separate representations (codes) for each version.
 And, of course there are the annotations on characters such as *diacritical marks*.  Then there are languages like Chinese that has thousands of characters
-in common use. I will start by describing how represent characters used in English.
+in common use. I will start by describing how to represent characters used in English.
 
 ---------------------------------------
 Binary patterns to represent characters
@@ -52,7 +52,7 @@ Here is a nice table of ASCII codes produced at UCLA:
 
 .. image:: Images/ascii-table-ack.png
 
-For a more complete history of the development of ASCII see the Wikipedia article <https://en.wikipedia.org/wiki/ASCII>
+For a more complete history of the development of ASCII see the `Wikipedia article <https://en.wikipedia.org/wiki/ASCII>`_
 
 Let's look at some ASCII codes
 
@@ -63,6 +63,88 @@ Let's look at some ASCII codes
    "A", "01000001", "41", "65"
    "B", "01000010", "42", "66"
 
+When we compare a variable containing a character with the literal value 'A', we are actually
+comparing the bit pattern in the variable to the bit pattern '01000001'.
+
+----------------------
+Non-English Characters
+----------------------
+
+.. role::  raw-html(raw)
+    :format: html
+
+Using 7 bits within a byte is plenty of bits to represent the normally used English characters,
+but once we move to other languages there is the need for vastly more character codes.
+Even within English there are local variants that require other code patterns, for example
+the pound symbol used in Britain (:raw-html:`&pound;`).
+
+In the early days of computers there were many different character encodings in use. These were
+almost all related to the particular devices being used and the manufacture.  When we settled on
+the 8-bit byte as the standard addressable unit in the computer memory, ASCII became a de-facto
+universal standard. As computing spread around the world there was a need to represent characters from
+many languages other than English. There were then many ad-hoc attempts to extend ASCII or use multiple
+ASCII characters to represent new graphemes.  In the 1980s there was a new effort to define a universal standard
+that would cover all languages and characters. This resulted in the first draft of a universal standard called
+Unicode.
+
+.. note::
+
+   Wikipedia has an excellent article on the `history and details of Unicode <https://en.wikipedia.org/wiki/Unicode>`_
+
+
+.. blah
+
+	.. |copy| unicode:: 0xA9 .. copyright sign
+	.. |smily| unicode:: 0x1F600 .. smily face
+	This is copyright: |copy|   |smily|
+
+Unicode uses 32 bits/character (4 bytes) and so could theoretically represent over 4 billion characters!
+Currently (2020) there are over 140,000 characters represented in Unicode that cover more than 150 languages.
+There are also characters represented in Unicode that are no longer used, except in historical documents.
+
+And there are "emojis" 👏😁👍
+
+😁 has code 1F600 in hexadecimal
+
+😷 has code 1F637 in hexadecimal
+
+For more information about Unicode see the website of the `Unicode Consortium <https://home.unicode.org/>`_
+
+Unicode is amazing. The website calls Unicode "A Global Standard to Support ALL the World’s Languages" and
+it does that and a lot more. All types of symbols, emojis, grapheme variants etc are covered.  However...
+
+The price you pay for representing so many different characters is that each one takes 4 bytes. If you are
+using  language like English with a small and widely used character set your documents are going to increase in size
+by a factor of 4! So right from the beginning the developers and users of Unicode were thinking about ways to reduce
+the size of Unicode characters.  The solution was to encode the encoding!
+
+Various encodings of Unicode have been developed. The one used almost universily in web pages is called UTF-8.
+UTF-8 stands for *Unicode Transformation Format - 8bit* and
+was developed by engineers in the Unix group at Bell Labs in the early 1990s (Dave Prosser, Ken Thompson and Rob Pike).
+It is a *variable length* encoding.   It encodes the ASCII characters in single bytes with the same code as ASCII,
+and other characters in two or more bytes.  This allows existing ASCII documents to be interpreted with very little
+effort, but also allows extended character sets (like emojis 😁) to be represented in the same documents.
+
+Example:
+
+.. csv-table::
+   :header: "Character", "Unicode (4 bytes hex)", "ASCII (1 byte hex)"
+   :widths: 20,20,20
+
+   "A", "00000041", "41"
+
+Most programming languages now have support for Unicode.
+For example, Python uses unicode for all character strings.
+Sometimes it is difficult to enter unicode characters and you may have to have
+special support for keyboards that include the character you want.
+Alternatively you could use the HEX code for the character.
+
+.. tip::
+   Read the wikipedia entry and Unicode web page about the Unicode system.
+   Experiment to see what characters you can type on your keyboard. Do you need to
+   enter the hex encoding?
+
+
 
 
 -----------------
@@ -72,10 +154,6 @@ Characters: Video
 .. raw:: html
 
           <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/dummy" frameborder="0"  allowfullscreen></iframe>
-
-
-
-
 
 
 
