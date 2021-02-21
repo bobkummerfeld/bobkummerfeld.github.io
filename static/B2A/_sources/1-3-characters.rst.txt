@@ -125,6 +125,8 @@ It is a *variable length* encoding.   It encodes the ASCII characters in single 
 and other characters in two or more bytes.  This allows existing ASCII documents to be interpreted with very little
 effort, but also allows extended character sets (like emojis 😁) to be represented in the same documents.
 
+.. |hglyph| unicode:: 0x13020 .. man
+
 Example:
 
 .. csv-table::
@@ -132,6 +134,8 @@ Example:
    :widths: 20,20,20
 
    "A", "00000041", "41"
+   "♬", "0000266C", ""
+   "|hglyph|", "00013020", ""
 
 Most programming languages now have support for Unicode.
 For example, Python uses unicode for all character strings.
@@ -144,6 +148,33 @@ Alternatively you could use the HEX code for the character.
    Experiment to see what characters you can type on your keyboard. Do you need to
    enter the hex encoding?
 
+
+-------------------
+Character Sequences
+-------------------
+
+Using codes like ASCII or Unicode we can represent single characters inside a computer.
+But what about sequences of characters? Sentences? Paragraphs?
+
+Sequences of characters or **strings** are represented as a sequence of characters codes in the
+memory.  Just as the characters of this sentence follow one another, the character codes follow
+one another in successive bytes of memory.
+
+The only tricky things about strings is how do we know where the string ends?  After all, if we
+are simply interpreting bit patterns in the memory as character codes we might go on until
+the end of the memory.  The string would probably look very strange! It might have emojis and heiroglyphics
+and other unusual characters. We need to indicate the end of a string somehow.
+
+There are two methods commonly used to represent a string. The first uses an explicit length number stored in
+the memory as an integer, followed by the character sequence of that length.   The second uses a particular
+bit pattern or code to indicate the end of the string. This code is usually 8 zero bits in a byte, although
+sometimes other values are used.
+
+.. note::
+   In the C programming language the character strings are terminated by a zero byte.
+
+Other features of strings such as line breaks and indentation are indicated by special codes and we
+saw that in the ASCII character code.
 
 
 

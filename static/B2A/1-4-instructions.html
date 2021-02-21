@@ -36,7 +36,37 @@
             
   <div class="section" id="instructions">
 <h1>1.4 Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">¶</a></h1>
-<p>The last simple type I want to describe are computer <strong>instructions</strong></p>
+<p>The last simple type and how it is represented by binary numbers that I want to describe are computer <strong>instructions</strong>.
+Computer instructions are the building blocks of computer programs. They are instructions to the computer hardware, the
+Central Processing Unit or CPU, to carry out some operation. The operations performed by the CPU are very simple, eg
+add two numbers together, copy one part of the memory to another part, compare two areas of memory and execute different
+subsequent instructions depending on the result.  By creating <strong>sequences</strong> of instructions (also known as <strong>programs</strong>)
+we can get the computer hardware to do what we want.</p>
+<p>The storage of program instructions in the same memeory as the data (numbers, characters etc) was one of the breakthrough ideas that
+made modern computers possible.  Before this idea (credited to John von Neumann in 1945) programs were often store elsewhere,
+for example on electrical plug-boards in the case of the ENIAC computer that was completed in 1945 at the University of Pennsylvania.
+In order to change a program, the programmers had to rewire the plugboard and this often took days or weeks. If the program instructions
+were represented in the same main memory as data, the program could be changed like any other data item.</p>
+<p>Before I start on the description of computer instructions I want to revisit the computer memory, specifically
+memory <em>addresses</em>.  Each byte in the memory is numbered and this number is the address of the byte.   Inside programs,
+particular bytes are referred to by their address.  So, when an instruction wants use a value from memory, it specifies the
+address.  A program consists of a sequence of instructions stored in the memory, and they are also referred to by a memory
+address.</p>
+<p>As well as memory, a  modern computer has set of smaller memories called <strong>registers</strong> that are used during program execution.
+It is possible to build a computer without these, but the speed of the computer would be drastically reduced. The reason is that
+the speed of operation of the main memory is much much slower than the technology used to build these smaller memories or registers.
+The registers are also special purpose, not for general use but for use in operations such as arithmetic or instruction decoding.</p>
+<p>One very special register is called the <strong>program counter</strong> or PC.
+The PC contains the address of the instruction that is being executed.
+Since you could potentially have instructions anywhere in the memory, the PC
+is the size of a memory address.
+So if the maximum memory size of your computer is 4Gigabytes then the PC is 32 bits.</p>
+<p>By storing a value in the PC we indicate where the next instruction is. After instructions
+are executed (mostly) the PC is increased to the address of the next instruction in the sequence.
+I say “mostly” because there are instructions that change the PC to the address of instructions
+somewhere else. This is what we call a “jump”, causing the program to jump to somewhere else in the memory
+and start executing from that point.</p>
+<img alt="_images/instructions-1.png" src="_images/instructions-1.png" />
 <div class="section" id="instructions-video">
 <h2>Instructions: Video<a class="headerlink" href="#instructions-video" title="Permalink to this headline">¶</a></h2>
 <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/dummy" frameborder="0"  allowfullscreen></iframe></div>
