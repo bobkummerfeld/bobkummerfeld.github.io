@@ -36,6 +36,18 @@
             
   <div class="section" id="from-the-bits-to-applications">
 <h1>From the Bits to Applications<a class="headerlink" href="#from-the-bits-to-applications" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>1.0 Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>This book is based on material that was developed by me, Bob Kummerfeld, for the University of Sydney
+School of Computer Science INFO1112 course in 2020. That was the year the pandemic started and
+we had to rapidly pivot from conventional face-to-face lectures and labs to fully online delivery.</p>
+<p>I spent several months creating videos for each segment of material, each with self test quiz questions.
+I’ve taken this material and converted it into book format using the Sphinx document processor and a
+small preprocessor program that I wrote to add a few extra features.</p>
+<p>Eventually I plan to enable a user login system with a backend personal user model for each registered
+user. Then I can add a simple dashboard display that allows users to see where they are up to in the material,
+what should be done next, what the main concepts are etc.</p>
+<p>The material is arranged in a series of web pages, each with text, graphics, embedded self test exercises and short video.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="1-1-binary.html">1.1 Starting at the Bits</a><ul>
@@ -67,20 +79,24 @@
 <li class="toctree-l2"><a class="reference internal" href="1-5-architecture.html#interrupts">Interrupts</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="2-1-OS.html">2.1 Operating Systems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2-1-OS.html#unix">UNIX</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2-2-procs.html">2.2 Programs and Processes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2-2-procs.html#processes">Processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2-2-procs.html#user-vs-system-mode">User vs System mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2-2-procs.html#id1">Processes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3-1-Unix.html">3.1 Unix/Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html">3.2 File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#file-access-system-calls">File Access System Calls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#files-directories-and-the-name-space">Files, Directories and the <em>Name-Space</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-3-fork.html">3.3 Managing Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-4-shell.html">3.3 Command Line</a></li>
 </ul>
 </div>
-<div class="section" id="introduction">
-<h2>1.0 Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>This book is based on material that was developed by me, Bob Kummerfeld, for the University of Sydney
-School of Computer Science INFO1112 course in 2020. That was the year the pandemic started and
-we had to rapidly pivot from conventional face-to-face lectures and labs to fully online delivery.</p>
-<p>I spent several months creating videos for each segment of material, each with self test quiz questions.
-I’ve taken this material and converted it into book format using the Sphinx document processor and a
-small preprocessor program that I wrote to add a few extra features.</p>
-<p>Eventually I plan to enable a user login system with a backend personal user model for each registered
-user. Then I can add a simple dashboard display that allows users to see where they are up to in the material,
-what should be done next, what the main concepts are etc.</p>
-<p>The material is arranged in a series of web pages, each with text, graphics, embedded self test exercises and short video.</p>
 </div>
 </div>
 
@@ -107,6 +123,14 @@ what should be done next, what the main concepts are etc.</p>
 <li class="toctree-l1"><a class="reference internal" href="1-3-characters.html">1.3 Characters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1-4-instructions.html">1.4 Instructions and Computer Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1-5-architecture.html">1.5 More Computer Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-1-OS.html">2.1 Operating Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-2-procs.html">2.2 Programs and Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-1-Unix.html">3.1 Unix/Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html">3.2 File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#file-access-system-calls">File Access System Calls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#files-directories-and-the-name-space">Files, Directories and the <em>Name-Space</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-3-fork.html">3.3 Managing Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-4-shell.html">3.3 Command Line</a></li>
 </ul>
 
 

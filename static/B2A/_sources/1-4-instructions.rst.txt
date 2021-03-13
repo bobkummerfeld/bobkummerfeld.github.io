@@ -9,7 +9,7 @@ add two numbers together, copy one part of the memory to another part, compare t
 subsequent instructions depending on the result.  By creating **sequences** of instructions (also known as **programs**)
 we can get the computer hardware to do what we want.
 
-The storage of program instructions in the same memeory as the data (numbers, characters etc) was one of the breakthrough ideas that
+The storage of program instructions in the same memory as the data (numbers, characters etc) was one of the breakthrough ideas that
 made modern computers possible.  Before this idea (credited to John von Neumann in 1945) programs were often store elsewhere,
 for example on electrical plug-boards in the case of the ENIAC computer that was completed in 1945 at the University of Pennsylvania.
 In order to change a program, the programmers had to rewire the plugboard and this often took days or weeks. If the program instructions
@@ -110,7 +110,7 @@ for storage of intermediate results. The main memory is only accessed when absol
 	Each of the registers is 32 bits wide and a memory address is 32 bits.
 
 Registers can contain intermediate results of calculations, characters,  status indicators, any binary information.
-They can also hold memory addresses and most machines allow you to use registers in the calulation of the address of
+They can also hold memory addresses and most machines allow you to use registers in the calculation of the address of
 operands.   For example, if you want to fetch a value from an array at a particular index,  you might store the index value
 in a register and instruct the cpu to fetch the contents of the memory indicated by that value.
 Early computers even had registers that were dedicated to this type of memory access and were called "index" registers.

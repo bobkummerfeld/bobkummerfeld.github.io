@@ -1,0 +1,68 @@
+
+2.1 Operating Systems
+:::::::::::::::::::::
+
+Early computers (and modern microcontroller computers) ran just one program at at a time. The
+original machines had a program loaded in to the memory, it ran and produced output and terminated.
+Then an operator fed in another program and so on.    Microcontrollers are the small computers we
+use to monitor and control things. For example your microwave oven, or your airconditioning system.
+They usually have low powered CPUs and limited memory. They are designed to be single purpose - just run a single
+program to control something.
+
+This is all fine if you only have a single task. But a desktop computer system, a mobile device or a network server
+is vastly more complex, running dozens or even hundreds of programs.  They have sophisticated graphics, many I/O devices
+used for human interaction, a file system, network connections.  They also need to run many of these programs "simultaneously",
+or they appear to be simultaneous anyway.  An overarching requirement is that each program needs to be secure from interference
+(accidental or otherwise) from other programs running in the same computer.
+
+To provide all these services, including security, we run our programs under the control of special, privileged, program
+called an **operating system**.
+
+Microcontrollers are simple and fun to program.   The Arduino company has produced a system that makes it easy to
+write programs for many microcontrollers (originally the Atmel 8-bit AVR microprocessors).  For just a few dollars
+you can buy a microcontroller board that has many i/o bits and even wifi. The Arduino software is free and easy to use and
+it allows you to write programs in a version of the C++ language. There is a large library of functions that can be used
+to develop programs that interact with sensors and devices as well has communicate using common internet protocols. But
+Arduino systems do not have an operating system. Your program is the only program running on the computer. It doesn't need
+security from other programs because your program is the only one. If it needs a sophisticated user interface, your program
+has to implement it.
+
+Desktop systems from Microsoft or Apple run a sophisticated operating system that provides many services and security.
+The operating system that I will describe in detail is probably one that you aren't familiar with but in fact you probably use
+it every day. The system has been around for a very long time and now has many different versions, all of them look very similar.
+The operating system is called **Unix** and in some version or another it is the system used behind-the-scenes in nearly all mobile phones
+and tablets as well has the vast majority of server system (web servers, databases etc).
+
+----
+UNIX
+----
+
+The `Unix <https://en.wikipedia.org/wiki/Unix>`_ operating system and its variants have a long history.
+It was invented long long ago (1969) in Bell Laboratories (New Jersey, USA), mainly by Dennis Ritchie and Ken Thompson, but many others have contributed
+since the beginning. The key concepts that continue in the system until today were developed by the mid-1970's. The system really took off in popularity when
+the source code was released, for free, to Universities in 1975.
+That led to wide-spread adoption within Universities, initially in Computer Science Departments, but then right across campuses.
+
+In the 1980's Unix began to be used by the commercial world and the owner of the system, AT&T, licenced it for a fee. Universities could still
+use the original version but in 1991 a new version, completely rewritten, was released by a Finnish Software Engineer called Linus Torvalds. Linus called his
+system "Linux".
+
+`Linux <https://en.wikipedia.org/wiki/Linux>`_ was also adopted by Universities and since the source code was freely available and open-source, it began to be maintained and further developed
+by a large number of enthusiastic programmers. Linux is now very widely used.  It is the basis for the Android system used in phones and tablets.
+It is commonly used as the operating system for servers and cloud computing. Interestingly, Apple uses another version of Unix as the underlying
+operating system for its products (Macintosh, iphone, ipad, Apple watch, Apple TV).
+
+Almost all systems that have an operating system, with the exception of Microsoft Windows, are running a version of Unix.
+
+For this reason I will use Unix as the platform to describe how we get from the bits to the applications.
+
+.. admonition:: The Evolution of Unix
+
+   .. image:: Images/2-1-OS.png
+      :scale: 20%
+      :align: center
+
+   (from `wikipedia <https://en.wikipedia.org/wiki/Unix#/media/File:Unix_history-simple.svg>`_)
+
+
+

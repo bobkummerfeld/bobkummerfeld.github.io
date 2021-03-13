@@ -1,0 +1,29 @@
+
+3.1 Unix/Linux
+::::::::::::::
+
+When you run a program in a Linux system, the only way a program can access files or services is
+via the operating system.  As we saw, this is achieved using "system calls" - a special interrupt
+with parameters that requests a service. On Linux there are is a large number of system calls (over 300).
+These can be divided into the following categories:
+
+    Process management
+        creating and terminating;
+        managing attributes;
+        managing memory allocation;
+        sending signals
+    File management
+        create, delete,
+        open, close,
+        read, write,
+        managing file attributes and permissions
+    System Information
+        managing information about the system
+    Communication
+        create, terminate connection;
+        send, receive messages
+
+A key part of any Unix system are the files, so I will start by describing the file system and the file
+management system calls.
+
+

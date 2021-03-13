@@ -2,10 +2,10 @@
 1.5 More Computer Architecture
 ::::::::::::::::::::::::::::::::::::::::::
 
-The design of computer central procesing units is a very big topic.
+The design of computer central processing units is a very big topic.
 There is a huge range of instruction types, register structures, memory structures and other features
 found in modern computers. A full discussion of computer architectures is out of scope for this
-"book".  However, there are a few other features of computure architecture that you need to know
+"book".  However, there are a few other features of computer architecture that you need to know
 in order to understand how computers work and what underlies application programs.
 
 I've discussed simple instructions that move data between registers an memory, as well as arithmetic
@@ -46,7 +46,7 @@ on top of the stack so you pickup where you left off and continue work on that t
    :scale: 30%
 
 This continues with new tasks arriving and building the stack, then finishing tasks and removing sheets from the stack.  Eventually
-you might get the to botton of the stack and have no jobs to do. Then you can just go into idle mode waiting for a job sheet.
+you might get the to bottom of the stack and have no jobs to do. Then you can just go into idle mode waiting for a job sheet.
 
 Inside the computer the stack data structure is very similar.  It is an area of memory that you can add data to, and remove in order of arrival.
 To keep track of the top of the stack the address of the top entry is saved. This is usually in a register for fast access but can
@@ -107,4 +107,4 @@ and transfers control into the operating system.
    :align: center
    :scale: 30%
 
-
+The next topic I will cover is an introduction to Operating Systems, starting with the basics.

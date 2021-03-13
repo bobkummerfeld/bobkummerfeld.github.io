@@ -68,7 +68,7 @@ To represent a large range of values we could add more bits. For example, 2 byte
 Do you think it is possible to represent ALL integers in a computer?
 
 The answer is **NO**! The reason is that computers have a finite amount of memory, and in mathematics there are an infinite number of integers
-and they can be infitely large.   We have to impose a limit somewhere.
+and they can be infinitely large.   We have to impose a limit somewhere.
 
 As well as integers we also want to represent negative numbers and fractions. How do we do that in the computer where we only have bits
 and no minus sign or point?
@@ -143,7 +143,7 @@ from -8 to +7.
 	</div>
 
 These examples are trivial because we are using only 4 bits for our numbers. However, the same issues can arise with larger fields.
-For example, a common method of representing intergers in a computer is to use 4 bytes, or 4 x 8 = 32 bits.
+For example, a common method of representing integers in a computer is to use 4 bytes, or 4 x 8 = 32 bits.
 
 .. raw:: html
 
@@ -205,7 +205,7 @@ It's not very *efficient* at representing real numbers.  For example a number li
    00101010.10000000
 
 This number is "wasting" a lot of zeros on the end. If we needed more digits in the whole number part to represent a big number
-we have a problem.  We can't re-use the unneccesary zeros on the end.
+we have a problem.  We can't re-use the unnecessary zeros on the end.
 
 The solution was another, ingenious, method to represent real numbers. We allow the binary point to "float" to a position that makes
 optimal use of the available bits.  It does this by storing the number in these two parts:  exponent and magnitude.   When we write large real numbers

@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.3 Managing Processes &#8212; B2A 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/paho-mqtt-min.js"></script>
+    <script src="_static/eBook.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3.3 Command Line" href="3-4-shell.html" />
+    <link rel="prev" title="3.2 File System" href="3-2-file-system.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="managing-processes">
+<h1>3.3 Managing Processes<a class="headerlink" href="#managing-processes" title="Permalink to this headline">¶</a></h1>
+<p>Given that we have a program (instructions and data) stored in a file on mass storage, how do we get it
+loaded into memory and started?</p>
+<p>This is done by an existing running program using system calls to request that the new program is started
+with the code coming from a certain file.</p>
+<p>You might be wondering how all this is started. How does the very first program get started before there
+are any other programs.   I’ll talk about how a Linux system starts up in a later chapter but the simple
+answer is that the very first program is created by the operating system when is starting up. Then it
+is the job of that program to start further programs and so on.</p>
+<p>Many systems, and certainly the early operating systems, have a system call that has parameters specifying
+the file that contains the program and any arguments to pass to the program.  In Unix the process is a little different
+and can be confusing.</p>
+<p>First we have a program running as a process in memory:</p>
+<a class="reference internal image-reference" href="_images/3-3-parent.png"><img alt="_images/3-3-parent.png" class="align-center" src="_images/3-3-parent.png" style="width: 270.40000000000003px; height: 782.4000000000001px;" /></a>
+<p>Then the initial process, called the “parent”, executes the <strong>fork</strong> system call. This causes the operating system kernel
+to make a copy of the memory of the parent process and all the meta-data about the process inside the kernel.
+The kernel then starts the child, and restarts the parent. The only difference between the parent and child is that the parent is passed a number that
+designates the child process (called the “process number”), while the child is passed a zero value indicating that it is the child.</p>
+<a class="reference internal image-reference" href="_images/3-3-fork.png"><img alt="_images/3-3-fork.png" class="align-center" src="_images/3-3-fork.png" style="width: 965.6px; height: 783.2px;" /></a>
+<p>Now we have a new process running (the child), but it is identical to the original (the parent). This is not very useful if the parent actually wanted to
+start a completely different program.</p>
+<p>To start a new program, the child now executes the <strong>exec</strong> system call (there are actually many variants of exec but they only differ in the parameters
+that can be passed).  The exec call specifies a file containing program instructions and data, as well as some arguments for the program.
+The operating system kernel then  <em>replaces</em> the process that did the exec (ie the child) with this new program.</p>
+<a class="reference internal image-reference" href="_images/3-3-exec.png"><img alt="_images/3-3-exec.png" class="align-center" src="_images/3-3-exec.png" style="width: 806.4000000000001px; height: 783.2px;" /></a>
+<p>So starting a new program from an existing program in Unix involves a combination of the fork and exec system calls.
+This approach can be confusing, so read through the description again and make sure you understand it.</p>
+<div class="admonition-why-fork-exec admonition">
+<p class="admonition-title">Why fork/exec?</p>
+<p>The reason for using these two system calls to start a new program in Unix is partly because there
+were earlier systems that did it this way, and partly because it turned out to be very efficient in
+those early systems. To fork a process (make a copy) required only a few lines of code. The exec call
+was also very simple to implement.</p>
+</div>
+<p>Some of the ramifications of doing it this way include the fact that the meta-data of the parent (in particular
+what files it has open) are passed to the child. Also, since the system is multi-user, the owner of the child is
+the same as the owner of the parent. This means the child then has all the same permissions to access file etc as the parent.</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">B2A</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1-1-binary.html">1.1 Starting at the Bits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-2-numbers.html">1.2 Integers and Real Numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-3-characters.html">1.3 Characters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-4-instructions.html">1.4 Instructions and Computer Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-5-architecture.html">1.5 More Computer Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-1-OS.html">2.1 Operating Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-2-procs.html">2.2 Programs and Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-1-Unix.html">3.1 Unix/Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html">3.2 File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#file-access-system-calls">File Access System Calls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#files-directories-and-the-name-space">Files, Directories and the <em>Name-Space</em></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3.3 Managing Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-4-shell.html">3.3 Command Line</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Bob Kummerfeld.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/3-3-fork.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

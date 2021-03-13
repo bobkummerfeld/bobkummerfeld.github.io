@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2.1 Operating Systems &#8212; B2A 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/paho-mqtt-min.js"></script>
+    <script src="_static/eBook.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2.2 Programs and Processes" href="2-2-procs.html" />
+    <link rel="prev" title="1.5 More Computer Architecture" href="1-5-architecture.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="operating-systems">
+<h1>2.1 Operating Systems<a class="headerlink" href="#operating-systems" title="Permalink to this headline">¶</a></h1>
+<p>Early computers (and modern microcontroller computers) ran just one program at at a time. The
+original machines had a program loaded in to the memory, it ran and produced output and terminated.
+Then an operator fed in another program and so on.    Microcontrollers are the small computers we
+use to monitor and control things. For example your microwave oven, or your airconditioning system.
+They usually have low powered CPUs and limited memory. They are designed to be single purpose - just run a single
+program to control something.</p>
+<p>This is all fine if you only have a single task. But a desktop computer system, a mobile device or a network server
+is vastly more complex, running dozens or even hundreds of programs.  They have sophisticated graphics, many I/O devices
+used for human interaction, a file system, network connections.  They also need to run many of these programs “simultaneously”,
+or they appear to be simultaneous anyway.  An overarching requirement is that each program needs to be secure from interference
+(accidental or otherwise) from other programs running in the same computer.</p>
+<p>To provide all these services, including security, we run our programs under the control of special, privileged, program
+called an <strong>operating system</strong>.</p>
+<p>Microcontrollers are simple and fun to program.   The Arduino company has produced a system that makes it easy to
+write programs for many microcontrollers (originally the Atmel 8-bit AVR microprocessors).  For just a few dollars
+you can buy a microcontroller board that has many i/o bits and even wifi. The Arduino software is free and easy to use and
+it allows you to write programs in a version of the C++ language. There is a large library of functions that can be used
+to develop programs that interact with sensors and devices as well has communicate using common internet protocols. But
+Arduino systems do not have an operating system. Your program is the only program running on the computer. It doesn’t need
+security from other programs because your program is the only one. If it needs a sophisticated user interface, your program
+has to implement it.</p>
+<p>Desktop systems from Microsoft or Apple run a sophisticated operating system that provides many services and security.
+The operating system that I will describe in detail is probably one that you aren’t familiar with but in fact you probably use
+it every day. The system has been around for a very long time and now has many different versions, all of them look very similar.
+The operating system is called <strong>Unix</strong> and in some version or another it is the system used behind-the-scenes in nearly all mobile phones
+and tablets as well has the vast majority of server system (web servers, databases etc).</p>
+<div class="section" id="unix">
+<h2>UNIX<a class="headerlink" href="#unix" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Unix">Unix</a> operating system and its variants have a long history.
+It was invented long long ago (1969) in Bell Laboratories (New Jersey, USA), mainly by Dennis Ritchie and Ken Thompson, but many others have contributed
+since the beginning. The key concepts that continue in the system until today were developed by the mid-1970’s. The system really took off in popularity when
+the source code was released, for free, to Universities in 1975.
+That led to wide-spread adoption within Universities, initially in Computer Science Departments, but then right across campuses.</p>
+<p>In the 1980’s Unix began to be used by the commercial world and the owner of the system, AT&amp;T, licenced it for a fee. Universities could still
+use the original version but in 1991 a new version, completely rewritten, was released by a Finnish Software Engineer called Linus Torvalds. Linus called his
+system “Linux”.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Linux">Linux</a> was also adopted by Universities and since the source code was freely available and open-source, it began to be maintained and further developed
+by a large number of enthusiastic programmers. Linux is now very widely used.  It is the basis for the Android system used in phones and tablets.
+It is commonly used as the operating system for servers and cloud computing. Interestingly, Apple uses another version of Unix as the underlying
+operating system for its products (Macintosh, iphone, ipad, Apple watch, Apple TV).</p>
+<p>Almost all systems that have an operating system, with the exception of Microsoft Windows, are running a version of Unix.</p>
+<p>For this reason I will use Unix as the platform to describe how we get from the bits to the applications.</p>
+<div class="admonition-the-evolution-of-unix admonition">
+<p class="admonition-title">The Evolution of Unix</p>
+<a class="reference internal image-reference" href="_images/2-1-OS.png"><img alt="_images/2-1-OS.png" class="align-center" src="_images/2-1-OS.png" style="width: 787.2px; height: 577.6px;" /></a>
+<p>(from <a class="reference external" href="https://en.wikipedia.org/wiki/Unix#/media/File:Unix_history-simple.svg">wikipedia</a>)</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">B2A</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1-1-binary.html">1.1 Starting at the Bits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-2-numbers.html">1.2 Integers and Real Numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-3-characters.html">1.3 Characters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-4-instructions.html">1.4 Instructions and Computer Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-5-architecture.html">1.5 More Computer Architecture</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2.1 Operating Systems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#unix">UNIX</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2-2-procs.html">2.2 Programs and Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-1-Unix.html">3.1 Unix/Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html">3.2 File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#file-access-system-calls">File Access System Calls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#files-directories-and-the-name-space">Files, Directories and the <em>Name-Space</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-3-fork.html">3.3 Managing Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-4-shell.html">3.3 Command Line</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Bob Kummerfeld.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/2-1-OS.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

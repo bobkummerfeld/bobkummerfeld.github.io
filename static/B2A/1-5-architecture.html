@@ -17,6 +17,7 @@
     <script src="_static/eBook.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2.1 Operating Systems" href="2-1-OS.html" />
     <link rel="prev" title="1.4 Instructions and Computer Architecture" href="1-4-instructions.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -36,10 +37,10 @@
             
   <div class="section" id="more-computer-architecture">
 <h1>1.5 More Computer Architecture<a class="headerlink" href="#more-computer-architecture" title="Permalink to this headline">¶</a></h1>
-<p>The design of computer central procesing units is a very big topic.
+<p>The design of computer central processing units is a very big topic.
 There is a huge range of instruction types, register structures, memory structures and other features
 found in modern computers. A full discussion of computer architectures is out of scope for this
-“book”.  However, there are a few other features of computure architecture that you need to know
+“book”.  However, there are a few other features of computer architecture that you need to know
 in order to understand how computers work and what underlies application programs.</p>
 <p>I’ve discussed simple instructions that move data between registers an memory, as well as arithmetic
 and logic operations on data. Another important class of instructions are those that transfer control
@@ -68,7 +69,7 @@ on the new one. Eventually you finish a task and take the sheet off the stack an
 on top of the stack so you pickup where you left off and continue work on that task.</p>
 <a class="reference internal image-reference" href="_images/1-5-arch-1.png"><img alt="_images/1-5-arch-1.png" class="align-center" src="_images/1-5-arch-1.png" style="width: 471.59999999999997px; height: 525.6px;" /></a>
 <p>This continues with new tasks arriving and building the stack, then finishing tasks and removing sheets from the stack.  Eventually
-you might get the to botton of the stack and have no jobs to do. Then you can just go into idle mode waiting for a job sheet.</p>
+you might get the to bottom of the stack and have no jobs to do. Then you can just go into idle mode waiting for a job sheet.</p>
 <p>Inside the computer the stack data structure is very similar.  It is an area of memory that you can add data to, and remove in order of arrival.
 To keep track of the top of the stack the address of the top entry is saved. This is usually in a register for fast access but can
 also be in main memory.</p>
@@ -108,6 +109,7 @@ I’ll describe the idea of “user mode” and “system mode” operation late
 in the operating system we use an instruction that causes and interrupt (the <em>system call</em> instruction)
 and transfers control into the operating system.</p>
 <a class="reference internal image-reference" href="_images/1-5-arch-4.png"><img alt="_images/1-5-arch-4.png" class="align-center" src="_images/1-5-arch-4.png" style="width: 900.0px; height: 667.8px;" /></a>
+<p>The next topic I will cover is an introduction to Operating Systems, starting with the basics.</p>
 </div>
 </div>
 
@@ -138,6 +140,14 @@ and transfers control into the operating system.</p>
 <li class="toctree-l2"><a class="reference internal" href="#interrupts">Interrupts</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="2-1-OS.html">2.1 Operating Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-2-procs.html">2.2 Programs and Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-1-Unix.html">3.1 Unix/Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html">3.2 File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#file-access-system-calls">File Access System Calls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#files-directories-and-the-name-space">Files, Directories and the <em>Name-Space</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-3-fork.html">3.3 Managing Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-4-shell.html">3.3 Command Line</a></li>
 </ul>
 
 
