@@ -1,7 +1,14 @@
 
----------------
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "B2A", "component": "filesystem" } 
+   </script>
+
+
+
 3.2 File System
----------------
+:::::::::::::::
 
 Every user of a desktop or server system is familiar with the idea of the file.
 A file is a way of storing data in some form of mass storage. A key aspect of files is
@@ -145,4 +152,17 @@ very fancy things like make a network connection and read the data from some oth
    distributed system available in the name-space.  Plan 9 was not commercialised and only
    used in an academic setting.
 
+The names in a tree-structured  name space could potentially be duplicated or reused.  You might have a file called "mypaper.doc" in one part of the tree
+and a completely different file with the same name in another part of the tree. That's fine as long as we know which actual file we're referring to.
+We can specify *exactly* the file we mean by showing the names of all the branches (ie the *directories*) leading to name of the file.
 
+In the example above if we wanted to unambiguously refer to the file called ``lecture1.pdf`` we could
+use the sequence of names ``Myfiles`` ``Lectures`` ``lecture1.pdf``.
+
+In the Unix command interpreter we use the ``/`` (slash) character between these names. Also, the root of the tree (ie the root of the file system)
+is designated by a single ``/``.
+
+Then the file specification is ``/Myfiles/Lectures/lecture1.pdf``.
+
+
+[Prev: `3.1 Unix <3-1-Unix.html>`_][`Next: 3.3 Managing Processes <3-3-fork.html>`_]

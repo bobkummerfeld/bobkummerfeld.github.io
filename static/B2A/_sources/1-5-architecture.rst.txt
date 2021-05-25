@@ -1,4 +1,12 @@
 
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "B2A", "component": "architecture" } 
+   </script>
+
+
+
 1.5 More Computer Architecture
 ::::::::::::::::::::::::::::::::::::::::::
 
@@ -66,6 +74,8 @@ When something is pushed onto the stack or popped off the stack, the top-of-stac
 
 As well as the return address, the arguments to a function and the local variables are also placed on the stack.
 When the function returns to the calling program, all the arguments and local variables are popped from the stack.
+This explains why the arguments and local variables of a function are no longer accessible after the function has returned -
+they have been popped from the stack.
 
 .. image:: Images/1-5-arch-3.png
    :align: center
@@ -75,7 +85,7 @@ When the function returns to the calling program, all the arguments and local va
 ----------
 Interrupts
 ----------
-There is one more transfer of control that is important to understand and that's the "interrupt".
+There is one more transfer of control that is important to understand and that is the "interrupt".
 An interrupt is like a forced function call that occurs *between* instructions and without your
 program noticing. This seems a weird concept - what causes it to happen?  What function gets called?
 Why is this necessary?
@@ -100,7 +110,7 @@ interrupt in some computers and there would be a special function to handle that
 
 The other very important use of interrupts is for a special function call known as a "system call".
 I'll describe the idea of "user mode" and "system mode" operation later, but to invoke some service
-in the operating system we use an instruction that causes and interrupt (the *system call* instruction)
+in the operating system we use an instruction that causes an interrupt (the *system call* instruction)
 and transfers control into the operating system.
 
 .. image:: Images/1-5-arch-4.png
@@ -108,3 +118,5 @@ and transfers control into the operating system.
    :scale: 30%
 
 The next topic I will cover is an introduction to Operating Systems, starting with the basics.
+
+[Prev: `1.4 Instructions <1-4-instructions.html>`_][Next: `2.1 Operating Systems <2-1-OS.html>`_]

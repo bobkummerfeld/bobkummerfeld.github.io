@@ -14,7 +14,8 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/paho-mqtt-min.js"></script>
-    <script src="_static/eBook.js"></script>
+    <script src="_static/paho-mqtt-min.js"></script>
+    <script src="_static/ebook.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="3.3 Managing Processes" href="3-3-fork.html" />
@@ -35,7 +36,9 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="file-system">
+  <script id="pagemeta" type="application/json">
+  { "ebook": "B2A", "component": "filesystem" }
+</script><div class="section" id="file-system">
 <h1>3.2 File System<a class="headerlink" href="#file-system" title="Permalink to this headline">¶</a></h1>
 <p>Every user of a desktop or server system is familiar with the idea of the file.
 A file is a way of storing data in some form of mass storage. A key aspect of files is
@@ -73,9 +76,8 @@ lists of file or sub-directory names and the parent directory.</p>
 <p>The usual user interface to files and directories on a desktop system consists of a graphical view with icons to represent files and
 directories. Clicking on a directory icon replaces it with the display of icons representing the contents of the directory.
 The program interface is <em>only</em> via system calls. The key system calls are: open, close, read, write, seek, delete.</p>
-</div>
 <div class="section" id="file-access-system-calls">
-<h1>File Access System Calls<a class="headerlink" href="#file-access-system-calls" title="Permalink to this headline">¶</a></h1>
+<h2>File Access System Calls<a class="headerlink" href="#file-access-system-calls" title="Permalink to this headline">¶</a></h2>
 <p>The main system calls for accessing files in Unix are: open, close, read, write, creat (sic), delete and seek.</p>
 <div class="admonition-creat admonition">
 <p class="admonition-title">creat!</p>
@@ -112,7 +114,7 @@ is linked to the driver via the file meta-data.</p>
 <p>This is very elegant! Instead of creating a special system call to get the data about a process, we just read it from a “file”.</p>
 </div>
 <div class="section" id="files-directories-and-the-name-space">
-<h1>Files, Directories and the <em>Name-Space</em><a class="headerlink" href="#files-directories-and-the-name-space" title="Permalink to this headline">¶</a></h1>
+<h2>Files, Directories and the <em>Name-Space</em><a class="headerlink" href="#files-directories-and-the-name-space" title="Permalink to this headline">¶</a></h2>
 <p>We’ve seen how the file name is part of the file meta-data.   The other major meta-data structure that everyone is familiar with are
 the directories (or folders) and the directory structure.</p>
 <div class="admonition-hierarchical-file-system-structure admonition">
@@ -139,6 +141,16 @@ very fancy things like make a network connection and read the data from some oth
 <p>The successor to Unix, called “<a class="reference external" href="https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs">Plan 9</a>” takes this to another level and makes every service across a
 distributed system available in the name-space.  Plan 9 was not commercialised and only
 used in an academic setting.</p>
+</div>
+<p>The names in a tree-structured  name space could potentially be duplicated or reused.  You might have a file called “mypaper.doc” in one part of the tree
+and a completely different file with the same name in another part of the tree. That’s fine as long as we know which actual file we’re referring to.
+We can specify <em>exactly</em> the file we mean by showing the names of all the branches (ie the <em>directories</em>) leading to name of the file.</p>
+<p>In the example above if we wanted to unambiguously refer to the file called <code class="docutils literal notranslate"><span class="pre">lecture1.pdf</span></code> we could
+use the sequence of names <code class="docutils literal notranslate"><span class="pre">Myfiles</span></code> <code class="docutils literal notranslate"><span class="pre">Lectures</span></code> <code class="docutils literal notranslate"><span class="pre">lecture1.pdf</span></code>.</p>
+<p>In the Unix command interpreter we use the <code class="docutils literal notranslate"><span class="pre">/</span></code> (slash) character between these names. Also, the root of the tree (ie the root of the file system)
+is designated by a single <code class="docutils literal notranslate"><span class="pre">/</span></code>.</p>
+<p>Then the file specification is <code class="docutils literal notranslate"><span class="pre">/Myfiles/Lectures/lecture1.pdf</span></code>.</p>
+<p>[Prev: <a class="reference external" href="3-1-Unix.html">3.1 Unix</a>][<a class="reference external" href="3-3-fork.html">Next: 3.3 Managing Processes</a>]</p>
 </div>
 </div>
 
@@ -168,11 +180,14 @@ used in an academic setting.</p>
 <li class="toctree-l1"><a class="reference internal" href="2-1-OS.html">2.1 Operating Systems</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2-2-procs.html">2.2 Programs and Processes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3-1-Unix.html">3.1 Unix/Linux</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">3.2 File System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#file-access-system-calls">File Access System Calls</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#files-directories-and-the-name-space">Files, Directories and the <em>Name-Space</em></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3.2 File System</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#file-access-system-calls">File Access System Calls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#files-directories-and-the-name-space">Files, Directories and the <em>Name-Space</em></a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="3-3-fork.html">3.3 Managing Processes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-4-shell.html">3.3 Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-4-shell.html">3.4 Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shell-1.html">shell.1 The BASH Shell</a></li>
 </ul>
 
 

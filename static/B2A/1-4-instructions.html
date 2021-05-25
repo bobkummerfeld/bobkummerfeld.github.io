@@ -14,7 +14,8 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/paho-mqtt-min.js"></script>
-    <script src="_static/eBook.js"></script>
+    <script src="_static/paho-mqtt-min.js"></script>
+    <script src="_static/ebook.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="1.5 More Computer Architecture" href="1-5-architecture.html" />
@@ -35,7 +36,9 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="instructions-and-computer-architecture">
+  <script id="pagemeta" type="application/json">
+  { "ebook": "B2A", "component": "instructions" }
+</script><div class="section" id="instructions-and-computer-architecture">
 <h1>1.4 Instructions and Computer Architecture<a class="headerlink" href="#instructions-and-computer-architecture" title="Permalink to this headline">¶</a></h1>
 <p>The last “simple” type and how it is represented by binary numbers that I want to describe are computer <strong>instructions</strong>.
 Computer instructions are the building blocks of computer programs. They are instructions to the computer hardware, the
@@ -44,7 +47,7 @@ add two numbers together, copy one part of the memory to another part, compare t
 subsequent instructions depending on the result.  By creating <strong>sequences</strong> of instructions (also known as <strong>programs</strong>)
 we can get the computer hardware to do what we want.</p>
 <p>The storage of program instructions in the same memory as the data (numbers, characters etc) was one of the breakthrough ideas that
-made modern computers possible.  Before this idea (credited to John von Neumann in 1945) programs were often store elsewhere,
+made modern computers possible.  Before this idea (credited to John von Neumann in 1945) programs were often stored elsewhere,
 for example on electrical plug-boards in the case of the ENIAC computer that was completed in 1945 at the University of Pennsylvania.
 In order to change a program, the programmers had to rewire the plugboard and this often took days or weeks. If the program instructions
 were represented in the same main memory as data, the program could be changed like any other data item.</p>
@@ -68,7 +71,7 @@ address.</p>
 It is possible to build a computer without these, but the speed of the computer would be drastically reduced. The reason is that
 the speed of operation of the main memory is much much slower than the technology used to build these smaller memories or registers.
 The registers are also special purpose, not for general use but for use in operations such as arithmetic or instruction decoding.</p>
-<p>One very special register is called the <strong>program counter</strong> or PC.
+<p>One very special register is called the <strong>Program Counter</strong> or PC.
 The PC contains the address of the instruction that is being executed.
 Since you could potentially have instructions anywhere in the memory, the PC
 is the size of a memory address.
@@ -130,7 +133,7 @@ the result in memory location 6. The instruction is stored in two bytes.</p>
 <img alt="_images/instructions-2.png" src="_images/instructions-2.png" />
 <p>I’m sure you can imagine other arithmetic operations that you might like to perform on memory.  The problem with my hypothetical machine is
 that I’ve only allowed 4 bits for the opcode, so I can only have 16 different instructions. Real machines have more bits for the opcode, typically a
-full 8 bit byte or more, allowing more than 256 different opcodes.</p>
+full 8 bit byte or more, allowing 256 or more different opcodes.</p>
 <p>Another problem with the hypothetical machine is that both the operands and the result are accessed directly in the memory.
 The reason this is a problem is that the main memory is slow compared to the circuitry of the CPU. I already mentioned
 the idea of a <em>register</em> and the Program Counter register that is made from faster technology.  Most machines have many of these fast registers that are used
@@ -161,7 +164,7 @@ expressions, loops, if statements etc into the machine instructions that do the 
 <p>But when we build a new computer architecture, that is a new design of instructions and registers, we have a bootstrap
 problem. We don’t have a compiler, just the binary instructions. The first way this problem was addressed was to
 design a simpler language that had instructions that were directly equivalent to the binary machine instructions.
-This language is called an “assembler” language.</p>
+This language is called an “assembly” language.</p>
 <p>Typically, assembly language consists of one statement per line and each statement is the equivalent of a single
 binary instruction code.   The statement has the operation to perform as well as the registers and operand addresses
 involved.   Also, there might be a label preceding the instruction that is associate with the address of the instruction.
@@ -216,7 +219,9 @@ new machine.</p>
 </div>
 <div class="section" id="instructions-video">
 <h2>Instructions: Video<a class="headerlink" href="#instructions-video" title="Permalink to this headline">¶</a></h2>
-<iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/dummy" frameborder="0"  allowfullscreen></iframe></div>
+      <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/dummy" frameborder="0"  allowfullscreen></iframe>
+<P><p>[Prev: <a class="reference external" href="1-3-characters.html">1.3 Characters</a>][Next: <a class="reference external" href="1-5-architecture.html">1.5 Architecture</a>]</p>
+</div>
 </div>
 
 
@@ -250,10 +255,9 @@ new machine.</p>
 <li class="toctree-l1"><a class="reference internal" href="2-2-procs.html">2.2 Programs and Processes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3-1-Unix.html">3.1 Unix/Linux</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html">3.2 File System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#file-access-system-calls">File Access System Calls</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#files-directories-and-the-name-space">Files, Directories and the <em>Name-Space</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="3-3-fork.html">3.3 Managing Processes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-4-shell.html">3.3 Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-4-shell.html">3.4 Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shell-1.html">shell.1 The BASH Shell</a></li>
 </ul>
 
 

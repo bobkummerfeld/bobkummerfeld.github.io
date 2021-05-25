@@ -1,4 +1,12 @@
 
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "B2A", "component": "operatingsystems" } 
+   </script>
+
+
+
 2.1 Operating Systems
 :::::::::::::::::::::
 
@@ -54,7 +62,7 @@ operating system for its products (Macintosh, iphone, ipad, Apple watch, Apple T
 
 Almost all systems that have an operating system, with the exception of Microsoft Windows, are running a version of Unix.
 
-For this reason I will use Unix as the platform to describe how we get from the bits to the applications.
+For this reason I will use Unix as the operating system platform to describe how we get from the bits to the applications.
 
 .. admonition:: The Evolution of Unix
 
@@ -66,3 +74,4 @@ For this reason I will use Unix as the platform to describe how we get from the 
 
 
 
+[Prev: `1.5 Architecture <1-5-architecture.html>`_][Next: `2.2 Processes <2-2-procs.html>`_]

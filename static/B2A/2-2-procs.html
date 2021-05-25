@@ -14,7 +14,8 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/paho-mqtt-min.js"></script>
-    <script src="_static/eBook.js"></script>
+    <script src="_static/paho-mqtt-min.js"></script>
+    <script src="_static/ebook.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="3.1 Unix/Linux" href="3-1-Unix.html" />
@@ -35,7 +36,9 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="programs-and-processes">
+  <script id="pagemeta" type="application/json">
+  { "ebook": "B2A", "component": "processes" }
+</script><div class="section" id="programs-and-processes">
 <h1>2.2 Programs and Processes<a class="headerlink" href="#programs-and-processes" title="Permalink to this headline">¶</a></h1>
 <p>So far I’ve discussed how you represent data and instructions in the memory of a computer.
 Now I’d like to cover programs in more detail.</p>
@@ -61,8 +64,8 @@ going to conflict, the program has run out of memory and should give an error me
 <p>When programs are stored in the file system (more later) they have a much more compressed form. It is a job of a special
 program called the “loader” along with the operating system to move the program into memory and setup the stack/heap/global/static/instruction
 areas.</p>
-<div class="section" id="processes">
-<h2>Processes<a class="headerlink" href="#processes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="programs">
+<h2>Programs<a class="headerlink" href="#programs" title="Permalink to this headline">¶</a></h2>
 <p>When you use a desktop computer there is a lot going on behind the scenes.   You might have a web browser, music player, word processor, spreadsheet
 all running at the same time.  The screen is covered in icons and windows and you interact though a keyboard and mouse.  You might get notifications
 popping up about a message that has arrived on social media.   All of these involve a program running on the computer.</p>
@@ -85,6 +88,20 @@ and length are changed to suit the new program before it is (re)started.</p>
 mapping. The program will not see any difference at the new location.</p>
 <p>Managing the memory mapping is a function of the operating system program.  The operating system has access to all the memory at
 the physical (rather the “virtual”) addresses, and so can move programs around and change the mapping.</p>
+<p>Since the processes can be stopped and started by the kernel of the operating system, the memory occupied by the process can be saved
+to mass storage and read back into memory when needed. This is called “swapping” - the process memory is swapped out to mass storage
+and swapped back in when required.</p>
+</div>
+<div class="section" id="virtual-memory">
+<h2>Virtual Memory<a class="headerlink" href="#virtual-memory" title="Permalink to this headline">¶</a></h2>
+<p>The simple memory management system I’ve described above is fine for low end systems but has a few serious problems.  The main one
+is that it is not very efficient in the use of memory.   If you have many processes in memory with many “holes” in the address
+space between them, you may have to do a lot of shuffling to move processes around to make a big enough “hole” to take another process.
+Also, since the complete process is in memory during execution this may be wasteful. The program might only be using a small part of the
+heap space, for example, so there is a large chunk of memory unused inside the process.
+To solve these problems, the idea of “paged” or “virtual” memory management was invented.</p>
+<p>In a paged virtual memory system the memory is divided into small (eg 2k or 4k bytes) blocks called pages.  A table is maintained
+in the memory that has an entry for each page showing its actual, physical address and the “virtual” address that it is mapped to.</p>
 </div>
 <div class="section" id="user-vs-system-mode">
 <h2>User vs System mode<a class="headerlink" href="#user-vs-system-mode" title="Permalink to this headline">¶</a></h2>
@@ -96,7 +113,7 @@ are many “modes” but I’m going to concentrate on these two.</p>
 As well the memory mapping system it can control the way interrupts work, access I/O devices, use restricted registers etc.</p>
 <p>When the computer is first started it is in system mode. This is when the operating system can set things up to run programs.
 Eventually the system creates a program image somewhere in memory, this could be read from mass storage.  It then initialises
-these special registers, interrupt details, memory mapping etc and final jumps to the start of the program, switching to
+these special registers, interrupt details, memory mapping etc and finally jumps to the start of the program, switching to
 user mode at the same time.</p>
 <p>Now the program in user mode can only access things inside its allotted memory space.  It can only communicate with the outside world
 by executing a “system call” interrupt, passing some parameter values.  In an earlier example of an assembly language program you saw
@@ -105,8 +122,8 @@ how the program placed some parameters into registers and then invoked the syste
 were a descriptor for the file to be written to (the standard output), the address of the data to be written, and the number of bytes to write.</p>
 <a class="reference internal image-reference" href="_images/2-2-proc-4.png"><img alt="_images/2-2-proc-4.png" class="align-center" src="_images/2-2-proc-4.png" style="width: 454.40000000000003px; height: 960.8000000000001px;" /></a>
 </div>
-<div class="section" id="id1">
-<h2>Processes<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="processes">
+<h2>Processes<a class="headerlink" href="#processes" title="Permalink to this headline">¶</a></h2>
 <p>A program running in it’s own memory space has a lot of associated data stored in the operating system. For example,
 every open file has to be recorded in the operating system so the program can refer to it with system calls.
 Programs have information about who owns them, how long they’ve been running, and many other  aspects.
@@ -115,6 +132,7 @@ When a program has been interrupted, the contents of registers have to be saved,
 and manage files on its behalf.   Processes are a key part of any system.</p>
 <p>In the next chapter we will start describing the Unix/Linux operating system and you will see that it is very easy to find out
 what processes are in the computer and many details about each process.</p>
+<p>[Prev: <a class="reference external" href="2-1-OS.html">2.1 Operating Systems</a>][Next: <a class="reference external" href="3-1-Unix.html">3.1 Unix</a>]</p>
 </div>
 </div>
 
@@ -143,17 +161,17 @@ what processes are in the computer and many details about each process.</p>
 <li class="toctree-l1"><a class="reference internal" href="1-5-architecture.html">1.5 More Computer Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2-1-OS.html">2.1 Operating Systems</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">2.2 Programs and Processes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#processes">Processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#programs">Programs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#virtual-memory">Virtual Memory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#user-vs-system-mode">User vs System mode</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">Processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#processes">Processes</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="3-1-Unix.html">3.1 Unix/Linux</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html">3.2 File System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#file-access-system-calls">File Access System Calls</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#files-directories-and-the-name-space">Files, Directories and the <em>Name-Space</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="3-3-fork.html">3.3 Managing Processes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-4-shell.html">3.3 Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-4-shell.html">3.4 Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shell-1.html">shell.1 The BASH Shell</a></li>
 </ul>
 
 

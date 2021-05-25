@@ -13,6 +13,14 @@ From the Bits to Applications
 .. Sources can also be included from subfolders of this directory.
    (e.g. "DataStructures/queues.rst").
 
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "B2A", "component": "introduction" } 
+   </script>
+
+
+
 1.0 Introduction
 ::::::::::::::::::::::::::::
 
@@ -21,14 +29,17 @@ School of Computer Science INFO1112 course in 2020. That was the year the pandem
 we had to rapidly pivot from conventional face-to-face lectures and labs to fully online delivery.
 
 I spent several months creating videos for each segment of material, each with self test quiz questions.
-I've taken this material and converted it into book format using the Sphinx document processor and a
-small preprocessor program that I wrote to add a few extra features.
+I've taken this material and started converting it into e-book format using the Sphinx document processor and a
+preprocessor program that I wrote to add a few extra features.
 
-Eventually I plan to enable a user login system with a backend personal user model for each registered
-user. Then I can add a simple dashboard display that allows users to see where they are up to in the material,
+Eventually I plan to enable a user modelling system with a backend personal user model for each user.
+Then I will add a simple dashboard display that allows users to see where they are up to in the material,
 what should be done next, what the main concepts are etc.
 
-The material is arranged in a series of web pages, each with text, graphics, embedded self test exercises and short video.
+The material is arranged in a series of web pages, each with text, graphics, embedded self test exercises and
+some with a short video.
+
+The e-book is currently in draft form.
 
 
 .. toctree::
@@ -45,4 +56,22 @@ The material is arranged in a series of web pages, each with text, graphics, emb
    3-2-file-system.rst
    3-3-fork.rst
    3-4-shell.rst
+   shell-1.rst
+
+.. raw:: html
+
+   <div class="likert">
+   Confidence that I know this -
+   <form id = "C1" data-component="binary">
+      Not confident
+   <input type="radio" name="C1" id="C1A1">
+   <input type="radio" name="C1" id="C1A2">
+   <input type="radio" name="C1" id="C1A3">
+   <input type="radio" name="C1" id="C1A4">
+   <input type="radio" name="C1" id="C1A5">
+   Very confident
+   <input type="button" value="Submit" onclick="sendlik('C1')"><br>
+   </form>
+   </div>
+
 

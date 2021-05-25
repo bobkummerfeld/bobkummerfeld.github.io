@@ -1,4 +1,12 @@
 
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "B2A", "component": "processes" } 
+   </script>
+
+
+
 2.2 Programs and Processes
 ::::::::::::::::::::::::::
 
@@ -36,9 +44,9 @@ When programs are stored in the file system (more later) they have a much more c
 program called the "loader" along with the operating system to move the program into memory and setup the stack/heap/global/static/instruction
 areas.
 
----------
-Processes
----------
+--------
+Programs
+--------
 
 When you use a desktop computer there is a lot going on behind the scenes.   You might have a web browser, music player, word processor, spreadsheet
 all running at the same time.  The screen is covered in icons and windows and you interact though a keyboard and mouse.  You might get notifications
@@ -77,6 +85,25 @@ mapping. The program will not see any difference at the new location.
 Managing the memory mapping is a function of the operating system program.  The operating system has access to all the memory at
 the physical (rather the "virtual") addresses, and so can move programs around and change the mapping.
 
+Since the processes can be stopped and started by the kernel of the operating system, the memory occupied by the process can be saved
+to mass storage and read back into memory when needed. This is called "swapping" - the process memory is swapped out to mass storage
+and swapped back in when required.
+
+
+--------------
+Virtual Memory
+--------------
+
+The simple memory management system I've described above is fine for low end systems but has a few serious problems.  The main one
+is that it is not very efficient in the use of memory.   If you have many processes in memory with many "holes" in the address
+space between them, you may have to do a lot of shuffling to move processes around to make a big enough "hole" to take another process.
+Also, since the complete process is in memory during execution this may be wasteful. The program might only be using a small part of the
+heap space, for example, so there is a large chunk of memory unused inside the process.
+To solve these problems, the idea of "paged" or "virtual" memory management was invented.
+
+In a paged virtual memory system the memory is divided into small (eg 2k or 4k bytes) blocks called pages.  A table is maintained
+in the memory that has an entry for each page showing its actual, physical address and the "virtual" address that it is mapped to.
+
 -------------------
 User vs System mode
 -------------------
@@ -92,7 +119,7 @@ As well the memory mapping system it can control the way interrupts work, access
 
 When the computer is first started it is in system mode. This is when the operating system can set things up to run programs.
 Eventually the system creates a program image somewhere in memory, this could be read from mass storage.  It then initialises
-these special registers, interrupt details, memory mapping etc and final jumps to the start of the program, switching to
+these special registers, interrupt details, memory mapping etc and finally jumps to the start of the program, switching to
 user mode at the same time.
 
 Now the program in user mode can only access things inside its allotted memory space.  It can only communicate with the outside world
@@ -123,4 +150,6 @@ and manage files on its behalf.   Processes are a key part of any system.
 In the next chapter we will start describing the Unix/Linux operating system and you will see that it is very easy to find out
 what processes are in the computer and many details about each process.
 
+
+[Prev: `2.1 Operating Systems <2-1-OS.html>`_][Next: `3.1 Unix <3-1-Unix.html>`_]
 

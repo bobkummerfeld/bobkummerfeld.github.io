@@ -1,4 +1,12 @@
 
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "B2A", "component": "unix" } 
+   </script>
+
+
+
 3.1 Unix/Linux
 ::::::::::::::
 
@@ -26,4 +34,4 @@ These can be divided into the following categories:
 A key part of any Unix system are the files, so I will start by describing the file system and the file
 management system calls.
 
-
+[Prev: `2.2 Processes <2-2-procs.html>`_][Next: `3.2 File System <3-2-file-system.html>`_]

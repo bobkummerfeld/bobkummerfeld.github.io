@@ -1,4 +1,11 @@
 
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "B2A", "component": "binary" } 
+   </script>
+
+
 1.1 Starting at the Bits
 ::::::::::::::::::::::::
 
@@ -45,11 +52,10 @@ This shows that the binary number 1011 is representing the **decimal** number 1x
 		<script id="Q1-answers" type="application/json">
 		[
 
-        { "regex": "5", "feedback": " Correct!", "result": "correct"  }  ,
-        { "regex": "x", "feedback": " Oops... wrong.  Convert using powers of 2 for each position. Start with the rightmost digit times 1 (which is :math:`2^0`), next digit times :math:`2^1`, next times :math:`2^2` etc.", "result": "incorrect"  }          ]
+        { "regex": "5", "feedback": " Correct!", "result": "correct"  } ,
+        { "regex": "x", "feedback": " Oops... wrong.  Convert using powers of 2 for each position. Start with the rightmost digit times 1 (which is :math:`2^0`), next digit times :math:`2^1`, next times :math:`2^2` etc.", "result": "incorrect"  }         ]
 	</script>
 	<p id="Q1-feedback"> <p>
-	</script>
 
 	</div>
 
@@ -66,7 +72,7 @@ To convert from decimal to binary we can divide by 2 repeatedly and write down t
 
 	So the answer is 110
 
-Try this:
+Try these questions:
 
 .. raw:: html
 
@@ -77,13 +83,30 @@ Try this:
 		<script id="Q2-answers" type="application/json">
 		[
 
-        { "regex": "1101", "feedback": " Correct!", "result": ""  }  ,
-        { "regex": "x", "feedback": " Sorry, that's wrong.  Try again.", "result": ""  }          ]
+        { "regex": "1101", "feedback": " Correct!", "result": "correct"  } ,
+        { "regex": "x", "feedback": " Sorry, that's wrong.  Try again.", "result": ""  }         ]
 	</script>
 	<p id="Q2-feedback"> <p>
+
+	</div>
+
+.. raw:: html
+
+
+          <div class="mcq">
+                <p>The decimal number 15 in binary is:</p>
+		<form name=Q3 id="Q3" data-component="binary">
+		<input type="checkbox" id="Q3A1" value=""><label for="Q3A1">1101</label> <span id="Q3A1-feedback"> </span><br> 		<input type="checkbox" id="Q3A2" value="correct"><label for="Q3A2">1111</label> <span id="Q3A2-feedback"> </span><br> 		<input type="checkbox" id="Q3A3" value=""><label for="Q3A3">11111</label> <span id="Q3A3-feedback"> </span><br> 		<input type="checkbox" id="Q3A4" value=""><label for="Q3A4">11110</label> <span id="Q3A4-feedback"> </span><br> 
+                <input type="button" value="Check" onclick="sendmcq('Q3')"><br>
+		</form>
+		<script id="Q3-answers" type="application/json"> 
+		[ 	{ "ansid":"Q3A1", "answer": "1101", "feedback": "Wrong.", "result": ""  } ,	{ "ansid":"Q3A2", "answer": "1111", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q3A3", "answer": "11111", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q3A4", "answer": "11110", "feedback": "Wrong.", "result": ""  } 
+	]
 	</script>
 
 	</div>
+
+
 
 Binary numbers take up more space than decimal!
 
@@ -199,5 +222,6 @@ Binary: Video
 .. raw:: html
 
           <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/ulx5fkcgvx4" frameborder="0"  allowfullscreen></iframe>
+    <P>
 
-
+[Next: `1.2 Numbers <1-2-numbers.html>`_]

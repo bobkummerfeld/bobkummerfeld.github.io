@@ -14,7 +14,8 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/paho-mqtt-min.js"></script>
-    <script src="_static/eBook.js"></script>
+    <script src="_static/paho-mqtt-min.js"></script>
+    <script src="_static/ebook.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="1.2 Integers and Real Numbers" href="1-2-numbers.html" />
@@ -35,7 +36,9 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="starting-at-the-bits">
+  <script id="pagemeta" type="application/json">
+  { "ebook": "B2A", "component": "binary" }
+</script><div class="section" id="starting-at-the-bits">
 <h1>1.1 Starting at the Bits<a class="headerlink" href="#starting-at-the-bits" title="Permalink to this headline">¶</a></h1>
 <p>Before we get to the bits, let’s start with the number system we use every day: <strong>DECIMAL</strong></p>
 <p>The decimal numbers system uses ten different symbols: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
@@ -60,11 +63,10 @@ In particular, if we use only two symbols, 0 and 1, and powers of two, we have t
         <script id="Q1-answers" type="application/json">
         [
 
-{ "regex": "5", "feedback": " Correct!", "result": "correct"  }  ,
-{ "regex": "x", "feedback": " Oops... wrong.  Convert using powers of 2 for each position. Start with the rightmost digit times 1 (which is :math:`2^0`), next digit times :math:`2^1`, next times :math:`2^2` etc.", "result": "incorrect"  }          ]
+{ "regex": "5", "feedback": " Correct!", "result": "correct"  } ,
+{ "regex": "x", "feedback": " Oops... wrong.  Convert using powers of 2 for each position. Start with the rightmost digit times 1 (which is :math:`2^0`), next digit times :math:`2^1`, next times :math:`2^2` etc.", "result": "incorrect"  }         ]
 </script>
 <p id="Q1-feedback"> <p>
-</script>
 
 </div><p>To convert from decimal to binary we can divide by 2 repeatedly and write down the remainder as the next digit starting from the right.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">To</span> <span class="n">convert</span> <span class="mi">6</span> <span class="n">to</span> <span class="n">binary</span> <span class="n">we</span> <span class="n">do</span><span class="p">:</span>
@@ -76,17 +78,27 @@ In particular, if we use only two symbols, 0 and 1, and powers of two, we have t
 <span class="n">So</span> <span class="n">the</span> <span class="n">answer</span> <span class="ow">is</span> <span class="mi">110</span>
 </pre></div>
 </div>
-<p>Try this:</p>
+<p>Try these questions:</p>
   <div class="fitb">
         <p>The number 13 in decimal is <input type="text" id="Q2" data-component="binary"> in binary</p>
         <button type="button" onclick="sendfitb('Q2')">Check</button>
         <script id="Q2-answers" type="application/json">
         [
 
-{ "regex": "1101", "feedback": " Correct!", "result": ""  }  ,
-{ "regex": "x", "feedback": " Sorry, that's wrong.  Try again.", "result": ""  }          ]
+{ "regex": "1101", "feedback": " Correct!", "result": "correct"  } ,
+{ "regex": "x", "feedback": " Sorry, that's wrong.  Try again.", "result": ""  }         ]
 </script>
 <p id="Q2-feedback"> <p>
+
+</div>  <div class="mcq">
+        <p>The decimal number 15 in binary is:</p>
+        <form name=Q3 id="Q3" data-component="binary">
+        <input type="checkbox" id="Q3A1" value=""><label for="Q3A1">1101</label> <span id="Q3A1-feedback"> </span><br>          <input type="checkbox" id="Q3A2" value="correct"><label for="Q3A2">1111</label> <span id="Q3A2-feedback"> </span><br>           <input type="checkbox" id="Q3A3" value=""><label for="Q3A3">11111</label> <span id="Q3A3-feedback"> </span><br>                 <input type="checkbox" id="Q3A4" value=""><label for="Q3A4">11110</label> <span id="Q3A4-feedback"> </span><br>
+        <input type="button" value="Check" onclick="sendmcq('Q3')"><br>
+        </form>
+        <script id="Q3-answers" type="application/json">
+        [       { "ansid":"Q3A1", "answer": "1101", "feedback": "Wrong.", "result": ""  } ,     { "ansid":"Q3A2", "answer": "1111", "feedback": "That's right!", "result": "correct"  } ,       { "ansid":"Q3A3", "answer": "11111", "feedback": "Incorrect.", "result": ""  } ,        { "ansid":"Q3A4", "answer": "11110", "feedback": "Wrong.", "result": ""  }
+]
 </script>
 
 </div><p>Binary numbers take up more space than decimal!</p>
@@ -162,7 +174,9 @@ In the next section we start by looking at how we represent numbers.</p>
 </div>
 <div class="section" id="binary-video">
 <h2>Binary: Video<a class="headerlink" href="#binary-video" title="Permalink to this headline">¶</a></h2>
-<iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/ulx5fkcgvx4" frameborder="0"  allowfullscreen></iframe></div>
+      <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/ulx5fkcgvx4" frameborder="0"  allowfullscreen></iframe>
+<P><p>[Next: <a class="reference external" href="1-2-numbers.html">1.2 Numbers</a>]</p>
+</div>
 </div>
 
 
@@ -196,10 +210,9 @@ In the next section we start by looking at how we represent numbers.</p>
 <li class="toctree-l1"><a class="reference internal" href="2-2-procs.html">2.2 Programs and Processes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3-1-Unix.html">3.1 Unix/Linux</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html">3.2 File System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#file-access-system-calls">File Access System Calls</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-2-file-system.html#files-directories-and-the-name-space">Files, Directories and the <em>Name-Space</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="3-3-fork.html">3.3 Managing Processes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-4-shell.html">3.3 Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-4-shell.html">3.4 Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shell-1.html">shell.1 The BASH Shell</a></li>
 </ul>
 
 
