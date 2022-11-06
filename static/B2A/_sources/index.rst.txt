@@ -28,7 +28,7 @@ This book was originally based on material that was developed by me, Bob Kummerf
 School of Computer Science INFO1112 course in 2020. That was the year the pandemic started and
 we had to rapidly pivot from conventional face-to-face lectures and labs to fully online delivery.
 
-I've taken that material, and a lot more, and developed a series of videos for a new youtube channel (youtube.com/@cs-tutorials).
+I've taken that material, and a lot more, and developed a series of videos for a new youtube channel <http://youtube.com/@cs-tutorials>.
 I have also  started  writing this e-book covering the material that includes self-test questions and embedded videos.
 
 To build the e-book I'm using the Sphinx document processor and a
