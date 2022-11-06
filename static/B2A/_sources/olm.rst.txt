@@ -9,14 +9,18 @@ From the Bits to Applications: Open Learner Model
    </script>
 
 
+
 .. raw:: html
 
 
    <table class="olm">
+        <tr><td>Name</td><td>Description</td><td>Now</td><td>Previous</td></tr>
 
    <tr>
-      <td id="binary">binary</td>
-      <td>Understanding the binary number base</td>
+      <td>binary</td>
+      <td>Understands binary numbers.</td>
+      <td id="binary"></td>
+      <td id="binary-prev"></td>
    <tr>
    </table>
 

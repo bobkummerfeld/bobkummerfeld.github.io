@@ -4,16 +4,16 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>3.3 Managing Processes &#8212; B2A 0.1 documentation</title>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/custom.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/paho-mqtt-min.js"></script>
     <script src="_static/paho-mqtt-min.js"></script>
     <script src="_static/ebook.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -38,7 +38,7 @@
             
   <script id="pagemeta" type="application/json">
   { "ebook": "B2A", "component": "forkexec" }
-</script><div class="section" id="managing-processes">
+</script><section id="managing-processes">
 <h1>3.3 Managing Processes<a class="headerlink" href="#managing-processes" title="Permalink to this headline">¶</a></h1>
 <p>Given that we have a program (instructions and data) stored in a file on mass storage, how do we get it
 loaded into memory and started?</p>
@@ -53,7 +53,7 @@ the file that contains the program and any arguments to pass to the program.  In
 and can be confusing.</p>
 <p>First we have a program running as a process in memory:</p>
 <a class="reference internal image-reference" href="_images/3-3-parent.png"><img alt="_images/3-3-parent.png" class="align-center" src="_images/3-3-parent.png" style="width: 270.40000000000003px; height: 782.4000000000001px;" /></a>
-<div class="section" id="fork">
+<section id="fork">
 <h2>Fork<a class="headerlink" href="#fork" title="Permalink to this headline">¶</a></h2>
 <p>Then the initial process, called the “parent”, executes the <strong>fork</strong> system call. This causes the operating system kernel
 to make a copy of the memory of the parent process and all the meta-data about the process inside the kernel.
@@ -63,8 +63,8 @@ designates the child process (called the “process number”), while the child 
 <a class="reference internal image-reference" href="_images/3-3-fork.png"><img alt="_images/3-3-fork.png" class="align-center" src="_images/3-3-fork.png" style="width: 965.6px; height: 783.2px;" /></a>
 <p>Now we have a new process running (the child), but it is identical to the original (the parent).
 This is not very useful if the parent actually wanted to start a completely different program.</p>
-</div>
-<div class="section" id="exec">
+</section>
+<section id="exec">
 <h2>Exec<a class="headerlink" href="#exec" title="Permalink to this headline">¶</a></h2>
 <p>To start a new program, the child now executes the <strong>exec</strong> system call (there are actually many variants of exec but they only differ in the parameters
 that can be passed).  The exec call specifies a file containing program instructions and data, as well as some arguments for the program.
@@ -96,8 +96,8 @@ This process has process number 1. The job of process number 1 is to start syste
 “systemd” and “launchd”.   The original Unix init process was “initd”.</p>
 </div>
 <p>[Prev: <a class="reference external" href="3-2-file-system.html">3.2 File System</a>][Next: <a class="reference external" href="3-4-shell.html">3.4 Command Line</a>]</p>
-</div>
-</div>
+</section>
+</section>
 
 
           </div>
@@ -140,7 +140,7 @@ This process has process number 1. The job of process number 1 is to start syste
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
     </form>
     </div>
@@ -154,7 +154,7 @@ This process has process number 1. The job of process number 1 is to start syste
       &copy;2021, Bob Kummerfeld.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

@@ -4,16 +4,16 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>1.3 Characters &#8212; B2A 0.1 documentation</title>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/custom.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/paho-mqtt-min.js"></script>
     <script src="_static/paho-mqtt-min.js"></script>
     <script src="_static/ebook.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -38,7 +38,7 @@
             
   <script id="pagemeta" type="application/json">
   { "ebook": "B2A", "component": "characters" }
-</script><div class="section" id="characters">
+</script><section id="characters">
 <h1>1.3 Characters<a class="headerlink" href="#characters" title="Permalink to this headline">¶</a></h1>
 <p>As I said before, we can represent <em>everything</em> in the computer using patterns of binary digits.</p>
 <p>This includes characters - codes that indicate a shape that we print on a page or display on a screen.
@@ -56,7 +56,7 @@ on the screen, but I will cover that aspect of the representation separately. Bu
 between upper and lower case versions and use separate representations (codes) for each version.
 And, of course there are the annotations on characters such as <em>diacritical marks</em>.  Then there are languages like Chinese that has thousands of characters
 in common use. I will start by describing how to represent characters used in English.</p>
-<div class="section" id="binary-patterns-to-represent-characters">
+<section id="binary-patterns-to-represent-characters">
 <h2>Binary patterns to represent characters<a class="headerlink" href="#binary-patterns-to-represent-characters" title="Permalink to this headline">¶</a></h2>
 <p>Since the memory of most computers is divided into 8-bit bytes that are individually addressable, it makes sense that we use a byte to
 represent a single character.   With 8 bits we can represent 256 characters and in normal English this is certainly enough to represent
@@ -109,8 +109,8 @@ characters that indicate where on the screen the next character should appear.</
 </table>
 <p>When we compare a variable containing a character with the literal value ‘A’, we are actually
 comparing the bit pattern in the variable to the bit pattern ‘01000001’.</p>
-</div>
-<div class="section" id="non-english-characters">
+</section>
+<section id="non-english-characters">
 <h2>Non-English Characters<a class="headerlink" href="#non-english-characters" title="Permalink to this headline">¶</a></h2>
 <p>Using 7 bits within a byte is plenty of bits to represent the normally used English characters,
 but once we move to other languages there is the need for vastly more character codes.
@@ -186,8 +186,8 @@ Alternatively you could use the HEX code for the character.</p>
 Experiment to see what characters you can type on your keyboard. Do you need to
 enter the hex encoding?</p>
 </div>
-</div>
-<div class="section" id="character-sequences">
+</section>
+<section id="character-sequences">
 <h2>Character Sequences<a class="headerlink" href="#character-sequences" title="Permalink to this headline">¶</a></h2>
 <p>Using codes like ASCII or Unicode we can represent single characters inside a computer.
 But what about sequences of characters? Sentences? Paragraphs?</p>
@@ -208,13 +208,13 @@ sometimes other values are used.</p>
 </div>
 <p>Other features of strings such as line breaks and indentation are indicated by special codes and we
 saw that in the ASCII character code.</p>
-</div>
-<div class="section" id="characters-video">
+</section>
+<section id="characters-video">
 <h2>Characters: Video<a class="headerlink" href="#characters-video" title="Permalink to this headline">¶</a></h2>
-      <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/dummy" frameborder="0"  allowfullscreen></iframe>
-<P><p>[Prev: <a class="reference external" href="1-2-numbers.html">1.2 Numbers</a>][Next: <a class="reference external" href="1-4-instructions.html">1.4 Instructions</a>]</p>
-</div>
-</div>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/dummy" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p><p>[Prev: <a class="reference external" href="1-2-numbers.html">1.2 Numbers</a>][Next: <a class="reference external" href="1-4-instructions.html">1.4 Instructions</a>]</p>
+</section>
+</section>
 
 
           </div>
@@ -259,7 +259,7 @@ saw that in the ASCII character code.</p>
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
     </form>
     </div>
@@ -273,7 +273,7 @@ saw that in the ASCII character code.</p>
       &copy;2021, Bob Kummerfeld.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

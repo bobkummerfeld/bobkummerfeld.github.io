@@ -24,12 +24,14 @@ From the Bits to Applications
 1.0 Introduction
 ::::::::::::::::::::::::::::
 
-This book is based on material that was developed by me, Bob Kummerfeld, for the University of Sydney
+This book was originally based on material that was developed by me, Bob Kummerfeld, for the University of Sydney
 School of Computer Science INFO1112 course in 2020. That was the year the pandemic started and
 we had to rapidly pivot from conventional face-to-face lectures and labs to fully online delivery.
 
-I spent several months creating videos for each segment of material, each with self test quiz questions.
-I've taken this material and started converting it into e-book format using the Sphinx document processor and a
+I've taken that material, and a lot more, and developed a series of videos for a new youtube channel (youtube.com/@cs-tutorials).
+I have also  started  writing this e-book covering the material that includes self-test questions and embedded videos.
+
+To build the e-book I'm using the Sphinx document processor and a
 preprocessor program that I wrote to add a few extra features.
 
 Eventually I plan to enable a user modelling system with a backend personal user model for each user.
@@ -37,9 +39,14 @@ Then I will add a simple dashboard display that allows users to see where they a
 what should be done next, what the main concepts are etc.
 
 The material is arranged in a series of web pages, each with text, graphics, embedded self test exercises and
-some with a short video.
+video.  The e-book is currently in draft form.
 
-The e-book is currently in draft form.
+An introduction to the channel:
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/6_hGZ2hNCYE" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
 
 .. toctree::
@@ -57,21 +64,5 @@ The e-book is currently in draft form.
    3-3-fork.rst
    3-4-shell.rst
    shell-1.rst
-
-.. raw:: html
-
-   <div class="likert">
-   Confidence that I know this -
-   <form id = "C1" data-component="binary">
-      Not confident
-   <input type="radio" name="C1" id="C1A1">
-   <input type="radio" name="C1" id="C1A2">
-   <input type="radio" name="C1" id="C1A3">
-   <input type="radio" name="C1" id="C1A4">
-   <input type="radio" name="C1" id="C1A5">
-   Very confident
-   <input type="button" value="Submit" onclick="sendlik('C1')"><br>
-   </form>
-   </div>
 
 

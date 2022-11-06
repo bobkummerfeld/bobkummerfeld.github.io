@@ -214,6 +214,22 @@ Binary is a method of representing numbers with just two digits, 0 and 1.
 A key idea that we will now explore is that **almost any** information can be represented with numbers and in particular binary numbers.
 In the next section we start by looking at how we represent numbers.
 
+.. raw:: html
+
+   <div class="likert"><br>
+   How confident are you that you understand binary?
+   <form id = "C4" data-component="binary">
+      Not confident
+   <input type="radio" name="C4" id="C4A1">
+   <input type="radio" name="C4" id="C4A2">
+   <input type="radio" name="C4" id="C4A3">
+   <input type="radio" name="C4" id="C4A4">
+   <input type="radio" name="C4" id="C4A5">
+   Very confident
+   <input type="button" value="Submit" onclick="sendlik('C4','binary')"><br>
+   </form>
+   </div>
+
 
 -------------
 Binary: Video
@@ -221,7 +237,9 @@ Binary: Video
 
 .. raw:: html
 
-          <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/ulx5fkcgvx4" frameborder="0"  allowfullscreen></iframe>
-    <P>
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/ulx5fkcgvx4" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+
 
 [Next: `1.2 Numbers <1-2-numbers.html>`_]
