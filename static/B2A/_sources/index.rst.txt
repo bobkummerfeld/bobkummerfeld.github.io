@@ -41,7 +41,8 @@ what should be done next, what the main concepts are etc.
 The material is arranged in a series of web pages, each with text, graphics, embedded self test exercises and
 video.  The e-book is currently in draft form.
 
-An introduction to the channel:
+I have also started a youtube channel (@cs-tutorials) based on the material.
+Here is the introduction to the channel:
 
 .. raw:: html
 
