@@ -41,7 +41,7 @@ In particular, if we use only two symbols, 0 and 1, and powers of two, we have t
    :width: 10cm
    :align: center
 
-This shows that the binary number 1011 is representing the **decimal** number 1x8 + 0x4 + 1x2 + 1x1 = 11.
+This shows that the binary number 1011 is representing the **decimal** number 1 x 8 + 0 x 4 + 1 x 2 + 1 x 1 = 11.
 
 .. raw:: html
 
