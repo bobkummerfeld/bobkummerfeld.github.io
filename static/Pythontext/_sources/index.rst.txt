@@ -1,6 +1,6 @@
-=============================
-From the Bits to Applications
-=============================
+======================
+Python Text - INFO1110
+======================
 
 .. Here is were you specify the content and order of your new book.
 
