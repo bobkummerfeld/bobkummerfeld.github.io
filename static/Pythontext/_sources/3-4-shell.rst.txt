@@ -1,0 +1,106 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "B2A", "component": "shell" } 
+   </script>
+
+
+
+3.4 Command Line
+::::::::::::::::
+
+Early computers had very simple input and output devices.  They usually had a device
+with a simple typewriter-like printer with an integrated keyboard. These evolved from
+communication devices called "teleprinters". Here is one from the 1930s by the Seimens company:
+
+.. figure:: Images/3-4-Siemens_teleprinter.jpg
+   :scale: 20%
+   :align: center
+
+   ``By Philipp Hachtmann - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=5056406``
+
+By the time Unix was in development, the "Teletype model 33" was a commonly used teleprinter that used the ASCII
+code for characters that it printed or read from the keyboard.
+
+.. figure:: Images/3-4-ASR-33_Teletype_terminal.jpg
+   :scale: 20%
+   :align: center
+
+   ``By Photograph by Rama, Wikimedia Commons, Cc-by-sa-2.0-fr, CC BY-SA 2.0 fr, https://commons.wikimedia.org/w/index.php?curid=17821795``
+
+The teletype device could print one character at a time and read one character at a time from the keyboard.
+The character I/O was carried out by the operating system on behalf of the user program.  The teletype also
+allowed the common "control characters" like newline, carriage return and tab.  The result was that everything
+you did on the computer was line oriented. You printed lines of text with your results, you typed a line of input
+(followed by "return").
+
+This "line orientation" continued with early Unix and right into the 1980s when graphical displays and mouse input
+were invented.
+It also gave rise to the idea of the "command line".   A user sat at the teletype and entered a command to
+the operating system which then interpreted it and carried out some operation.
+
+The major innovation that Unix made to the command line was to make the command interpreter a normal user program and
+not part of the operating system kernel.  Anyone can write their own command interpreter for Unix and there
+are many popular command interpreters written by users.
+
+.. admonition:: The Shell
+
+   The original idea for a user program as command interpreter comes from Multics, the system developed
+   at MIT in the 1960s. Ken Thompson included this in Unix and kept the original name for such programs:
+   the shell.
+
+The idea behind the command line interpreter is very simple: the user types a line of text, the program reads the characters
+and works out what the user wants to do ("the command"), and then does it.
+
+For a simple command interpreter this could involve running a program and the "command" might be simply the name of the file containing the
+program as well as some arguments.
+
+A more complex command interpreter, such as most Unix/Linux shells, are much more sophisticated and are almost like a programming
+language with variables and control structures.
+
+---------
+The Shell
+---------
+
+For my examples, I'm going to use a shell command interpreter called "Bash". This shell is included with most Unix systems and
+is widely known and used. Knowledge of bash will transfer across all Unix systems. Bash is the standard shell for Linux systems.
+The standard shell for Macos is zsh.
+
+There are many other shell programs such as csh (c shell!), ksh, zsh etc. All have differences in the syntax of the commands they
+interpret and facilities they offer. The basic idea is still the same: read a line from a keyboard and interpret it as a command to do something.
+
+.. admonition:: bash
+
+   `Bash <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ stands for "Bourne again shell" and is a pun.  `Steve Bourne <https://en.wikipedia.org/wiki/Stephen_R._Bourne>`_ was a programmer
+   at Bell Laboratories where Unix was developed. He developed a shell program that became known as the "Bourne Shell".  This shell was re-implemented
+   as part of the `gnu <https://en.wikipedia.org/wiki/GNU>`_  project and the result called the "Bourne again shell" or bash.
+
+A command interpreter is conceptually very simple. It first displays a "prompt" string that tells the user that the shell is ready to read a
+command line.  Rather than something wordy like "Next Command?" the prompt is often very small like a character or two (eg "$ "),
+or is a little longer and carries extra information such as the name of the user or the directory they are currently working in.
+
+Commands are character strings interpreted by the shell and may either be carried out completely by the shell, or are simply the names of programs
+to be executed.
+
+Here is an example session where the user types two commands: echo and date.
+
+.. image:: Images/3-4-shell-1.png
+   :scale: 40%
+   :align: center
+
+The commands echo and date are actually programs that the shell command interpreter finds in the file system by looking in
+standard places. The shell uses fork/exec to start the command program and passes the arguments that were typed by the user.
+The program then runs and produces output. After the command terminates (ie the child process exits) the parent (ie the shell)
+displays the prompt and waits for the next command to be entered by the user.
+
+Anyone can write a shell program. It doesn't require any special priviledges. A really simple shell just interprets the commands
+typed by the user as program names and arguments. In this case the shell finds the program and runs it. Most shells, however, are much more complex.
+They provide many more sophisticated features that turn them into a full programming language complete with variables and control structures!
+The bash shell is an example of this type of shell.
+
+A description of bash will take a lot of content, so rather than go into the details now, I'm going to insert a branch here.
+If you continue with the main stream of the ebook I will assume you know the basics of the shell. If you don't know the basics I suggest
+you read the shell branch starting here: `shell.1 <shell-1.html>`_
+
+[Prev: `3.3 Managing Processes <3-3-fork.html>`_][Next: ][Shell: `shell.1 <shell-1.html>`_]

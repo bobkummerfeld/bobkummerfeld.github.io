@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>3.4 Command Line &#8212; Pythontext 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/paho-mqtt-min.js"></script>
+    <script src="_static/ebook.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <script id="pagemeta" type="application/json">
+  { "ebook": "B2A", "component": "shell" }
+</script><section id="command-line">
+<h1>3.4 Command Line<a class="headerlink" href="#command-line" title="Permalink to this headline">¶</a></h1>
+<p>Early computers had very simple input and output devices.  They usually had a device
+with a simple typewriter-like printer with an integrated keyboard. These evolved from
+communication devices called “teleprinters”. Here is one from the 1930s by the Seimens company:</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/3-4-Siemens_teleprinter.jpg"><img alt="_images/3-4-Siemens_teleprinter.jpg" src="_images/3-4-Siemens_teleprinter.jpg" style="width: 409.6px; height: 307.20000000000005px;" /></a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">By</span> <span class="pre">Philipp</span> <span class="pre">Hachtmann</span> <span class="pre">-</span> <span class="pre">Own</span> <span class="pre">work,</span> <span class="pre">CC</span> <span class="pre">BY-SA</span> <span class="pre">4.0,</span> <span class="pre">https://commons.wikimedia.org/w/index.php?curid=5056406</span></code></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>By the time Unix was in development, the “Teletype model 33” was a commonly used teleprinter that used the ASCII
+code for characters that it printed or read from the keyboard.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/3-4-ASR-33_Teletype_terminal.jpg"><img alt="_images/3-4-ASR-33_Teletype_terminal.jpg" src="_images/3-4-ASR-33_Teletype_terminal.jpg" style="width: 530.0px; height: 632.0px;" /></a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">By</span> <span class="pre">Photograph</span> <span class="pre">by</span> <span class="pre">Rama,</span> <span class="pre">Wikimedia</span> <span class="pre">Commons,</span> <span class="pre">Cc-by-sa-2.0-fr,</span> <span class="pre">CC</span> <span class="pre">BY-SA</span> <span class="pre">2.0</span> <span class="pre">fr,</span> <span class="pre">https://commons.wikimedia.org/w/index.php?curid=17821795</span></code></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The teletype device could print one character at a time and read one character at a time from the keyboard.
+The character I/O was carried out by the operating system on behalf of the user program.  The teletype also
+allowed the common “control characters” like newline, carriage return and tab.  The result was that everything
+you did on the computer was line oriented. You printed lines of text with your results, you typed a line of input
+(followed by “return”).</p>
+<p>This “line orientation” continued with early Unix and right into the 1980s when graphical displays and mouse input
+were invented.
+It also gave rise to the idea of the “command line”.   A user sat at the teletype and entered a command to
+the operating system which then interpreted it and carried out some operation.</p>
+<p>The major innovation that Unix made to the command line was to make the command interpreter a normal user program and
+not part of the operating system kernel.  Anyone can write their own command interpreter for Unix and there
+are many popular command interpreters written by users.</p>
+<div class="admonition-the-shell admonition">
+<p class="admonition-title">The Shell</p>
+<p>The original idea for a user program as command interpreter comes from Multics, the system developed
+at MIT in the 1960s. Ken Thompson included this in Unix and kept the original name for such programs:
+the shell.</p>
+</div>
+<p>The idea behind the command line interpreter is very simple: the user types a line of text, the program reads the characters
+and works out what the user wants to do (“the command”), and then does it.</p>
+<p>For a simple command interpreter this could involve running a program and the “command” might be simply the name of the file containing the
+program as well as some arguments.</p>
+<p>A more complex command interpreter, such as most Unix/Linux shells, are much more sophisticated and are almost like a programming
+language with variables and control structures.</p>
+<section id="the-shell">
+<h2>The Shell<a class="headerlink" href="#the-shell" title="Permalink to this headline">¶</a></h2>
+<p>For my examples, I’m going to use a shell command interpreter called “Bash”. This shell is included with most Unix systems and
+is widely known and used. Knowledge of bash will transfer across all Unix systems. Bash is the standard shell for Linux systems.
+The standard shell for Macos is zsh.</p>
+<p>There are many other shell programs such as csh (c shell!), ksh, zsh etc. All have differences in the syntax of the commands they
+interpret and facilities they offer. The basic idea is still the same: read a line from a keyboard and interpret it as a command to do something.</p>
+<div class="admonition-bash admonition">
+<p class="admonition-title">bash</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> stands for “Bourne again shell” and is a pun.  <a class="reference external" href="https://en.wikipedia.org/wiki/Stephen_R._Bourne">Steve Bourne</a> was a programmer
+at Bell Laboratories where Unix was developed. He developed a shell program that became known as the “Bourne Shell”.  This shell was re-implemented
+as part of the <a class="reference external" href="https://en.wikipedia.org/wiki/GNU">gnu</a>  project and the result called the “Bourne again shell” or bash.</p>
+</div>
+<p>A command interpreter is conceptually very simple. It first displays a “prompt” string that tells the user that the shell is ready to read a
+command line.  Rather than something wordy like “Next Command?” the prompt is often very small like a character or two (eg “$ “),
+or is a little longer and carries extra information such as the name of the user or the directory they are currently working in.</p>
+<p>Commands are character strings interpreted by the shell and may either be carried out completely by the shell, or are simply the names of programs
+to be executed.</p>
+<p>Here is an example session where the user types two commands: echo and date.</p>
+<a class="reference internal image-reference" href="_images/3-4-shell-1.png"><img alt="_images/3-4-shell-1.png" class="align-center" src="_images/3-4-shell-1.png" style="width: 1014.4000000000001px; height: 420.0px;" /></a>
+<p>The commands echo and date are actually programs that the shell command interpreter finds in the file system by looking in
+standard places. The shell uses fork/exec to start the command program and passes the arguments that were typed by the user.
+The program then runs and produces output. After the command terminates (ie the child process exits) the parent (ie the shell)
+displays the prompt and waits for the next command to be entered by the user.</p>
+<p>Anyone can write a shell program. It doesn’t require any special priviledges. A really simple shell just interprets the commands
+typed by the user as program names and arguments. In this case the shell finds the program and runs it. Most shells, however, are much more complex.
+They provide many more sophisticated features that turn them into a full programming language complete with variables and control structures!
+The bash shell is an example of this type of shell.</p>
+<p>A description of bash will take a lot of content, so rather than go into the details now, I’m going to insert a branch here.
+If you continue with the main stream of the ebook I will assume you know the basics of the shell. If you don’t know the basics I suggest
+you read the shell branch starting here: <a class="reference external" href="shell-1.html">shell.1</a></p>
+<p>[Prev: <a class="reference external" href="3-3-fork.html">3.3 Managing Processes</a>][Next: ][Shell: <a class="reference external" href="shell-1.html">shell.1</a>]</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Pythontext</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="1-1-videos.html">1.1 Videos</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Bob Kummerfeld.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/3-4-shell.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

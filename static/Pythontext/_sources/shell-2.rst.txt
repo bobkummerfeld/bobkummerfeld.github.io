@@ -1,0 +1,16 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "B2A", "component": "shell-1" } 
+   </script>
+
+
+
+==============================
+shell.2 Commonly Used Commands
+==============================
+
+
+
+[Prev: `shell.1 <shell-1.html>`_] [Next: `shell.3 <shell-3.html>`_]
