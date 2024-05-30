@@ -59,6 +59,7 @@ Printing a box
 ------------------------------
 Introduction to the Unix Shell
 ------------------------------
+The Unix shell is the program that provides the command line on your system. I introduce the idea, where it comes from and how to use it.
 
 .. raw:: html
 
