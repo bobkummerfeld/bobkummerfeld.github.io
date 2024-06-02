@@ -96,6 +96,16 @@ Python has many functions that are either built into the system library or avail
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/0vZODuYKGUg" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
+------------------------
+How do we handle errors?
+------------------------
+When you run your program you can sometimes get an error and your program crashes. These are usually called run-time crashes. I will explain what Python does to help you catch a run-time using an "exception".
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/qW4pvdRFkJ8" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
 ------------------------------
 Introduction to the Unix Shell
 ------------------------------
