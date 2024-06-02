@@ -56,6 +56,46 @@ Printing a box
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/aoXM6BkWzpo" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
+--------------------------------
+Introduction to Python Functions
+--------------------------------
+Functions are very important features of Python. But they are not too hard to understand! Watch the video and start making your own functions.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/mYys1inKD9I" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------
+Function Data
+-------------
+Functions work with parameters that are key features. I explain how the function data is managed.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/DoSoCfMAxws" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------
+Python Scope
+------------
+Scope of the values of variables is very important in Python. I show you how a program might have the same variable name inside and outside your function, but refer to different values.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/LV-gP-vJCpU" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------------
+Python functions available
+--------------------------
+Python has many functions that are either built into the system library or available from a web site of functions produced by other people.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/0vZODuYKGUg" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
 ------------------------------
 Introduction to the Unix Shell
 ------------------------------
