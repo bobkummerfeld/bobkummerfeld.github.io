@@ -10,27 +10,27 @@
 1.1 Videos
 ::::::::::
 
---------------------------
-What's a computer program?
---------------------------
+-----------------------------
+E1 What's a computer program?
+-----------------------------
 
 .. raw:: html
 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/fzj_6pHOYJo" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
----------------------
-First Python Exercise
----------------------
+------------------------
+E1 First Python Exercise
+------------------------
 
 .. raw:: html
 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/0Wq6AQ9B42E" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
--------------------------------
-Answer to First Python Exercise
--------------------------------
+----------------------------------
+E1 Answer to First Python Exercise
+----------------------------------
 
 .. raw:: html
 
@@ -38,27 +38,58 @@ Answer to First Python Exercise
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
 
--------------------------
-The python print function
--------------------------
+----------------------------
+E1 The python print function
+----------------------------
 
 .. raw:: html
 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/mwPgns_6rao" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
---------------
-Printing a box
---------------
+-----------------
+E1 Printing a box
+-----------------
 
 .. raw:: html
 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/aoXM6BkWzpo" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
---------------------------------
-Introduction to Python Functions
---------------------------------
+---------------------------------
+E1 Introduction to the Unix Shell
+---------------------------------
+The Unix shell is the program that provides the command line on your system. I introduce the idea, where it comes from and how to use it.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/c05cgvWNJYU" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+
+--------------------
+E3 Files and Folders
+--------------------
+All our data is stored in files on the computer, and the files are enclosed in folders. We use the Unix system for this course and in the future and it has a simple but powerful system for organising files and folders.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/nqpdtsO1Rn0" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------
+E3 File System Demo
+-------------------
+Let me show you how you can manipulate files and folders from the UNIX command line.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/rPJ8QtNOWnA" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-----------------------------------
+E8 Introduction to Python Functions
+-----------------------------------
 Functions are very important features of Python. But they are not too hard to understand! Watch the video and start making your own functions.
 
 .. raw:: html
@@ -66,9 +97,9 @@ Functions are very important features of Python. But they are not too hard to un
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/mYys1inKD9I" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
--------------
-Function Data
--------------
+----------------
+E8 Function Data
+----------------
 Functions work with parameters that are key features. I explain how the function data is managed.
 
 .. raw:: html
@@ -76,9 +107,9 @@ Functions work with parameters that are key features. I explain how the function
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/DoSoCfMAxws" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
-------------
-Python Scope
-------------
+---------------
+E8 Python Scope
+---------------
 Scope of the values of variables is very important in Python. I show you how a program might have the same variable name inside and outside your function, but refer to different values.
 
 .. raw:: html
@@ -86,9 +117,9 @@ Scope of the values of variables is very important in Python. I show you how a p
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/LV-gP-vJCpU" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
---------------------------
-Python functions available
---------------------------
+-----------------------------
+E8 Python functions available
+-----------------------------
 Python has many functions that are either built into the system library or available from a web site of functions produced by other people.
 
 .. raw:: html
@@ -96,24 +127,14 @@ Python has many functions that are either built into the system library or avail
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/0vZODuYKGUg" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
-------------------------
-How do we handle errors?
-------------------------
+----------------------------
+E13 How do we handle errors?
+----------------------------
 When you run your program you can sometimes get an error and your program crashes. These are usually called run-time crashes. I will explain what Python does to help you catch a run-time using an "exception".
 
 .. raw:: html
 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/qW4pvdRFkJ8" frameborder="0"  allowfullscreen></iframe>
- </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
-
-------------------------------
-Introduction to the Unix Shell
-------------------------------
-The Unix shell is the program that provides the command line on your system. I introduce the idea, where it comes from and how to use it.
-
-.. raw:: html
-
-      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/c05cgvWNJYU" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
 [Next: `1.2 something <1-2-something.html>`_]
