@@ -13,34 +13,37 @@
 -----------------------------
 E1 What's a computer program?
 -----------------------------
+If you are a beginner, you probably don't know exactly what is a computer program. This video introduces the whole idea! Compares it with cooking 🤪
 
 .. raw:: html
 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/fzj_6pHOYJo" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
-------------------------
-E1 First Python Exercise
-------------------------
+-------------------------------
+E1 Python introductory exercise
+-------------------------------
+To learn Python you need to practice. This video describes a problem. There is following video that shows the solution. Make sure you try to write the program solution before looking at the answer video!
 
 .. raw:: html
 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/0Wq6AQ9B42E" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
-----------------------------------
-E1 Answer to First Python Exercise
-----------------------------------
+--------------------------------------
+E1 Answer to the first Python exercise
+--------------------------------------
+In the previous video I introduced an exercise. Please do the solution before you watch this video!
 
 .. raw:: html
 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/zbX0WekzlZA" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
-
 ----------------------------
-E1 The python print function
+E1 The Python print function
 ----------------------------
+If you want to display output from your program, you need to use the print function. This video shows you how.
 
 .. raw:: html
 
@@ -50,6 +53,7 @@ E1 The python print function
 -----------------
 E1 Printing a box
 -----------------
+The print function is very useful when combined with strings and string operations. This exercise shows you how to easily print patterns like boxes. There is a pause in the middle to do the exercise yourself. Please stop the video and do it before seeing the solution.
 
 .. raw:: html
 
@@ -66,6 +70,65 @@ The Unix shell is the program that provides the command line on your system. I i
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/c05cgvWNJYU" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
+-----------------
+E2 Variable names
+-----------------
+Python variable names have to follow some rules. The name must start with upper/lower case alphabetic or an underscore. It can only continue with alphabetics/numbers/underscore.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/NMzK0EArkJI" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------------
+E2 Types of data in Python
+--------------------------
+Python can store and manipulate many types of data.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/SLSCgdUkzuI" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------
+E2 Type hints
+-------------
+Python is a dynamically typed programming language. Variable names can label any type of data. However, you can give a hint about what type of data is being labelled.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/UW2K0nC6IAc" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-----------------------------------
+E2 Python Operators and Expressions
+-----------------------------------
+Python allows you to combine data with operators using expressions. Add two numbers together, do a complex formula etc.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/0mlY3sDHSgY" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+---------------------
+E3 Comments in Python
+---------------------
+It is easy to put comments in your Python code. This means you can explain in your language what is going on in your program.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/ADWDxhA2tXc" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-----------------------
+E3 The input() function
+-----------------------
+The input() function is very useful for prompting a user and reading an answer.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/lLGwbfdN8ZI" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
 --------------------
 E3 Files and Folders
@@ -85,6 +148,166 @@ Let me show you how you can manipulate files and folders from the UNIX command l
 .. raw:: html
 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/rPJ8QtNOWnA" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------
+E4 The IF statement
+-------------------
+We often want to make choices about what our program is running. The Python IF statement let's you control what is being executed.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/6frryPVm46A" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-----------------------------
+E4 An example of IF statement
+-----------------------------
+When you write a program you often need choices about what the program is doing. In this video I'll show an example of using an IF.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/sC8pg6l_A3M" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------------------
+E4 An exercise on IF statements
+-------------------------------
+This is an exercise on IF statements for you to do. Please do the exercise before looking at the solution!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/PWXFm9AJ3-E" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+---------------------------------
+E4 The answer for the IF exercise
+---------------------------------
+This shows the Python code to develop answer to the IF statement exercise. Do the exercise before you look at this!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/FvxDgM2BiyE" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------------------------
+E4 Indenting blocks of code in Python
+-------------------------------------
+Groups of python statements after an if statement are consistently indented and called a "block". If you have an if statement inside a block we call them "nested". This video explains.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/U7FkL1JNU3U" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+---------------------------
+E5 Python Containers: Lists
+---------------------------
+Python has a data structure that lets you store a sequence of objects. It's called the "list".
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/wvlimfkXYAk" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+---------------------------------
+E9 A list: command line arguments
+---------------------------------
+When you start a program by typing the name on the command line, the arguments you put on the line are passed into your program as a list of strings. Watch this to see how.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/OtkBq15xfHc" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------
+E5 Python Tuples
+----------------
+As well as lists, Python has a container data structure called a "tuple". The difference between and a list is the tuple contents cannot be changed: it is "immutable".
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/YV1mQ_kDcWY" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+---------------------
+E5 Python List Slices
+---------------------
+As well as accessing a single element of a list using an index, you can also access a sub-section of the list called a "slice".
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/JW-yOKsWX3c" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-----------------------------
+E5 Mutable and Immutable Data
+-----------------------------
+Most data structures in Python are "mutable". This means they are changeable. You must be a little careful with mutable data structures because you might accidentally modify them. But, there is also an "immutable" data structure in the form of a "tuple". A tuple is the same as a list except not changeable.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/gQBiqScabeo" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------
+E6 Python for loop
+------------------
+We very often want to process elements of lists and other data structures. The Python for loop allows you to step through a list and access each element.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/aTGMk8YHy6E" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------------
+E7 Python BREAK statement
+-------------------------
+Sometimes you want to interrupt a loop like for or while, and jump out of it to the end of the loop. You can do this using the "break" statement.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/LByupSnSjI0" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------------------
+E7 Python CONTINUE statement
+----------------------------
+Some loops need to be continued. In this case you use the Python continue statement that will jump to the beginning of the loop again.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/SLEFouqO8SE" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------
+E7 Python While loop
+--------------------
+In a program you very often want to do a repeated action until some condition is true. This might be prompting a user for information until they type QUIT for example. The Python while loop is ideal for this.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/r0E_AiMWWRo" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------------
+E5 A example of a list
+----------------------
+Lists are a very useful data structure in Python. Here I will show you an example of a list: how you create and use it.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/thHHwRiRkfw" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------------------
+E13 How do we handle errors?
+----------------------------
+When you run your program you can sometimes get an error and your program crashes. These are usually called run-time crashes. I will explain what Python does to help you catch a run-time using an "exception".
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/qW4pvdRFkJ8" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
 -----------------------------------
@@ -127,15 +350,46 @@ Python has many functions that are either built into the system library or avail
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/0vZODuYKGUg" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
-----------------------------
-E13 How do we handle errors?
-----------------------------
-When you run your program you can sometimes get an error and your program crashes. These are usually called run-time crashes. I will explain what Python does to help you catch a run-time using an "exception".
+--------------------
+E10 Input and Output
+--------------------
+Reading and writing data from your program is essential. In this video I give some examples on how to do it.
 
 .. raw:: html
 
-      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/qW4pvdRFkJ8" frameborder="0"  allowfullscreen></iframe>
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/S2A-e-XHvhY" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-----------------
+E11 Dictionaries!
+-----------------
+The dictionary data structure is the most important for Python. It looks like a list, but instead of indexing with a number, you can use any immutable object to do the lookup.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/g0jLxB89xfI" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------
+E14 Python Classes
+------------------
+All data in Python is managed in terms of "objects". We can also define our own types of data objects using a class.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/OFbwbFpki1Y" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------------
+E14 An example of a class
+-------------------------
+Learning about the class structure of python is best done with examples.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/AYwn9ffKx8M" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
 
 [Next: `1.2 something <1-2-something.html>`_]
 
