@@ -41,5 +41,7 @@ Then a series of exercises to do with that .....
    :maxdepth: 2
 
    1-1-videos.rst
+   1-2-extensions.rst
+   1-3-advanced.rst
 
 
