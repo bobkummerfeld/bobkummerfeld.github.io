@@ -7,8 +7,28 @@
 
 
 
-1.1 Videos
-::::::::::
+1.1 Essential Videos
+::::::::::::::::::::
+
+------------------
+E0 Why use PYTHON?
+------------------
+In INFO1110 you learn about programming computers and I want to show you why we chose the Python programming language.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/vktMrmWoGN0" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------------
+ Programming Environment
+------------------------
+To write your program and get it running, you need software on your system. There are many programs that help you type in your program and then get it running. This video describes the simple and easy approach using the Ed programming environment.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/CNpiLwOCoCs" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
 -----------------------------
 E1 What's a computer program?
@@ -130,6 +150,16 @@ The input() function is very useful for prompting a user and reading an answer.
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/lLGwbfdN8ZI" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
+------------------------
+E3 Testing and Debugging
+------------------------
+When you start to learn how to program you may have a lot of errors. For small and not very complex programs there are some easy approaches to detecting and correcting your errors. In this video I will show a few easy techniques.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/EeyrhkNrP28" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
 --------------------
 E3 Files and Folders
 --------------------
@@ -180,6 +210,16 @@ This is an exercise on IF statements for you to do. Please do the exercise befor
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/PWXFm9AJ3-E" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
+----------------------------------
+E4 What are True and False values?
+----------------------------------
+True and False values are very useful. There are ways of making complex expressions that compare values and then compare comparisons!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/qV0pLlXQ-cU" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
 ---------------------------------
 E4 The answer for the IF exercise
 ---------------------------------
@@ -198,6 +238,16 @@ Groups of python statements after an if statement are consistently indented and 
 .. raw:: html
 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/U7FkL1JNU3U" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------------
+E4 Three Debug Approaches
+-------------------------
+This video describes three useful but simple ways to debug a program. The print function, the Python debugger pdb, and the Python doctest package.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/Mlrn0sgI7QA" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
 ---------------------------
@@ -240,6 +290,16 @@ As well as accessing a single element of a list using an index, you can also acc
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/JW-yOKsWX3c" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
+-----------------
+E11 Dictionaries!
+-----------------
+The dictionary data structure is the most important for Python. It looks like a list, but instead of indexing with a number, you can use any immutable object to do the lookup.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/g0jLxB89xfI" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
 -----------------------------
 E5 Mutable and Immutable Data
 -----------------------------
@@ -277,7 +337,7 @@ Some loops need to be continued. In this case you use the Python continue statem
 
 .. raw:: html
 
-      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/SLEFouqO8SE" frameborder="0"  allowfullscreen></iframe>
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/r2S0tEwril8" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
 --------------------
@@ -298,6 +358,26 @@ Lists are a very useful data structure in Python. Here I will show you an exampl
 .. raw:: html
 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/thHHwRiRkfw" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------------
+E7 Count Controlled Loops
+-------------------------
+Sometimes you have a problem that involves doing a certain number of actions. You have a counter that counts up or down until you reach the end of the problem. We will use the while loop (or even the for loop) and show you how to do this type of problem.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/ht4nMvvUtxY" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------
+E7 Event Loops
+--------------
+The while loop is often used when you have an event that might stop it looping. For example, reading input frequently until a special value is read. That is an event that might stop the while loop.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/oxvNWcQW-k4" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
 ----------------------------
@@ -360,16 +440,6 @@ Reading and writing data from your program is essential. In this video I give so
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/S2A-e-XHvhY" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
------------------
-E11 Dictionaries!
------------------
-The dictionary data structure is the most important for Python. It looks like a list, but instead of indexing with a number, you can use any immutable object to do the lookup.
-
-.. raw:: html
-
-      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/g0jLxB89xfI" frameborder="0"  allowfullscreen></iframe>
- </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
-
 ------------------
 E14 Python Classes
 ------------------
@@ -391,5 +461,6 @@ Learning about the class structure of python is best done with examples.
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
 
-[Next: `1.2 something <1-2-something.html>`_]
+[Next: `1.2 Extensions <1-2-extensions.html>`_]
+
 

@@ -1,0 +1,167 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythontext", "component": "Videos" } 
+   </script>
+
+
+
+1.3 Advanced Videos
+:::::::::::::::::::
+
+------------------------------------
+A2 Dictionary and Set Comprehensions
+------------------------------------
+You can easily create a list using a technique called a comprehension. You can also create a set or a dictionary using the same comprehension approach.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/wd0ZXoA2_nQ" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------------
+A6 Classes special methods
+--------------------------
+Python provides a number of special methods that you can use within your class. These methods are described in this video with examples of use.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/X-S_GvDeUaE" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------------
+A6 Inheritance Classes
+----------------------
+If you want a new class with the same facilities as an existing class and new features, Python can allow a new class to inherit facilities from a previous class. We call the first class a superclass and the new class a subclass.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/PvzpRFLV-s0" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------------------------------
+A6 Class variables and private variables
+----------------------------------------
+We can set up variables that belong to the class universally, and NOT to objects created by the class. Also, we can use a way of naming any variables inside a class to indicate they are private.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/mK3oO79Oxe8" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------
+A10 Decorators
+--------------
+Decorators are easy to use and very common from existing packages. BUT, they are an advanced concept for Python. If you want to know how they work or write your own for your code it can be difficult until you understand how to do that. This video introduces the idea behind them.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/RKX6qI42egM" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------
+A9 Generators
+-------------
+Generator functions are very sophisticated and quite different to normal functions. This video introduces the detail of how they work.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/UNVUrjK5gLA" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-----------------
+A11 If Expression
+-----------------
+An IF expression allows you to do a test within an expression. For example, inside an expression you could test a value the way you normally do in an if statement. Then use the result to choose a new value inside the expression!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/Haccn_dfzHU" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------
+A11 Binary Operators
+--------------------
+As well as operators that do conventional arithmetic there are operators that do simple binary operations. This video describes them all!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/T2XWah3Sg58" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------
+A12 Lambda Functions
+--------------------
+The Python lambda function allows you to declare an anonymous function within an expression. This allows you to use a simple function without a large, multi-line definition.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/3OW_RqyYAxU" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------------------
+A16 Regular Expressions Part 1
+------------------------------
+Regular expressions are text patterns that you can use to find matches in a text file. They are super useful and worth learning. This video introduces the way of writing a pattern and using it in Python.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/BeCNg3yTFxs" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------------------
+A16 Regular Expressions Part 2
+------------------------------
+This is the second video about regular expressions used in Python. It introduced more advanced features and shows how useful it is.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/wYk-mBWPHxI" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------------------
+A19 Shell Programming Advanced
+------------------------------
+There are many aspects of shell programming that are useful to know. This video covers many parts. Shell scripts are very important and worth learning.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/9Kt31WKXDKI" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------
+A20 Modules Advanced
+--------------------
+Python has many modules that provide very useful services. I'll show you how to find the list of available modules and all the documentation. Also, I will show you how you can develop your own modules.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/2kq3f0pyQz8" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+---------------------------------
+A21 Code example: Text Generation
+---------------------------------
+This video describe a simple way of generating a random sequence of text in the same sequence as the text from an existing author. Please try and write the code and experiment with this!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/LVOFupZzAac" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-----------------------------------------
+A21 Code example: Text Generation program
+-----------------------------------------
+This video describes the code to implement the text generator.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/smJonXoHn1E" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+
+
+[Next: `1.4 Somewhere <1-4-somewhere.html>`_]
+
+
