@@ -30,6 +30,83 @@ Python provides a number of special methods that you can use within your class. 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/X-S_GvDeUaE" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
+The video describes a class that represents an object containing information about a toy. An object of that class contains the name of the toy and the price for the toy. A Toy object also has a method to allow a price increase.
+
+
+::
+
+    class Toy:
+        def __init__(self,name, price):
+            self.name = name
+            self.price = price
+            print(f"Toy: name is {self.name},
+            price is {self.price}")
+
+
+    def price_increase(self, amount):
+            self.price += amount
+            print("New price:", self.price)
+
+
+Here is an example of creating a Toy object:
+
+
+::
+
+    a = Toy("car", 123)
+    b = Toy("truck", 321)
+
+
+Here is the output:
+
+
+::
+
+    Toy: name is car, price is 123
+    Toy: name is truck, price is 321
+
+
+There is also the definition of a class containing a list of Toy objects.
+
+
+::
+
+    class ToyCollection:
+        def __init__(self):
+            self.toys = []
+        def add_toy(self,toy):
+            self.toys.append(toy)
+
+
+You can add the Toy objects created earlier, with the following code:
+
+
+::
+
+    toys = ToyCollection()
+    toys.add_toy(a)
+    toys.add_toy(b)
+
+To find the number of toys being stored in the collection you would like to do:
+
+::
+
+    number = len(toys)
+
+but this would fail with an error message. Unless you provide a special method called __len__ in the ToyCollection class.
+
+::
+
+    class ToyCollection:
+        def __init__(self):
+            self.toys = []
+        def add_toy(self,toy):
+            self.toys.append(toy)
+        def __len__(self):
+            return len(self.toys)
+
+This is a good example of a special method for a class! This one implements the use of the len() function. In this case it has code to get the length of the toys list and return it.
+
 ----------------------
 A6 Inheritance Classes
 ----------------------

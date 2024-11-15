@@ -48,7 +48,60 @@
 <h2>A6 Classes special methods<a class="headerlink" href="#a6-classes-special-methods" title="Permalink to this headline">¶</a></h2>
 <p>Python provides a number of special methods that you can use within your class. These methods are described in this video with examples of use.</p>
      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/X-S_GvDeUaE" frameborder="0"  allowfullscreen></iframe>
-</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p><p>The video describes a class that represents an object containing information about a toy. An object of that class contains the name of the toy and the price for the toy. A Toy object also has a method to allow a price increase.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Toy</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">name</span><span class="p">,</span> <span class="n">price</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">price</span> <span class="o">=</span> <span class="n">price</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Toy: name is </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">,</span>
+        <span class="n">price</span> <span class="ow">is</span> <span class="p">{</span><span class="bp">self</span><span class="o">.</span><span class="n">price</span><span class="p">}</span><span class="s2">&quot;)</span>
+
+
+<span class="k">def</span> <span class="nf">price_increase</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">price</span> <span class="o">+=</span> <span class="n">amount</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;New price:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">price</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here is an example of creating a Toy object:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">Toy</span><span class="p">(</span><span class="s2">&quot;car&quot;</span><span class="p">,</span> <span class="mi">123</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">Toy</span><span class="p">(</span><span class="s2">&quot;truck&quot;</span><span class="p">,</span> <span class="mi">321</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here is the output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Toy</span><span class="p">:</span> <span class="n">name</span> <span class="ow">is</span> <span class="n">car</span><span class="p">,</span> <span class="n">price</span> <span class="ow">is</span> <span class="mi">123</span>
+<span class="n">Toy</span><span class="p">:</span> <span class="n">name</span> <span class="ow">is</span> <span class="n">truck</span><span class="p">,</span> <span class="n">price</span> <span class="ow">is</span> <span class="mi">321</span>
+</pre></div>
+</div>
+<p>There is also the definition of a class containing a list of Toy objects.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ToyCollection</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">toys</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">def</span> <span class="nf">add_toy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">toy</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">toys</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">toy</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can add the Toy objects created earlier, with the following code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">toys</span> <span class="o">=</span> <span class="n">ToyCollection</span><span class="p">()</span>
+<span class="n">toys</span><span class="o">.</span><span class="n">add_toy</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">toys</span><span class="o">.</span><span class="n">add_toy</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To find the number of toys being stored in the collection you would like to do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">toys</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>but this would fail with an error message. Unless you provide a special method called __len__ in the ToyCollection class.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ToyCollection</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">toys</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">def</span> <span class="nf">add_toy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">toy</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">toys</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">toy</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">toys</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This is a good example of a special method for a class! This one implements the use of the len() function. In this case it has code to get the length of the toys list and return it.</p>
+</section>
 <section id="a6-inheritance-classes">
 <h2>A6 Inheritance Classes<a class="headerlink" href="#a6-inheritance-classes" title="Permalink to this headline">¶</a></h2>
 <p>If you want a new class with the same facilities as an existing class and new features, Python can allow a new class to inherit facilities from a previous class. We call the first class a superclass and the new class a subclass.</p>
