@@ -2,7 +2,7 @@
 .. raw:: html
 
    <script id="pagemeta" type="application/json">
-     { "ebook": "Pythontext", "component": "Videos" } 
+     { "ebook": "Pythonvideos", "component": "Videos" } 
    </script>
 
 

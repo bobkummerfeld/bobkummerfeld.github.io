@@ -1,6 +1,6 @@
-======================
-Python Text - INFO1110
-======================
+========================
+Python Videos - INFO1110
+========================
 
 .. Here is were you specify the content and order of your new book.
 
