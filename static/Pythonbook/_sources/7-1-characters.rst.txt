@@ -1,0 +1,29 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythontext", "component": "Videos" } 
+   </script>
+
+
+7.1 Characters
+::::::::::::::::::::
+
+---------------
+Characters
+---------------
+Almost every time you use a computer you work with characters.
+You type them in and manipulate them in documents.
+You work with a range of different characters, even emojis‼️
+In this video I describe exactly how characters are represented in the computer.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/LcHea_GehIs" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+
+
+[Next: `7.2 Importing Modules <7-2-import.html>`_]
+
+

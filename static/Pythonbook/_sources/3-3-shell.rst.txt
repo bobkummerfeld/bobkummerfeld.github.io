@@ -1,0 +1,47 @@
+
+3.3 Command Line
+::::::::::::::::
+
+Early computers had very simple input and output devices.  They usually had a device
+with a simple typewriter-like printer with an integrated keyboard. These evolved from
+communication devices called "teleprinters". Here is one from the 1930s by the Seimens company:
+
+.. figure:: Images/3-3-Siemens_teleprinter.jpg
+   :scale: 20%
+   :align: center
+
+   ``By Philipp Hachtmann - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=5056406``
+
+By the time Unix was in development, the "Teletype model 33" was a commonly used teleprinter that used the ASCII
+code for characters that it printed or read from the keyboard.
+
+.. figure:: Images/3-3-ASR-33_Teletype_terminal.jpg
+   :scale: 20%
+   :align: center
+
+   ``By Photograph by Rama, Wikimedia Commons, Cc-by-sa-2.0-fr, CC BY-SA 2.0 fr, https://commons.wikimedia.org/w/index.php?curid=17821795``
+
+The teletype device could print one character at a time and read one character at a time from the keyboard.
+The character I/O was carried out by the operating system on behalf of the user program.  The teletype also
+allowed the common "control characters" like newline, carriage return and tab.  The result was that everything
+you did on the computer was line oriented. You printed lines of text with your results, you typed a line of input
+(followed by "return").
+
+This "line orientation" continued with early Unix and right into the 1980s when graphical displays and mouse input
+were invented.
+It also gave rise to the idea of the "command line".   A user sat at the teletype and entered a command to
+the operating system which then interpreted it and carried out some operation.
+
+The major innovation that Unix made to the command line was to make the command interpreter a normal user program and
+not part of the operating system kernel.  Anyone can write their own command interpreter for Unix and there
+are many popular command interpreters written by users.
+
+.. admonition:: The Shell
+
+   The original idea for a user program as command interpreter comes from Multics, the system developed
+   at MIT in the 1960s. Ken Thompson included this in Unix and kept the original name for such programs:
+   the shell.
+
+
+
+

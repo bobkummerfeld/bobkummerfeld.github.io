@@ -1,0 +1,24 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythontext", "component": "Videos" } 
+   </script>
+
+
+10.1 Generators
+::::::::::::::::::::
+
+-------------
+Generators
+-------------
+Generator functions are very sophisticated and quite different to normal functions. This video introduces the detail of how they work.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/UNVUrjK5gLA" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+[Next: `11.1 Advanced Expressions <11-1-expressions2.html>`_]
+
+

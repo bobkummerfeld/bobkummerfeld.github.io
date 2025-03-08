@@ -1,0 +1,87 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythontext", "component": "Selection" } 
+   </script>
+
+
+
+2.1 If Statement
+::::::::::::::::::::
+
+----------------
+The IF statement
+----------------
+We often want to make choices about what our program is running. The Python IF statement let's you control what is being executed.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/6frryPVm46A" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------------
+An example of IF statement
+--------------------------
+When you write a program you often need choices about what the program is doing. In this video I'll show an example of using an IF.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/sC8pg6l_A3M" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------------------
+An exercise on IF statements
+----------------------------
+This is an exercise on IF statements for you to do. Please do the exercise before looking at the solution!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/PWXFm9AJ3-E" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------------------
+What are True and False values?
+-------------------------------
+True and False values are very useful. There are ways of making complex expressions that compare values and then compare comparisons!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/qV0pLlXQ-cU" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------------------
+The answer for the IF exercise
+------------------------------
+This shows the Python code to develop answer to the IF statement exercise. Do the exercise before you look at this!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/FvxDgM2BiyE" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------------------------
+Indenting blocks of code in Python
+-------------------------------------
+Groups of python statements after an if statement are consistently indented and called a "block". If you have an if statement inside a block we call them "nested". This video explains.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/U7FkL1JNU3U" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------------
+Three Debug Approaches
+-------------------------
+This video describes three useful but simple ways to debug a program. The print function, the Python debugger pdb, and the Python doctest package.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/Mlrn0sgI7QA" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+
+
+[Next: `3.0 Lists and Dictionaries <3-0-lists-dicts.html>`_]
+
+

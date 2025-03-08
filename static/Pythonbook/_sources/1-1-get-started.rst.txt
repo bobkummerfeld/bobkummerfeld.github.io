@@ -1,0 +1,68 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythonbook", "component": "Getting-Started" } 
+   </script>
+
+
+
+1.1 Getting Started
+::::::::::::::::::::
+
+-----------------------------
+What's a computer program?
+-----------------------------
+.. E1-what-is-a-computer-program
+
+If you are a beginner, you probably don't know exactly what is a computer program. This video introduces the whole idea! Compares it with cooking 🤪
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/fzj_6pHOYJo" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------------------
+Python introductory exercise
+-------------------------------
+To learn Python you need to practice. This video describes a problem. There is following video that shows the solution. Make sure you try to write the program solution before looking at the answer video!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/0Wq6AQ9B42E" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------------------------
+Answer to the first Python exercise
+--------------------------------------
+In the previous video I introduced an exercise. Please do the solution before you watch this video!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/zbX0WekzlZA" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------------------
+The Python print function
+----------------------------
+If you want to display output from your program, you need to use the print function. This video shows you how.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/mwPgns_6rao" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-----------------
+Printing a box
+-----------------
+The print function is very useful when combined with strings and string operations. This exercise shows you how to easily print patterns like boxes. There is a pause in the middle to do the exercise yourself. Please stop the video and do it before seeing the solution.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/aoXM6BkWzpo" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+
+[Next: `2.1 Selection <2-1-selection.html>`_]
+
+

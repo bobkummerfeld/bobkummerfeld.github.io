@@ -1,0 +1,95 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythontext", "component": "Videos" } 
+   </script>
+
+
+
+4.1 Loops
+::::::::::::::::::::
+
+------------------
+Python for loop
+------------------
+We very often want to process elements of lists and other data structures. The Python for loop allows you to step through a list and access each element.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/aTGMk8YHy6E" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------------
+Python BREAK statement
+-------------------------
+Sometimes you want to interrupt a loop like for or while, and jump out of it to the end of the loop. You can do this using the "break" statement.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/LByupSnSjI0" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------------------
+Python CONTINUE statement
+----------------------------
+Some loops need to be continued. In this case you use the Python continue statement that will jump to the beginning of the loop again.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/r2S0tEwril8" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------
+Python While loop
+--------------------
+In a program you very often want to do a repeated action until some condition is true. This might be prompting a user for information until they type QUIT for example. The Python while loop is ideal for this.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/r0E_AiMWWRo" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------------
+A example of a list
+----------------------
+Lists are a very useful data structure in Python. Here I will show you an example of a list: how you create and use it.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/thHHwRiRkfw" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------------
+Count Controlled Loops
+-------------------------
+Sometimes you have a problem that involves doing a certain number of actions. You have a counter that counts up or down until you reach the end of the problem. We will use the while loop (or even the for loop) and show you how to do this type of problem.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/ht4nMvvUtxY" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------
+Event Loops
+--------------
+The while loop is often used when you have an event that might stop it looping. For example, reading input frequently until a special value is read. That is an event that might stop the while loop.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/oxvNWcQW-k4" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------------------
+How do we handle errors?
+----------------------------
+When you run your program you can sometimes get an error and your program crashes. These are usually called run-time crashes. I will explain what Python does to help you catch a run-time using an "exception".
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/qW4pvdRFkJ8" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+[Next: `5.1 Functions <5-1-functions.html>`_]
+
+

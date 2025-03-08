@@ -1,0 +1,26 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythonbook", "component": "Unix-Shell" } 
+   </script>
+
+
+
+1.2 The Unix Shell
+::::::::::::::::::::
+
+---------------------------------
+Introduction to the Unix Shell
+---------------------------------
+The Unix shell is the program that provides the command line on your system. I introduce the idea, where it comes from and how to use it.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/c05cgvWNJYU" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+
+[Next: `2.1 Selection <2-1-selection.html>`_]
+
+

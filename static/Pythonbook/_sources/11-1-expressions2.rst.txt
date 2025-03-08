@@ -1,0 +1,63 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythontext", "component": "Videos" } 
+   </script>
+
+
+11.1 Advanced Expressions
+:::::::::::::::::::::::::
+
+-----------------
+If Expression
+-----------------
+An IF expression allows you to do a test within an expression. For example, inside an expression you could test a value the way you normally do in an if statement. Then use the result to choose a new value inside the expression!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/Haccn_dfzHU" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------
+Binary Operators
+--------------------
+As well as operators that do conventional arithmetic there are operators that do simple binary operations. This video describes them all!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/T2XWah3Sg58" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------
+Lambda Functions
+--------------------
+The Python lambda function allows you to declare an anonymous function within an expression. This allows you to use a simple function without a large, multi-line definition.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/3OW_RqyYAxU" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------------------
+Regular Expressions Part 1
+------------------------------
+Regular expressions are text patterns that you can use to find matches in a text file. They are super useful and worth learning. This video introduces the way of writing a pattern and using it in Python.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/BeCNg3yTFxs" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------------------
+Regular Expressions Part 2
+------------------------------
+This is the second video about regular expressions used in Python. It introduced more advanced features and shows how useful it is.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/wYk-mBWPHxI" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+[Next: `12.1 Example Programs <12-1-exampleprograms.html>`_]
+

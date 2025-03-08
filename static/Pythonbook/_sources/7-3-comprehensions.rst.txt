@@ -1,0 +1,36 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythontext", "component": "Videos" } 
+   </script>
+
+
+7.3 Comprehensions
+::::::::::::::::::::
+
+-------------------
+List Comprehensions
+-------------------
+Python has a very simple approach for creating a new list.
+The list comprehension approach allows you to do selection, filtering and calculation of the final value. All in one line!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/DRPExD2WC34" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------------------------
+Dictionary and Set Comprehensions
+------------------------------------
+You can easily create a list using a technique called a comprehension.
+You can also create a set or a dictionary using the same comprehension approach.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/wd0ZXoA2_nQ" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+[Next: `7.4 Modules <7-4-modules.html>`_]
+
+

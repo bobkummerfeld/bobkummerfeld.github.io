@@ -1,0 +1,64 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythontext", "component": "Videos" } 
+   </script>
+
+
+7.5 More Functions
+::::::::::::::::::::
+
+--------------------------------------
+Function Arguments and Parameters
+--------------------------------------
+Python has many features for passing data to a function. The declaration of a function has arguments that describe how data is passed. A function call involves passing data as parameters.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/XrDTpq1zsBw" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------------
+Recursive Functions
+------------------------
+A function that calls itself is a "recursive" function. A recursive solution for a problem can be very elegant but recursive solutions are not strictly necessary.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/_qr2NAv-Dp0" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------------------------
+__name__ and value "__main__"
+----------------------------------
+When importing functions from another file you need to make sure that you don't accidently run non-function code. The __name__ variable can help you solve this problem.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/1UYhP7RtVVk" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------
+With Statement
+-------------------
+Sometimes you might need to recover when an error occurs in your code. Python has a way of managing a block of code that depends on some activity such as reading data from a file. This approach lets you fix errors If they occur. The with-statement will do this for you.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/KZMH23BOJVs" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------------------------------
+Numerical Python: Arrays and NUMPY
+----------------------------------------
+If you want to do some very fast calculation in a Python program, you may have to use a different way of storing data. Python lists are not as efficient or high speed as an array. The NUMPY package implements arrays using the C language and lets you store your data in very fast arrays.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/WrLT6qgKkaE" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+[Next: `8.1 More Shell <8-1-shell2.html>`_]
+
+

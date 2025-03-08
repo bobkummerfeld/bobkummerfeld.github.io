@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>1.3 Advanced Videos &#8212; Pythontext 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/paho-mqtt-min.js"></script>
+    <script src="_static/ebook.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="1.2 Extension Videos" href="1-2-extensions.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <script id="pagemeta" type="application/json">
+  { "ebook": "Pythontext", "component": "Videos" }
+</script><section id="advanced-videos">
+<h1>1.3 Advanced Videos<a class="headerlink" href="#advanced-videos" title="Permalink to this headline">¶</a></h1>
+<section id="a2-dictionary-and-set-comprehensions">
+<h2>A2 Dictionary and Set Comprehensions<a class="headerlink" href="#a2-dictionary-and-set-comprehensions" title="Permalink to this headline">¶</a></h2>
+<p>You can easily create a list using a technique called a comprehension. You can also create a set or a dictionary using the same comprehension approach.</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/wd0ZXoA2_nQ" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+<section id="a6-classes-special-methods">
+<h2>A6 Classes special methods<a class="headerlink" href="#a6-classes-special-methods" title="Permalink to this headline">¶</a></h2>
+<p>Python provides a number of special methods that you can use within your class. These methods are described in this video with examples of use.</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/X-S_GvDeUaE" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p><p>The video describes a class that represents an object containing information about a toy. An object of that class contains the name of the toy and the price for the toy. A Toy object also has a method to allow a price increase.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Toy</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">name</span><span class="p">,</span> <span class="n">price</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">price</span> <span class="o">=</span> <span class="n">price</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Toy: name is </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">,</span>
+        <span class="n">price</span> <span class="ow">is</span> <span class="p">{</span><span class="bp">self</span><span class="o">.</span><span class="n">price</span><span class="p">}</span><span class="s2">&quot;)</span>
+
+
+<span class="k">def</span> <span class="nf">price_increase</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">price</span> <span class="o">+=</span> <span class="n">amount</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;New price:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">price</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here is an example of creating a Toy object:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">Toy</span><span class="p">(</span><span class="s2">&quot;car&quot;</span><span class="p">,</span> <span class="mi">123</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">Toy</span><span class="p">(</span><span class="s2">&quot;truck&quot;</span><span class="p">,</span> <span class="mi">321</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here is the output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Toy</span><span class="p">:</span> <span class="n">name</span> <span class="ow">is</span> <span class="n">car</span><span class="p">,</span> <span class="n">price</span> <span class="ow">is</span> <span class="mi">123</span>
+<span class="n">Toy</span><span class="p">:</span> <span class="n">name</span> <span class="ow">is</span> <span class="n">truck</span><span class="p">,</span> <span class="n">price</span> <span class="ow">is</span> <span class="mi">321</span>
+</pre></div>
+</div>
+<p>There is also the definition of a class containing a list of Toy objects.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ToyCollection</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">toys</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">def</span> <span class="nf">add_toy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">toy</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">toys</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">toy</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can add the Toy objects created earlier, with the following code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">toys</span> <span class="o">=</span> <span class="n">ToyCollection</span><span class="p">()</span>
+<span class="n">toys</span><span class="o">.</span><span class="n">add_toy</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">toys</span><span class="o">.</span><span class="n">add_toy</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To find the number of toys being stored in the collection you would like to do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">toys</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>but this would fail with an error message. Unless you provide a special method called __len__ in the ToyCollection class.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ToyCollection</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">toys</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">def</span> <span class="nf">add_toy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">toy</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">toys</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">toy</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">toys</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This is a good example of a special method for a class! This one implements the use of the len() function. In this case it has code to get the length of the toys list and return it.</p>
+</section>
+<section id="a6-inheritance-classes">
+<h2>A6 Inheritance Classes<a class="headerlink" href="#a6-inheritance-classes" title="Permalink to this headline">¶</a></h2>
+<p>If you want a new class with the same facilities as an existing class and new features, Python can allow a new class to inherit facilities from a previous class. We call the first class a superclass and the new class a subclass.</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/PvzpRFLV-s0" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+<section id="a6-class-variables-and-private-variables">
+<h2>A6 Class variables and private variables<a class="headerlink" href="#a6-class-variables-and-private-variables" title="Permalink to this headline">¶</a></h2>
+<p>We can set up variables that belong to the class universally, and NOT to objects created by the class. Also, we can use a way of naming any variables inside a class to indicate they are private.</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/mK3oO79Oxe8" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+<section id="a10-decorators">
+<h2>A10 Decorators<a class="headerlink" href="#a10-decorators" title="Permalink to this headline">¶</a></h2>
+<p>Decorators are easy to use and very common from existing packages. BUT, they are an advanced concept for Python. If you want to know how they work or write your own for your code it can be difficult until you understand how to do that. This video introduces the idea behind them.</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/RKX6qI42egM" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+<section id="a9-generators">
+<h2>A9 Generators<a class="headerlink" href="#a9-generators" title="Permalink to this headline">¶</a></h2>
+<p>Generator functions are very sophisticated and quite different to normal functions. This video introduces the detail of how they work.</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/UNVUrjK5gLA" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+<section id="a11-if-expression">
+<h2>A11 If Expression<a class="headerlink" href="#a11-if-expression" title="Permalink to this headline">¶</a></h2>
+<p>An IF expression allows you to do a test within an expression. For example, inside an expression you could test a value the way you normally do in an if statement. Then use the result to choose a new value inside the expression!</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/Haccn_dfzHU" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+<section id="a11-binary-operators">
+<h2>A11 Binary Operators<a class="headerlink" href="#a11-binary-operators" title="Permalink to this headline">¶</a></h2>
+<p>As well as operators that do conventional arithmetic there are operators that do simple binary operations. This video describes them all!</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/T2XWah3Sg58" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+<section id="a12-lambda-functions">
+<h2>A12 Lambda Functions<a class="headerlink" href="#a12-lambda-functions" title="Permalink to this headline">¶</a></h2>
+<p>The Python lambda function allows you to declare an anonymous function within an expression. This allows you to use a simple function without a large, multi-line definition.</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/3OW_RqyYAxU" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+<section id="a16-regular-expressions-part-1">
+<h2>A16 Regular Expressions Part 1<a class="headerlink" href="#a16-regular-expressions-part-1" title="Permalink to this headline">¶</a></h2>
+<p>Regular expressions are text patterns that you can use to find matches in a text file. They are super useful and worth learning. This video introduces the way of writing a pattern and using it in Python.</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/BeCNg3yTFxs" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+<section id="a16-regular-expressions-part-2">
+<h2>A16 Regular Expressions Part 2<a class="headerlink" href="#a16-regular-expressions-part-2" title="Permalink to this headline">¶</a></h2>
+<p>This is the second video about regular expressions used in Python. It introduced more advanced features and shows how useful it is.</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/wYk-mBWPHxI" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+<section id="a19-shell-programming-advanced">
+<h2>A19 Shell Programming Advanced<a class="headerlink" href="#a19-shell-programming-advanced" title="Permalink to this headline">¶</a></h2>
+<p>There are many aspects of shell programming that are useful to know. This video covers many parts. Shell scripts are very important and worth learning.</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/9Kt31WKXDKI" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+<section id="a20-modules-advanced">
+<h2>A20 Modules Advanced<a class="headerlink" href="#a20-modules-advanced" title="Permalink to this headline">¶</a></h2>
+<p>Python has many modules that provide very useful services. I’ll show you how to find the list of available modules and all the documentation. Also, I will show you how you can develop your own modules.</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/2kq3f0pyQz8" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+<section id="a21-code-example-text-generation">
+<h2>A21 Code example: Text Generation<a class="headerlink" href="#a21-code-example-text-generation" title="Permalink to this headline">¶</a></h2>
+<p>This video describe a simple way of generating a random sequence of text in the same sequence as the text from an existing author. Please try and write the code and experiment with this!</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/LVOFupZzAac" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+<section id="a21-code-example-text-generation-program">
+<h2>A21 Code example: Text Generation program<a class="headerlink" href="#a21-code-example-text-generation-program" title="Permalink to this headline">¶</a></h2>
+<p>This video describes the code to implement the text generator.</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/smJonXoHn1E" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p><p>[Next: <a class="reference external" href="1-4-somewhere.html">1.4 Somewhere</a>]</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Pythontext</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1-1-videos.html">1.1 Essential Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-2-extensions.html">1.2 Extension Videos</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1.3 Advanced Videos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#a2-dictionary-and-set-comprehensions">A2 Dictionary and Set Comprehensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a6-classes-special-methods">A6 Classes special methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a6-inheritance-classes">A6 Inheritance Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a6-class-variables-and-private-variables">A6 Class variables and private variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a10-decorators">A10 Decorators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a9-generators">A9 Generators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a11-if-expression">A11 If Expression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a11-binary-operators">A11 Binary Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a12-lambda-functions">A12 Lambda Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a16-regular-expressions-part-1">A16 Regular Expressions Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a16-regular-expressions-part-2">A16 Regular Expressions Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a19-shell-programming-advanced">A19 Shell Programming Advanced</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a20-modules-advanced">A20 Modules Advanced</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a21-code-example-text-generation">A21 Code example: Text Generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a21-code-example-text-generation-program">A21 Code example: Text Generation program</a></li>
+</ul>
+</li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Bob Kummerfeld.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/1-3-advanced.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

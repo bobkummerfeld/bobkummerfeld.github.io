@@ -1,0 +1,67 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythonbook", "component": "Variables" } 
+   </script>
+
+
+
+1.4 Expressions
+::::::::::::::::::::
+
+--------------------------------
+Python Operators and Expressions
+--------------------------------
+Python allows you to combine data with operators using expressions. Add two numbers together, do a complex formula etc.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/0mlY3sDHSgY" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------
+Comments in Python
+------------------
+It is easy to put comments in your Python code. This means you can explain in your language what is going on in your program.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/ADWDxhA2tXc" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------
+The input() function
+--------------------
+The input() function is very useful for prompting a user and reading an answer.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/lLGwbfdN8ZI" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+---------------------
+Testing and Debugging
+---------------------
+When you start to learn how to program you may have a lot of errors. For small and not very complex programs there are some easy approaches to detecting and correcting your errors. In this video I will show a few easy techniques.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/EeyrhkNrP28" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------
+Tracing
+-------
+This is an introduction to a useful technique for analysing your program.
+It helps you find errors in the code and how it can be improved.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/ycmL4B_A1pM" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+
+[Next: `2.1 Selection <2-1-selection.html>`_]
+
+

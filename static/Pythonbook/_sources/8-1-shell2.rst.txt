@@ -1,0 +1,44 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythontext", "component": "Videos" } 
+   </script>
+
+
+8.1 More Shell
+::::::::::::::::::::
+
+--------------------
+Shell Arguments
+--------------------
+Adding arguments to the command you use to run a program is useful. This video describes how your program can access strings for the arguments.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/dLQe3grhYKI" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------------------
+Shell Script Introduction
+-------------------------------
+You can put a set of shell commands inside a file and then run them by typing the name of the file! This video introduces the idea of shell programming that we normally call a shell script.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/ihXKI-gtO10" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------------------
+Shell Programming Advanced
+------------------------------
+There are many aspects of shell programming that are useful to know. This video covers many parts. Shell scripts are very important and worth learning.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/9Kt31WKXDKI" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+[Next: `9.1 Decorators <9-1-decorators.html>`_]
+
+

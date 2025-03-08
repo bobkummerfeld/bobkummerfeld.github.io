@@ -1,0 +1,75 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythontext", "component": "Videos" } 
+   </script>
+
+
+3.1 Lists and Dictionaries
+::::::::::::::::::::::::::
+
+---------------------------
+Python Containers: Lists
+---------------------------
+Python has a data structure that lets you store a sequence of objects. It's called the "list".
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/wvlimfkXYAk" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+---------------------------------
+A list: command line arguments
+---------------------------------
+When you start a program by typing the name on the command line, the arguments you put on the line are passed into your program as a list of strings. Watch this to see how.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/OtkBq15xfHc" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------
+Python Tuples
+----------------
+As well as lists, Python has a container data structure called a "tuple". The difference between and a list is the tuple contents cannot be changed: it is "immutable".
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/YV1mQ_kDcWY" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+---------------------
+Python List Slices
+---------------------
+As well as accessing a single element of a list using an index, you can also access a sub-section of the list called a "slice".
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/JW-yOKsWX3c" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-----------------
+Dictionaries!
+-----------------
+The dictionary data structure is the most important for Python. It looks like a list, but instead of indexing with a number, you can use any immutable object to do the lookup.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/g0jLxB89xfI" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-----------------------------
+Mutable and Immutable Data
+-----------------------------
+Most data structures in Python are "mutable". This means they are changeable. You must be a little careful with mutable data structures because you might accidentally modify them. But, there is also an "immutable" data structure in the form of a "tuple". A tuple is the same as a list except not changeable.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/gQBiqScabeo" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+
+[Next: `4.1 Loops <4-1-loops.html>`_]
+
+

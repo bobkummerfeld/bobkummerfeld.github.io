@@ -1,0 +1,24 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythontext", "component": "Videos" } 
+   </script>
+
+
+9.1 Decorators
+::::::::::::::::::::
+
+--------------
+Decorators
+--------------
+Decorators are easy to use and very common from existing packages. BUT, they are an advanced concept for Python. If you want to know how they work or write your own for your code it can be difficult until you understand how to do that. This video introduces the idea behind them.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/RKX6qI42egM" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+[Next: `10.1 Generators <10-1-generators.html>`_]
+
+

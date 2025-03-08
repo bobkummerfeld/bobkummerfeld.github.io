@@ -1,0 +1,35 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythonbook", "component": "Files" } 
+   </script>
+
+
+
+1.5 Files and Folders
+:::::::::::::::::::::
+
+-----------------
+Files and Folders
+-----------------
+All our data is stored in files on the computer, and the files are enclosed in folders. We use the Unix system for this course and in the future and it has a simple but powerful system for organising files and folders.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/nqpdtsO1Rn0" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------
+File System Demo
+----------------
+Let me show you how you can manipulate files and folders from the UNIX command line.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/rPJ8QtNOWnA" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+[Next: `2.1 Selection <2-1-selection.html>`_]
+
+

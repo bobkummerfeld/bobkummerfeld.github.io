@@ -1,0 +1,36 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythonbook", "component": "Preface" } 
+   </script>
+
+
+
+0.1 Preface
+::::::::::::::::::::
+
+------------------
+Why use PYTHON?
+------------------
+Why do we choose the Python programming language?
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/0lrj8vqmvmc" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------------
+Programming Environment
+------------------------
+To write your program and get it running, you need software on your system. There are many programs that help you type in your program and then get it running. This video describes the simple and easy approach using the Ed programming environment.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/CNpiLwOCoCs" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+
+[Next: `1.1 Getting Started <1-1-get-started.html>`_]
+
+

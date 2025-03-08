@@ -1,0 +1,22 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythontext", "component": "Videos" } 
+   </script>
+
+
+
+7.0 Extensions
+::::::::::::::::::::
+
+------------------------
+Extra Features of Python
+------------------------
+The early parts of the book are the fundamentals of the Python language, but Python contains
+a LOT more features.
+
+
+[Next: `7.1 Characters <7-1-characters.html>`_]
+
+

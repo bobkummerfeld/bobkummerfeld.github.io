@@ -1,0 +1,125 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythontext", "component": "Videos" } 
+   </script>
+
+
+1.2 Extension Videos
+::::::::::::::::::::
+
+---------------
+Ext1 Characters
+---------------
+Almost every time you use a computer you work with characters. You type them in and manipulate them in documents. You work with a range of different characters. even emojis! In this video I describe exactly how characters are represented in the computer.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/LcHea_GehIs" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------
+Ext2 Import a Module
+--------------------
+Modules provide many services for Python programs. To make use of the services you must import the module. In this video I describe modules and introduce how they work.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/08ihdUy0pdA" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------------
+Ext2 List Comprehensions
+------------------------
+Python has a very simple approach for creating a new list. The list comprehension approach allows you to do selection, filtering and calculation of the final value. All in one line!
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/DRPExD2WC34" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------------------------
+Ext3 Function Arguments and Parameters
+--------------------------------------
+Python has many features for passing data to a function. The declaration of a function has arguments that describe how data is passed. A function call involves passing data as parameters.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/XrDTpq1zsBw" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+--------------------
+Ext3 Shell Arguments
+--------------------
+Adding arguments to the command you use to run a program is useful. This video describes how your program can access strings for the arguments.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/dLQe3grhYKI" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------------------------
+Ext3 __name__ and value "__main__"
+----------------------------------
+When importing functions from another file you need to make sure that you don't accidently run non-function code. The __name__ variable can help you solve this problem.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/1UYhP7RtVVk" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+---------
+Ext4 Sets
+---------
+Python has a useful data structure called the set. It has operations that allow you to union, intersect and other mathematical set operations. It is easy to create and manage in Python.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/QS_z2BN_LAk" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+------------------------
+Ext8 Recursive Functions
+------------------------
+A function that calls itself is a "recursive" function. A recursive solution for a problem can be very elegant but recursive solutions are not strictly necessary.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/_qr2NAv-Dp0" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------
+Ext9 With Statement
+-------------------
+Sometimes you might need to recover when an error occurs in your code. Python has a way of managing a block of code that depends on some activity such as reading data from a file. This approach lets you fix errors If they occur. The with-statement will do this for you.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/KZMH23BOJVs" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------------------------------------
+Ext17 Numerical Python: Arrays and NUMPY
+----------------------------------------
+If you want to do some very fast calculation in a Python program, you may have to use a different way of storing data. Python lists are not as efficient or high speed as an array. The NUMPY package implements arrays using the C language and lets you store your data in very fast arrays.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/WrLT6qgKkaE" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+-------------------------------
+Ext19 Shell Script Introduction
+-------------------------------
+You can put a set of shell commands inside a file and then run them by typing the name of the file! This video introduces the idea of shell programming that we normally call a shell script.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/ihXKI-gtO10" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+
+[Next: `1.3 Advanced <1-3-advanced.html>`_]
+
+
