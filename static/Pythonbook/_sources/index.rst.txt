@@ -58,6 +58,8 @@ Then a series of exercises to do with that .....
    7-3-comprehensions.rst
    7-4-modules.rst
    7-5-functions2.rst
+   7-6-with.rst
+   7-7-numpy.rst
    8-1-shell2.rst
    9-1-decorators.rst
    10-1-generators.rst

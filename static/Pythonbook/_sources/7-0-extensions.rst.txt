@@ -14,7 +14,7 @@
 Extra Features of Python
 ------------------------
 The early parts of the book are the fundamentals of the Python language, but Python contains
-a LOT more features.
+a LOT more features. This section of the book has videos and details of important aspects of Python.
 
 
 [Next: `7.1 Characters <7-1-characters.html>`_]
