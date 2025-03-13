@@ -70,17 +70,6 @@ Groups of python statements after an if statement are consistently indented and 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/U7FkL1JNU3U" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
--------------------------
-Three Debug Approaches
--------------------------
-This video describes three useful but simple ways to debug a program. The print function, the Python debugger pdb, and the Python doctest package.
-
-.. raw:: html
-
-      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/Mlrn0sgI7QA" frameborder="0"  allowfullscreen></iframe>
- </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
-
-
 
 [Next: `3.1 Lists and Dictionaries <3-1-lists-dicts.html>`_]
 

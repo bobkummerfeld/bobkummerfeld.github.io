@@ -19,16 +19,26 @@ This video describe a simple way of generating a random sequence of text in the 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/LVOFupZzAac" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
------------------------------------------
-Code example: Text Generation program
------------------------------------------
-This video describes the code to implement the text generator.
+This video describes the code to implement the text generator:
 
 .. raw:: html
 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/smJonXoHn1E" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
+|
+|
+
+
+---------------------------------
+Code example: Using Generators
+---------------------------------
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/HpsAsBWXUvo" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+|
 
 [Next: `13.0 Conclusion! <13-0-conclusion.html>`_]
 

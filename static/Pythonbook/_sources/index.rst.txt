@@ -1,5 +1,5 @@
 ==========================
-Python Book
+Programming in Python
 ==========================
 
 .. Here is were you specify the content and order of your new book.
@@ -48,6 +48,7 @@ Then a series of exercises to do with that .....
    1-3-variables.rst
    1-4-expressions.rst
    1-5-files.rst
+   1-6-debug.rst
    2-1-if-statement.rst
    3-1-lists-dicts.rst
    4-1-loops.rst
