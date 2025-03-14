@@ -21,7 +21,7 @@ Programming in Python
 
 
 
-1.0 Introduction
+Introduction
 ::::::::::::::::::::::::::::
 
 This document is an introduction to programming in the Python programming language.
