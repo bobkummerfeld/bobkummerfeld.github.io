@@ -1,0 +1,76 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythontext", "component": "Videos" } 
+   </script>
+
+
+12.2 Example: Web Log Analysis
+:::::::::::::::::::::::::::::::
+
+---------------------------------
+Code example: Using Generators
+---------------------------------
+You might wonder "What is a Web Log"!. A Web Log is an example of a system log file that contains information
+about a particular program or system. In this case I will describe the information that a web server saves whenever
+someone attempts to fetch a certain web page.
+
+Many system components keep a log file on your machine.   For systems running a version of Unix (eg Mac, Linux)
+you can find a large number of log files in the directory /var/log.
+
+Log files are nearly always text files that have lines that describe some activity. In the case of a web server, i.e.
+a program that provides web pages to a remote web server,  each line on the web server has information about what page
+was selected, how big it is, what sort of request is required,.... and so on.
+
+The most common web server programs are "Nginx" and "Apache".  In this example I'll use the log file produced by the "Apache"
+web server.  There is a lot of information available for these server programs, so feel free to google them.  You can even
+install and run these programs on your own system and serve local web browsers.
+
+Here is an example of an entry in a (very old) Apache web log:
+
+::
+
+    208.115.111.72 - - [17/May/2015:11:05:15 +0000] "GET /blog/geekery/yahoo-hackday-08.html HTTP/1.1" 200 9882 "-" "Mozilla/5.0 (compatible; Ezooms/1.0; help@moz.com)"
+
+
+Hmmmmm that example is a very long line!   Let me show you the line as pieces separated by space:
+
+::
+
+    208.115.111.72
+    -
+    -
+    [17/May/2015:11:05:15 +0000]
+    "GET /blog/geekery/yahoo-hackday-08.html HTTP/1.1"
+    200
+    9882
+    "-"
+    "Mozilla/5.0 (compatible; Ezooms/1.0; help@moz.com)"
+
+The line contains a lot of information about a typical request from a web browser.
+
+The video has a description of these parts of the line but the very useful ones are:
+
+
+* 208.115.111.72 ➞ the IP (Internet Packet) address of the machine that fetched the web page,
+* [17/May/2015:11:05:15 +0000] ➞ the date of the request,
+* "GET /blog/geekery/yahoo-hackday-08.html HTTP/1.1" ➞ the request (uses the HTTP web fetch protocol),
+* 200 ➞ the status (200: ok, 404: error),
+* 9882 ➞ the size of the web page requested.
+
+   More description coming .....
+
+This video has a full explanation and example of simple and generator code to analyse the web server log file.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/HpsAsBWXUvo" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+
+|
+
+[Next: `13.0 Conclusion! <13-0-conclusion.html>`_]
+
+

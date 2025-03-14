@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>12.1 Example: Text Generation &#8212; Programming in Python 0.1 documentation</title>
+    <title>12.2 Example: Web Log Analysis &#8212; Programming in Python 0.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/custom.css" />
@@ -18,8 +18,7 @@
     <script src="_static/ebook.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="12.2 Example: Web Log Analysis" href="12-2-exampleprograms.html" />
-    <link rel="prev" title="11.1 Advanced Expressions" href="11-1-expressions2.html" />
+    <link rel="prev" title="12.1 Example: Text Generation" href="12-1-exampleprograms.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -38,18 +37,56 @@
             
   <script id="pagemeta" type="application/json">
   { "ebook": "Pythontext", "component": "Videos" }
-</script><section id="example-text-generation">
-<h1>12.1 Example: Text Generation<a class="headerlink" href="#example-text-generation" title="Permalink to this headline">¶</a></h1>
-<section id="code-example-text-generation">
-<h2>Code example: Text Generation<a class="headerlink" href="#code-example-text-generation" title="Permalink to this headline">¶</a></h2>
-<p>This video describe a simple way of generating a random sequence of text in the same sequence as the text from an existing author. Please try and write the code and experiment with this!</p>
-     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/LVOFupZzAac" frameborder="0"  allowfullscreen></iframe>
-</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p><p>This video describes the code to implement the text generator:</p>
-     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/smJonXoHn1E" frameborder="0"  allowfullscreen></iframe>
+</script><section id="example-web-log-analysis">
+<h1>12.2 Example: Web Log Analysis<a class="headerlink" href="#example-web-log-analysis" title="Permalink to this headline">¶</a></h1>
+<section id="code-example-using-generators">
+<h2>Code example: Using Generators<a class="headerlink" href="#code-example-using-generators" title="Permalink to this headline">¶</a></h2>
+<p>You might wonder “What is a Web Log”!. A Web Log is an example of a system log file that contains information
+about a particular program or system. In this case I will describe the information that a web server saves whenever
+someone attempts to fetch a certain web page.</p>
+<p>Many system components keep a log file on your machine.   For systems running a version of Unix (eg Mac, Linux)
+you can find a large number of log files in the directory /var/log.</p>
+<p>Log files are nearly always text files that have lines that describe some activity. In the case of a web server, i.e.
+a program that provides web pages to a remote web server,  each line on the web server has information about what page
+was selected, how big it is, what sort of request is required,…. and so on.</p>
+<p>The most common web server programs are “Nginx” and “Apache”.  In this example I’ll use the log file produced by the “Apache”
+web server.  There is a lot of information available for these server programs, so feel free to google them.  You can even
+install and run these programs on your own system and serve local web browsers.</p>
+<p>Here is an example of an entry in a (very old) Apache web log:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">208.115.111.72</span> <span class="o">-</span> <span class="o">-</span> <span class="p">[</span><span class="mi">17</span><span class="o">/</span><span class="n">May</span><span class="o">/</span><span class="mi">2015</span><span class="p">:</span><span class="mi">11</span><span class="p">:</span><span class="mi">05</span><span class="p">:</span><span class="mi">15</span> <span class="o">+</span><span class="mi">0000</span><span class="p">]</span> <span class="s2">&quot;GET /blog/geekery/yahoo-hackday-08.html HTTP/1.1&quot;</span> <span class="mi">200</span> <span class="mi">9882</span> <span class="s2">&quot;-&quot;</span> <span class="s2">&quot;Mozilla/5.0 (compatible; Ezooms/1.0; help@moz.com)&quot;</span>
+</pre></div>
+</div>
+<p>Hmmmmm that example is a very long line!   Let me show you the line as pieces separated by space:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">208.115.111.72</span>
+<span class="o">-</span>
+<span class="o">-</span>
+<span class="p">[</span><span class="mi">17</span><span class="o">/</span><span class="n">May</span><span class="o">/</span><span class="mi">2015</span><span class="p">:</span><span class="mi">11</span><span class="p">:</span><span class="mi">05</span><span class="p">:</span><span class="mi">15</span> <span class="o">+</span><span class="mi">0000</span><span class="p">]</span>
+<span class="s2">&quot;GET /blog/geekery/yahoo-hackday-08.html HTTP/1.1&quot;</span>
+<span class="mi">200</span>
+<span class="mi">9882</span>
+<span class="s2">&quot;-&quot;</span>
+<span class="s2">&quot;Mozilla/5.0 (compatible; Ezooms/1.0; help@moz.com)&quot;</span>
+</pre></div>
+</div>
+<p>The line contains a lot of information about a typical request from a web browser.</p>
+<p>The video has a description of these parts of the line but the very useful ones are:</p>
+<ul>
+<li><p>208.115.111.72 ➞ the IP (Internet Packet) address of the machine that fetched the web page,</p></li>
+<li><p>[17/May/2015:11:05:15 +0000] ➞ the date of the request,</p></li>
+<li><p>“GET /blog/geekery/yahoo-hackday-08.html HTTP/1.1” ➞ the request (uses the HTTP web fetch protocol),</p></li>
+<li><p>200 ➞ the status (200: ok, 404: error),</p></li>
+<li><p>9882 ➞ the size of the web page requested.</p>
+<blockquote>
+<div><p>More description coming …..</p>
+</div></blockquote>
+</li>
+</ul>
+<p>This video has a full explanation and example of simple and generator code to analyse the web server log file.</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/HpsAsBWXUvo" frameborder="0"  allowfullscreen></iframe>
 </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p><div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>[Next: <a class="reference external" href="12-2-exampleprograms.html">12.2 Example: Web Log Analysis</a>]</p>
+<p>[Next: <a class="reference external" href="13-0-conclusion.html">13.0 Conclusion!</a>]</p>
 </section>
 </section>
 
@@ -95,11 +132,11 @@
 <li class="toctree-l1"><a class="reference internal" href="9-1-decorators.html">9.1 Decorators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="10-1-generators.html">10.1 Generators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="11-1-expressions2.html">11.1 Advanced Expressions</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">12.1 Example: Text Generation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#code-example-text-generation">Code example: Text Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12-1-exampleprograms.html">12.1 Example: Text Generation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">12.2 Example: Web Log Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#code-example-using-generators">Code example: Using Generators</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="12-2-exampleprograms.html">12.2 Example: Web Log Analysis</a></li>
 </ul>
 
 
@@ -125,7 +162,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/12-1-exampleprograms.rst.txt"
+      <a href="_sources/12-2-exampleprograms.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

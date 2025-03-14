@@ -24,19 +24,16 @@ Programming in Python
 1.0 Introduction
 ::::::::::::::::::::::::::::
 
-This book is an introduction to programming in the Python programming language.
+This document is an introduction to programming in the Python programming language.
 It introduces key programming concepts and methods.
 It illustrates how Python programmers make use of these to create programs in a Unix environment.
 
-The book is divided into a set of topics and each topic is described in a similar format.
+The document is divided into a set of topics and each topic is described in a similar format.
 Within a topic there is first a description of the aspect of Python.
 Then an example of the feature.
-Then a series of exercises to do with that .....
 
-
-
-
-
+**NOTE**: this is initially **ONLY for the staff**. I will be enhancing the document over several weeks and may be able to make it
+available to all students at the end of the semester as a "study aid". Please don't pass the link to anyone else 🙃
 
 
 .. toctree::
@@ -67,3 +64,4 @@ Then a series of exercises to do with that .....
    10-1-generators.rst
    11-1-expressions2.rst
    12-1-exampleprograms.rst
+   12-2-exampleprograms.rst

@@ -6,8 +6,8 @@
    </script>
 
 
-12.1 Example Programs
-:::::::::::::::::::::
+12.1 Example: Text Generation
+::::::::::::::::::::::::::::::
 
 ---------------------------------
 Code example: Text Generation
@@ -27,19 +27,7 @@ This video describes the code to implement the text generator:
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
 |
-|
 
-
----------------------------------
-Code example: Using Generators
----------------------------------
-.. raw:: html
-
-      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/HpsAsBWXUvo" frameborder="0"  allowfullscreen></iframe>
- </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
-
-|
-
-[Next: `13.0 Conclusion! <13-0-conclusion.html>`_]
+[Next: `12.2 Example: Web Log Analysis <12-2-exampleprograms.html>`_]
 
 
