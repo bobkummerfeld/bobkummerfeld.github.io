@@ -71,6 +71,5 @@ This video has a full explanation and example of simple and generator code to an
 
 |
 
-[Next: `13.0 Conclusion! <13-0-conclusion.html>`_]
 
 
