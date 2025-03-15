@@ -59,7 +59,18 @@ The video has a description of these parts of the line but the very useful ones 
 * 200 ➞ the status (200: ok, 404: error),
 * 9882 ➞ the size of the web page requested.
 
-   More description coming .....
+The IP address is actually a 32 bit integer that has been divided into 4 x 8 bit parts, and each part written as
+a decimal number!  In the log this is the address of the machine that is fetching a web page.
+
+The string starting with GET is a action written in the HTTP protocol. It is simply asking for a particular web page.
+
+The status part (200) indicates the result of the operation. The best is 200! Meaning everything worked ok.
+The worst is 404, meaning that the operation failed.
+
+The number in the example, 9882, is actually the number of bytes giving the size of the web page file.
+
+It is very useful to be able to analyse the log and get some statistics that show, for example, the number
+of times a particular IP address fetched a certain web page.
 
 This video has a full explanation and example of simple code to analyse the web server log file.
 
