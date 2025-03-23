@@ -46,6 +46,7 @@ available to all students at the end of the semester as a "study aid". Please do
    1-4-expressions.rst
    1-5-files.rst
    1-6-debug.rst
+   1-7-format.rst
    2-1-if-statement.rst
    3-1-lists-dicts.rst
    4-1-loops.rst

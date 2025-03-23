@@ -43,6 +43,6 @@ This video describes three useful but simple ways to debug a program. The print 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/Mlrn0sgI7QA" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
-[Next: `2.1 Selection <2-1-if-statement.html>`_]
+[Next: `1.7 Output Formatting <1-7-format.html>`_]
 
 

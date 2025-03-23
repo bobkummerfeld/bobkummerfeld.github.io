@@ -1,0 +1,27 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythonbook", "component": "Files" } 
+   </script>
+
+
+
+1.7 Output Formatting
+:::::::::::::::::::::
+
+---------------------
+Format Strings
+---------------------
+When you display values, you need to work out how they should be laid out.
+You might have particular types of numbers, or you might want to position them carefully.
+The format string facility allows you to create good layouts.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/_a74eXNHPTc" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+[Next: `2.1 Selection <2-1-if-statement.html>`_]
+
+
