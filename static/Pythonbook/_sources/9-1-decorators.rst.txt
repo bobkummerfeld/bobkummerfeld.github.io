@@ -19,6 +19,68 @@ Decorators are easy to use and very common from existing packages. BUT, they are
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/RKX6qI42egM" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
+-------------------
+Decorator Example
+-------------------
+
+A useful reason to create and use a decorator is when debugging your program.
+For example, when you write a function to do a calculation you might like to check
+if it is producing a correct result.  You could do this by adding print statements before and
+after the function call, but this is messy! You would have to add print statements everytime
+you call the function within your program. By using a decorator, you can add print statements
+without changing the function or putting them in the final code.
+
+Here is an example:
+
+::
+
+    def debug(fun):
+    	def wrapper(*args,**kwargs):
+    		print(f"Args before: {args}, {kwargs}")
+    		result = fun(*args,**kwargs)
+    		print(f"Result after: {result}")
+		return result
+	return wrapper
+
+    @debug
+    def addup(x,y):
+        return x+y
+
+    print("The sum was ", addup(1,2))
+
+If we run the code we get:
+
+::
+
+    Args before: (1, 2), {}
+    Result after: 3
+    The sum was  3
+
+
+The way it works is the following:
+when ``@debug`` was placed before the ``addup`` function, it creates a replacement function of ``addup``.
+
+The ``debug`` decorator function has ``addup`` passed as an argument.
+Inside ``debug`` there is another function defined (I called it ``wrapper``) and that function is returned
+as the result of the execution of the ``debug`` function.   From then on, whenever you call ``addup`` you are actually
+calling the new function.
+
+The ``wrapper`` function can do anything and completely replace ``addup``, but that would not be very useful 😀
+Instead, ``wrapper`` in this case will print all the arguments of ``addup``, then run ``addup``, using
+the same parameters as before. This is very useful to see how your call of ``addup`` is working.
+
+I can switch off the use of ``debug`` if I make the ``@debug`` line into a comment like this:
+
+::
+
+    #@debug
+
+The output then looks like this:
+
+::
+
+    The sum was  3
+
+That means that the decorator, ``debug``, was not executed and just the output of ``addup`` appears.
+
 [Next: `10.1 Generators <10-1-generators.html>`_]
-
-

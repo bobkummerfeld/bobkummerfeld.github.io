@@ -44,7 +44,56 @@
 <h2>Decorators<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>Decorators are easy to use and very common from existing packages. BUT, they are an advanced concept for Python. If you want to know how they work or write your own for your code it can be difficult until you understand how to do that. This video introduces the idea behind them.</p>
      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/RKX6qI42egM" frameborder="0"  allowfullscreen></iframe>
-</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p><p>[Next: <a class="reference external" href="10-1-generators.html">10.1 Generators</a>]</p>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p></section>
+<section id="decorator-example">
+<h2>Decorator Example<a class="headerlink" href="#decorator-example" title="Permalink to this headline">¶</a></h2>
+<p>A useful reason to create and use a decorator is when debugging your program.
+For example, when you write a function to do a calculation you might like to check
+if it is producing a correct result.  You could do this by adding print statements before and
+after the function call, but this is messy! You would have to add print statements everytime
+you call the function within your program. By using a decorator, you can add print statements
+without changing the function or putting them in the final code.</p>
+<p>Here is an example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">debug</span><span class="p">(</span><span class="n">fun</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Args before: </span><span class="si">{</span><span class="n">args</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">kwargs</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">fun</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result after: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">result</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
+
+<span class="nd">@debug</span>
+<span class="k">def</span> <span class="nf">addup</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum was &quot;</span><span class="p">,</span> <span class="n">addup</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>If we run the code we get:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Args</span> <span class="n">before</span><span class="p">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">{}</span>
+<span class="n">Result</span> <span class="n">after</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">The</span> <span class="nb">sum</span> <span class="n">was</span>  <span class="mi">3</span>
+</pre></div>
+</div>
+<p>The way it works is the following:
+when <code class="docutils literal notranslate"><span class="pre">&#64;debug</span></code> was placed before the <code class="docutils literal notranslate"><span class="pre">addup</span></code> function, it creates a replacement function of <code class="docutils literal notranslate"><span class="pre">addup</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">debug</span></code> decorator function has <code class="docutils literal notranslate"><span class="pre">addup</span></code> passed as an argument.
+Inside <code class="docutils literal notranslate"><span class="pre">debug</span></code> there is another function defined (I called it <code class="docutils literal notranslate"><span class="pre">wrapper</span></code>) and that function is returned
+as the result of the execution of the <code class="docutils literal notranslate"><span class="pre">debug</span></code> function.   From then on, whenever you call <code class="docutils literal notranslate"><span class="pre">addup</span></code> you are actually
+calling the new function.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">wrapper</span></code> function can do anything and completely replace <code class="docutils literal notranslate"><span class="pre">addup</span></code>, but that would not be very useful 😀
+Instead, <code class="docutils literal notranslate"><span class="pre">wrapper</span></code> in this case will print all the arguments of <code class="docutils literal notranslate"><span class="pre">addup</span></code>, then run <code class="docutils literal notranslate"><span class="pre">addup</span></code>, using
+the same parameters as before. This is very useful to see how your call of <code class="docutils literal notranslate"><span class="pre">addup</span></code> is working.</p>
+<p>I can switch off the use of <code class="docutils literal notranslate"><span class="pre">debug</span></code> if I make the <code class="docutils literal notranslate"><span class="pre">&#64;debug</span></code> line into a comment like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#@debug</span>
+</pre></div>
+</div>
+<p>The output then looks like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">The</span> <span class="nb">sum</span> <span class="n">was</span>  <span class="mi">3</span>
+</pre></div>
+</div>
+<p>That means that the decorator, <code class="docutils literal notranslate"><span class="pre">debug</span></code>, was not executed and just the output of <code class="docutils literal notranslate"><span class="pre">addup</span></code> appears.</p>
+<p>[Next: <a class="reference external" href="10-1-generators.html">10.1 Generators</a>]</p>
 </section>
 </section>
 
@@ -90,6 +139,7 @@
 <li class="toctree-l1"><a class="reference internal" href="8-1-shell2.html">8.1 More Shell 🐚</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">9.1 Decorators</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id1">Decorators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#decorator-example">Decorator Example</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="10-1-generators.html">10.1 Generators</a></li>
