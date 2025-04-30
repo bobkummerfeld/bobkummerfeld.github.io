@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>1.2 The Unix Shell 🐚 &#8212; Programming in Python 0.1 documentation</title>
+    <title>1.4.3 input() function &#8212; Programming in Python 0.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/custom.css" />
@@ -18,8 +18,8 @@
     <script src="_static/ebook.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="1.3 Variables" href="1-3-variables.html" />
-    <link rel="prev" title="1.1 Getting Started" href="1-1-get-started.html" />
+    <link rel="next" title="1.5 Files and Folders" href="1-5-files.html" />
+    <link rel="prev" title="1.4.2 Comments" href="1-4-2-comments.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -37,43 +37,14 @@
           <div class="body" role="main">
             
   <script id="pagemeta" type="application/json">
-  { "ebook": "Pythonbook", "component": "Unix-Shell" }
-</script><section id="the-unix-shell">
-<h1>1.2 The Unix Shell 🐚<a class="headerlink" href="#the-unix-shell" title="Permalink to this headline">¶</a></h1>
-<section id="introduction-to-the-unix-shell">
-<h2>Introduction to the Unix Shell<a class="headerlink" href="#introduction-to-the-unix-shell" title="Permalink to this headline">¶</a></h2>
-<p>For computers to be useful, we need a way of interacting with them: starting a program, giving it data, getting results out.
-Today, we have amazing hardware and software for interacting with computers - keyboards, mice,
-high resolution colour screens, smart window systems, and more…
-But in the beginning, systems only had a simple character input and display - no windows, no mouse!
-To use the system you typed characters on the keyboard and the output characters were displayed.</p>
-<a class="reference internal image-reference" href="_images/1-2-shell-terminal.png"><img alt="_images/1-2-shell-terminal.png" class="align-center" src="_images/1-2-shell-terminal.png" style="width: 10cm;" /></a>
-<p>In 1969, with the development of the first version of the Unix operating system
-(by Dennis Ritchie and Ken Thompson at Bell Labs in the USA)
-a special program was developed that interpreted commands typed by the user and
-then executed those commands by running programs.
-They called this program the “Shell”.</p>
-<p>The shell reads a line of characters from input (keyboard or file),
-analyses the line and runs the program specified.</p>
-<p>We can still use a shell program to run programs on systems such as Linux and MacOS (Apple), which are modern versions
-of the Unix operating system.
-Each system today has the ability to run the shell in a separate window (eg the Terminal app on an Apple mac).</p>
-<a class="reference internal image-reference" href="_images/1-2-shell-window.png"><img alt="_images/1-2-shell-window.png" class="align-center" src="_images/1-2-shell-window.png" style="width: 10cm;" /></a>
-<p>There are several versions of the shell program available. In this course we use a very common version called “bash”
-(Bourne Again SHell  - the original programmer was Steve Bourne at Bell Labs).</p>
-     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/c05cgvWNJYU" frameborder="0"  allowfullscreen></iframe>
-</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p><div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p>It is fairly easy to write a simple version of your own shell program.
-The program has to display a <em>prompt</em> and wait for the user to type a line containing a command.
-It reads the line, interpretes it to work out what action to take and then does it!</p>
-<p>Modern shell programs such as Bash have many facilities, so would be a difficult program to develop.
-If you just wanted to accept a command to run a program it would be easy!</p>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p>[Next: <a class="reference external" href="1-3-variables.html">1.3.1 Variables</a>]</p>
+  { "ebook": "Pythonbook", "component": "Variables" }
+</script><section id="input-function">
+<h1>1.4.3 input() function<a class="headerlink" href="#input-function" title="Permalink to this headline">¶</a></h1>
+<section id="the-input-function">
+<h2>The input() function<a class="headerlink" href="#the-input-function" title="Permalink to this headline">¶</a></h2>
+<p>The input() function is very useful for prompting a user and reading an answer.</p>
+     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/lLGwbfdN8ZI" frameborder="0"  allowfullscreen></iframe>
+</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p><p>[Next: <a class="reference external" href="1-5-files.html">1.5 Files and Folders</a>]</p>
 </section>
 </section>
 
@@ -97,15 +68,15 @@ If you just wanted to accept a command to run a program it would be easy!</p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="1-0-Preface.html">1.0 Preface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1-1-get-started.html">1.1 Getting Started</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1.2 The Unix Shell 🐚</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introduction-to-the-unix-shell">Introduction to the Unix Shell</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="1-2-shell.html">1.2 The Unix Shell 🐚</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1-3-variables.html">1.3 Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1-3-2-types.html">1.3.2 Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1-4-expressions.html">1.4 Expressions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1-4-2-comments.html">1.4.2 Comments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1-4-3-input.html">1.4.3 input() function</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1.4.3 input() function</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-input-function">The input() function</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="1-5-files.html">1.5 Files and Folders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1-6-debug.html">1.6 Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1-7-format.html">1.7 Output Formatting</a></li>
@@ -153,7 +124,7 @@ If you just wanted to accept a command to run a program it would be easy!</p>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/1-2-shell.rst.txt"
+      <a href="_sources/1-4-3-input.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

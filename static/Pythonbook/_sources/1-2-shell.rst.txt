@@ -13,7 +13,40 @@
 ---------------------------------
 Introduction to the Unix Shell
 ---------------------------------
-The Unix shell is the program that provides the command line on your system. I introduce the idea, where it comes from and how to use it.
+For computers to be useful, we need a way of interacting with them: starting a program, giving it data, getting results out.
+Today, we have amazing hardware and software for interacting with computers - keyboards, mice,
+high resolution colour screens, smart window systems, and more...
+But in the beginning, systems only had a simple character input and display - no windows, no mouse!
+To use the system you typed characters on the keyboard and the output characters were displayed.
+
+
+.. image:: Images/1-2-shell-terminal.png
+   :width: 10cm
+   :align: center
+
+
+In 1969, with the development of the first version of the Unix operating system
+(by Dennis Ritchie and Ken Thompson at Bell Labs in the USA)
+a special program was developed that interpreted commands typed by the user and
+then executed those commands by running programs.
+They called this program the "Shell".
+
+The shell reads a line of characters from input (keyboard or file),
+analyses the line and runs the program specified.
+
+We can still use a shell program to run programs on systems such as Linux and MacOS (Apple), which are modern versions
+of the Unix operating system.
+Each system today has the ability to run the shell in a separate window (eg the Terminal app on an Apple mac).
+
+
+.. image:: Images/1-2-shell-window.png
+   :width: 10cm
+   :align: center
+
+
+There are several versions of the shell program available. In this course we use a very common version called "bash"
+(Bourne Again SHell  - the original programmer was Steve Bourne at Bell Labs).
+
 
 .. raw:: html
 
@@ -22,6 +55,15 @@ The Unix shell is the program that provides the command line on your system. I i
 
 |
 
-[Next: `1.3 Variables <1-3-variables.html>`_]
+It is fairly easy to write a simple version of your own shell program.
+The program has to display a *prompt* and wait for the user to type a line containing a command.
+It reads the line, interpretes it to work out what action to take and then does it!
+
+Modern shell programs such as Bash have many facilities, so would be a difficult program to develop.
+If you just wanted to accept a command to run a program it would be easy!
+
+|
+
+[Next: `1.3.1 Variables <1-3-variables.html>`_]
 
 

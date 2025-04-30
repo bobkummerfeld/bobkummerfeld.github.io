@@ -1,0 +1,116 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "Pythonbook", "component": "Variables" } 
+   </script>
+
+
+
+1.3.2 Types
+::::::::::::::::::::
+
+--------------
+Types of Data
+--------------
+Python can store and manipulate many types of data.
+For example, ``30`` is of type **integer** and ``30.0`` is of type **floating point**.
+The fact that data can be of different types is very important.
+Doing arithmetic with integers is different than with real numbers.
+
+In a computer, an integer is stored as a simple binary number, but a real number
+is stored with a different format and is called a **floating point** number.
+They are **different types of data**!
+
+Integers are completely accurate.  In Python, you can store a very large number with perfect
+accuracy.   Real numbers stored in floating point format are not accurate!
+
+For example, if we store the integer ``3``  then it looks like this in
+the binary representation:
+
+::
+
+    11
+
+If we want to store the real number ``0.3`` then we need to use the floating point
+number pattern in a binary representation:
+
+::
+
+    0.01001100110011 ....... goes on forever!!
+
+
+We have to limit the number of bits for the representation of 0.3, so representation is not
+perfectly accurate. A **floating point** number is a standard  representation.
+The total size for a floating point number may be 32 bits or 64 bits.
+In this Python course we're not going to cover the standard in detail, but it's
+important to know that there is a special way of representing the number with a
+value and exponent.
+
+The important point is that Python will store a number in an appropiate type object and
+you can label the object with a variable name.
+
+There are other types of data used in a Python program. For example a **string** of characters.
+
+There are also pieces of data that are a combination of data. There is a **list** data
+form that might contain numbers or strings or a mixture.
+
+As well as each object being classified as a type, they also have operations that can be
+performaed on them.   For example, we can do all the obvious arithmetic operation on integers.
+
+The operations that can be performed on an object are called **methods**.
+
+A string data type has many useful methods for manipulating the string.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/SLSCgdUkzuI" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+----------
+Type hints
+----------
+Python is a **dynamically** typed programming language. This means that a variable name
+can label *any* type of data.
+
+For example we can have a variable name do this:
+
+::
+
+    now = "1st January"
+    print(now)
+    now = 54
+    print(now)
+
+The ``now`` variable name subsequently named two completely different type of data - a
+string then an integer.
+
+Of course, if you re-use a variable name it forgets the original value. You can't get it back!
+
+However, in Python you can give a hint about what type of data is being labelled
+with a variable name. This is really *only a hint*!   It doesn't give any error messages
+if you use the same name for different types.
+
+Here is an example of using a variable in the normal Python way,
+and giving a hint to the type:
+
+::
+
+    name: str = "Fred"
+
+The ``: str`` part is the hint that the variable is labelling a string.
+
+There is an external add-on program that you can use to check that a variable
+is only referring to an object type you specify in the hint.
+
+The video about ``Python type hints`` describes this program.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/UW2K0nC6IAc" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
+
+[Next: `1.4 Expressions <1-4-expressions.html>`_]
+
+

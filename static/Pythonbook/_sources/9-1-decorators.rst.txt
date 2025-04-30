@@ -12,6 +12,27 @@
 --------------
 Decorators
 --------------
+Sometimes you might need to add functionality to an existing function.
+It would be a good idea if you could do that by not modifying the function, but instead wrapping it inside another function.
+
+You could do that manually, but in Python you can specify a "decorator" function and do the wrapping automatically!
+
+The way you do this is to write the decorator/wrapper function and "call" it by placing a call preceded by an at (@) character
+on the line before you define your function.
+Here is an example:
+
+::
+
+    @wrapper(arg)
+    def myfunction(myargs):
+        ....
+
+
+
+Your wrapping function is called a "decorator" and it is easy to specify which function to use as a wrapper.
+For example, in the lightweight web server system called "bottle" (see http://bottlepy.org),
+there is a set of decorator functions that add a lot of complex data handling.
+
 Decorators are easy to use and very common from existing packages. BUT, they are an advanced concept for Python. If you want to know how they work or write your own for your code it can be difficult until you understand how to do that. This video introduces the idea behind them.
 
 .. raw:: html
@@ -34,6 +55,7 @@ Here is an example:
 
 ::
 
+    # first we define the debug decorator function
     def debug(fun):
     	def wrapper(*args,**kwargs):
     		print(f"Args before: {args}, {kwargs}")
@@ -42,6 +64,7 @@ Here is an example:
 		return result
 	return wrapper
 
+    # here is how we use the decorator
     @debug
     def addup(x,y):
         return x+y
@@ -59,6 +82,7 @@ If we run the code we get:
 
 The way it works is the following:
 when ``@debug`` was placed before the ``addup`` function, it creates a replacement function of ``addup``.
+BUT still called ``addup``.
 
 The ``debug`` decorator function has ``addup`` passed as an argument.
 Inside ``debug`` there is another function defined (I called it ``wrapper``) and that function is returned
@@ -66,7 +90,7 @@ as the result of the execution of the ``debug`` function.   From then on, whenev
 calling the new function.
 
 The ``wrapper`` function can do anything and completely replace ``addup``, but that would not be very useful 😀
-Instead, ``wrapper`` in this case will print all the arguments of ``addup``, then run ``addup``, using
+Instead, ``wrapper`` in this case will print all the arguments of ``addup``, then run the original ``addup``, using
 the same parameters as before. This is very useful to see how your call of ``addup`` is working.
 
 I can switch off the use of ``debug`` if I make the ``@debug`` line into a comment like this:

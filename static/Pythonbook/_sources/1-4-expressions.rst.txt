@@ -13,34 +13,27 @@
 --------------------------------
 Python Operators and Expressions
 --------------------------------
-Python allows you to combine data with operators using expressions. Add two numbers together, do a complex formula etc.
+Python allows you to combine data with operators using expressions.
+For example, here is an assignment statement with a variable name on the left
+and an arithmetic expression on the right:
+
+::
+
+    BodyMassIndex = weight/(height**2)
+
+The expression does arithmetic on some variables and the assignment (``=``)
+labels the result with the variable name ``BodyMassIndex``
+
+The operators used in the expression are a division (``/``) and exponentiation (``**``).
+
+
 
 .. raw:: html
 
       <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/0mlY3sDHSgY" frameborder="0"  allowfullscreen></iframe>
  </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
 
-------------------
-Comments in Python
-------------------
-It is easy to put comments in your Python code. This means you can explain in your language what is going on in your program.
 
-.. raw:: html
-
-      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/ADWDxhA2tXc" frameborder="0"  allowfullscreen></iframe>
- </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
-
---------------------
-The input() function
---------------------
-The input() function is very useful for prompting a user and reading an answer.
-
-.. raw:: html
-
-      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/lLGwbfdN8ZI" frameborder="0"  allowfullscreen></iframe>
- </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
-
-
-[Next: `1.5 Files and Folders <1-5-files.html>`_]
+[Next: `1.4.2 Comments <1-4-2-comments.html>`_]
 
 
